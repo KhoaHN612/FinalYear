@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 6961e2900a0fe9740a5abd3a5b35a5e8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - agentData: {fileID: 11400000, guid: db4b3d2103274fd4bae6cdc4a21dadf7, type: 2}
+  - rb2d: {instanceID: 0}
+  - agentInput: {instanceID: 0}
+  - animationManager: {instanceID: 0}
+  - agentRenderer: {instanceID: 0}
+  - groundDetector: {instanceID: 0}
+  - climbingDetector: {instanceID: 0}
+  - curretSate: {instanceID: 0}
+  - previousState: {instanceID: 0}
+  - IdleState: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
