@@ -7,7 +7,7 @@ using UnityEngine.Events;
 public class Agent : MonoBehaviour
 {
     public AgentDataSO agentData;
-
+    public MovementData movementData;
     public Rigidbody2D rb2d;
     public PlayerInput agentInput;
     public AgentAnimation animationManager;
@@ -28,6 +28,7 @@ public class Agent : MonoBehaviour
     {
         agentInput = GetComponentInParent<PlayerInput>();
         rb2d = GetComponent<Rigidbody2D>();
+        movementData = GetComponent<MovementData>();
         animationManager = GetComponentInChildren<AgentAnimation>();
         agentRenderer = GetComponentInChildren<AgentRenderer>();
         groundDetector = GetComponentInChildren<GroundDetector>();
@@ -40,6 +41,15 @@ public class Agent : MonoBehaviour
         }
     }
 
+    public float GetFaceDirection(){
+        if (transform.localScale.x>0){
+            return 1;
+        } else if (transform.localScale.x<0){
+            return -1;
+        } else {
+            return 0;
+        }
+    }
     public void AgentDied()
     {
         OnRespawnRequired?.Invoke();

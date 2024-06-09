@@ -11,6 +11,12 @@ public class AgentDataSO : ScriptableObject
     public float acceleration = 50;
     public float deacceleration = 50;
 
+    [Header("Dash data")]
+    [Space]
+    public float dashSpeed = 18f;
+    public float dashTime = 0.2f;
+    public float dashCooldown = 1f;
+
     [Header("Jump data")]
     [Space]
     public float jumpForce = 12;

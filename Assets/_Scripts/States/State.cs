@@ -7,7 +7,7 @@ using UnityEngine.Events;
 public abstract class State : MonoBehaviour
 {
     [SerializeField]
-    protected State JumpState, FallState;
+    protected State JumpState, FallState, DashingState;
 
     protected Agent agent;
 
@@ -21,6 +21,7 @@ public abstract class State : MonoBehaviour
     public void Enter()
     {
         this.agent.agentInput.OnAttack += HandleAttack;
+        this.agent.agentInput.OnDash += HandleDash;
         this.agent.agentInput.OnJumpPressed += HandleJumpPressed;
         this.agent.agentInput.OnJumpReleased += HandleJumpReleased;
         this.agent.agentInput.OnMovement += HandleMovement;
@@ -58,6 +59,18 @@ public abstract class State : MonoBehaviour
     {
     }
 
+    protected virtual void HandleDash()
+    {
+        if (agent.movementData.canDash){
+            TestDashTransition();
+        }
+    }
+
+    private void TestDashTransition()
+    {
+        agent.TransitionToState(DashingState);
+    }
+
     public virtual void StateUpdate()
     {
         TestFallTransition();
@@ -81,6 +94,7 @@ public abstract class State : MonoBehaviour
     public void Exit()
     {
         this.agent.agentInput.OnAttack -= HandleAttack;
+        this.agent.agentInput.OnDash -= HandleDash;
         this.agent.agentInput.OnJumpPressed -= HandleJumpPressed;
         this.agent.agentInput.OnJumpReleased -= HandleJumpReleased;
         this.agent.agentInput.OnMovement -= HandleMovement;

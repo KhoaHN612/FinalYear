@@ -29,6 +29,9 @@ public class AgentAnimation : MonoBehaviour
             case AnimationType.run:
                 Play("Run");
                 break;
+            case AnimationType.dash:
+                Play("Dashing");
+                break;
             case AnimationType.jump:
                 Play("Jump");
                 break;
@@ -68,6 +71,7 @@ public enum AnimationType
     idle,
     attack,
     run,
+    dash,
     jump,
     fall,
     climb,

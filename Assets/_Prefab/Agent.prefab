@@ -51,8 +51,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 320
   isGrounded: 0
-  boxCastYOffset: -0.52
-  boxCastXOffset: 0.02
+  boxCastYOffset: -0.832
+  boxCastXOffset: -0
   boxCastWidth: 0.45
   boxCastHeight: 0.17
   gizmoColorNotGrounded: {r: 1, g: 0, b: 0, a: 1}
@@ -89,8 +89,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.116065264}
-  m_Size: {x: 0.5, y: 1.189925}
+  m_Offset: {x: 0, y: -0.17664671}
+  m_Size: {x: 0.5, y: 1.7834277}
   m_Direction: 0
 --- !u!114 &3835380306622964531
 MonoBehaviour:
@@ -231,8 +231,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.116065264}
-  m_Size: {x: 0.5, y: 1.189925}
+  m_Offset: {x: 0, y: -0.17475969}
+  m_Size: {x: 0.5, y: 1.7856892}
   m_Direction: 0
 --- !u!114 &9197074560093167656
 MonoBehaviour:
@@ -391,6 +391,7 @@ GameObject:
   - component: {fileID: 7557005314161595069}
   - component: {fileID: 4290815553879461690}
   - component: {fileID: 2485613710050250807}
+  - component: {fileID: 6415536930857807561}
   m_Layer: 0
   m_Name: States
   m_TagString: Untagged
@@ -427,6 +428,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   JumpState: {fileID: 4290815553879461690}
   FallState: {fileID: 2485613710050250807}
+  DashingState: {fileID: 6415536930857807561}
   OnEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -449,6 +451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   JumpState: {fileID: 4290815553879461690}
   FallState: {fileID: 2485613710050250807}
+  DashingState: {fileID: 6415536930857807561}
   OnEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -471,6 +474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   JumpState: {fileID: 4290815553879461690}
   FallState: {fileID: 2485613710050250807}
+  DashingState: {fileID: 6415536930857807561}
   OnEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -494,6 +498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   JumpState: {fileID: 4290815553879461690}
   FallState: {fileID: 2485613710050250807}
+  DashingState: {fileID: 6415536930857807561}
   OnEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -503,3 +508,26 @@ MonoBehaviour:
   movementData: {fileID: 9197074560093167656}
   IdleState: {fileID: 7243882101363639340}
   ClimbState: {fileID: 0}
+--- !u!114 &6415536930857807561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8344573179310717554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93c7f85c2b4ae0142ae6e3725e646945, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JumpState: {fileID: 4290815553879461690}
+  FallState: {fileID: 2485613710050250807}
+  DashingState: {fileID: 6415536930857807561}
+  OnEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnExit:
+    m_PersistentCalls:
+      m_Calls: []
+  movementData: {fileID: 9197074560093167656}
+  IdleState: {fileID: 7243882101363639340}
