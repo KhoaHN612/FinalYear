@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class RewindObject : MonoBehaviour
@@ -9,22 +10,27 @@ public class RewindObject : MonoBehaviour
 	public float recordTime = 5f;
 
 	List<StateInTime> statesInTime;
-
-	Rigidbody2D rb;
+	[SerializeField]
+	public Rigidbody2D rb;
     public SpriteRenderer spriteRenderer;
+	public GhostTrail ghostTrail;
 
     public Animator animator;
 
 	// Use this for initialization
 	void Start () {
 		statesInTime = new List<StateInTime>();
-		rb = GetComponent<Rigidbody2D>();
+		if (rb == null){
+			rb = GetComponent<Rigidbody2D>();
+		}
         if (spriteRenderer == null){
             spriteRenderer = GetComponent<SpriteRenderer>();
         }
         if (animator == null){
             animator = GetComponent<Animator>();
         }
+		ghostTrail = this.AddComponent<GhostTrail>();
+		ghostTrail.enabled = false;
 	}
 	
 	// Update is called once per frame
@@ -46,14 +52,16 @@ public class RewindObject : MonoBehaviour
 	void Rewind ()
 	{
 		if (statesInTime.Count > 0)
-		{
+		{		
             if (animator != null){
                 animator.enabled = false;
             }
 			StateInTime stateInTime = statesInTime[0];
             transform.position = stateInTime.position;
 			transform.rotation = stateInTime.rotation;
-            spriteRenderer = stateInTime.spriteRenderer;
+			transform.localScale = stateInTime.scale;
+            spriteRenderer.sprite = stateInTime.sprite;
+			ghostTrail.enabled = true;
 			statesInTime.RemoveAt(0);
 		} else
 		{
@@ -69,12 +77,13 @@ public class RewindObject : MonoBehaviour
 			statesInTime.RemoveAt(statesInTime.Count - 1);
 		}
 
-		statesInTime.Insert(0, new StateInTime(transform.position, transform.rotation, spriteRenderer));
+		statesInTime.Insert(0, new StateInTime(transform.position, transform.rotation, transform.localScale, spriteRenderer.sprite));
 	}
 
 	public void StartRewind ()
 	{
 		isRewinding = true;
+		rb.velocity = new Vector3(0f, 0f, 0f);
 		rb.isKinematic = true;
 	}
 
@@ -85,5 +94,6 @@ public class RewindObject : MonoBehaviour
         }
 		isRewinding = false;
 		rb.isKinematic = false;
+		ghostTrail.enabled = false;
 	}
 }
