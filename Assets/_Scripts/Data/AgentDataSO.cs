@@ -17,6 +17,11 @@ public class AgentDataSO : ScriptableObject
     public float dashTime = 0.2f;
     public float dashCooldown = 1f;
 
+    [Header("Rewind Data")]
+    [Space]
+    public float recordTime = 5f;
+    public float rewindCooldown = 1f;
+
     [Header("Jump data")]
     [Space]
     public float jumpForce = 12;

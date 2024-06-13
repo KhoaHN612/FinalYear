@@ -2,11 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class MovementState : State
 {
     [SerializeField]
     protected MovementData movementData;
+    public UnityEvent OnStep;
     public State IdleState;
 
     private void Awake()
@@ -17,7 +19,7 @@ public class MovementState : State
     protected override void EnterState()
     {
         agent.animationManager.PlayAnimation(AnimationType.run);
-
+        agent.animationManager.OnAnimationAction.AddListener(()=>OnStep.Invoke());
         movementData.horizontalMovementDirection = 0;
         movementData.currentSpeed = 0;
         movementData.currentVelocity = Vector2.zero;
@@ -70,5 +72,10 @@ public class MovementState : State
             movementData.currentSpeed -= agent.agentData.deacceleration * Time.deltaTime;
         }
         movementData.currentSpeed = Mathf.Clamp(movementData.currentSpeed, 0, agent.agentData.maxSpeed);
+    }
+
+    protected override void ExitState()
+    {
+        agent.animationManager.ResetEvents();
     }
 }

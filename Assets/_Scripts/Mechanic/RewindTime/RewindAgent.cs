@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class RewindObject : MonoBehaviour
+public class RewindAgent : MonoBehaviour
 {
 	bool isRewinding = false;
 
@@ -15,8 +15,6 @@ public class RewindObject : MonoBehaviour
     public SpriteRenderer spriteRenderer;
 	public GhostTrail ghostTrail;
 
-    public Animator animator;
-
 	// Use this for initialization
 	void Start () {
 		statesInTime = new List<StateInTime>();
@@ -26,20 +24,10 @@ public class RewindObject : MonoBehaviour
         if (spriteRenderer == null){
             spriteRenderer = GetComponent<SpriteRenderer>();
         }
-        if (animator == null){
-            animator = GetComponent<Animator>();
-        }
+
 		ghostTrail = this.AddComponent<GhostTrail>();
 		ghostTrail.enabled = false;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		if (Input.GetKeyDown(KeyCode.Backspace))
-			StartRewind();
-		if (Input.GetKeyUp(KeyCode.Backspace))
-			StopRewind();
-	}
+	}	
 
 	void FixedUpdate ()
 	{
@@ -53,9 +41,6 @@ public class RewindObject : MonoBehaviour
 	{
 		if (statesInTime.Count > 0)
 		{		
-            if (animator != null){
-                animator.enabled = false;
-            }
 			StateInTime stateInTime = statesInTime[0];
             transform.position = stateInTime.position;
 			transform.rotation = stateInTime.rotation;
@@ -89,9 +74,6 @@ public class RewindObject : MonoBehaviour
 
 	public void StopRewind ()
 	{
-        if (animator != null){
-            animator.enabled = true;
-        }
 		isRewinding = false;
 		rb.isKinematic = false;
 		ghostTrail.enabled = false;

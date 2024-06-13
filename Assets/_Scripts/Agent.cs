@@ -14,6 +14,7 @@ public class Agent : MonoBehaviour
     public AgentRenderer agentRenderer;
     public GroundDetector groundDetector;
     public ClimbingDetector climbingDetector;
+    public RewindAgent rewindAgent;
 
     public State curretSate = null, previousState = null;
     public State IdleState;
@@ -33,6 +34,7 @@ public class Agent : MonoBehaviour
         agentRenderer = GetComponentInChildren<AgentRenderer>();
         groundDetector = GetComponentInChildren<GroundDetector>();
         climbingDetector = GetComponentInChildren<ClimbingDetector>();
+        rewindAgent = GetComponent<RewindAgent>();
 
         State[] states = GetComponentsInChildren<State>();
         foreach (var state in states)

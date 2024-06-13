@@ -9,6 +9,8 @@ public class MovementData : MonoBehaviour
     internal Vector2 currentVelocity;
     internal bool canDash = true;
     internal bool isDashing;
+    internal bool canRewind = true;
+    internal bool isRewind = false;
 
     // Start is called before the first frame update
     void Start()

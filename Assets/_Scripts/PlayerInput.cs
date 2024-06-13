@@ -9,11 +9,11 @@ public class PlayerInput : MonoBehaviour
     [field: SerializeField]
     public Vector2 MovementVector { get; private set; }
 
-    public event Action OnAttack, OnJumpPressed, OnJumpReleased, OnWeaponChange, OnDash;
+    public event Action OnAttack, OnJumpPressed, OnJumpReleased, OnWeaponChange, OnDash, OnRewindPressed, OnRewindReleased;
 
     public event Action<Vector2> OnMovement;
 
-    public KeyCode jumpKey, attackKey, dashKey, menuKey;
+    public KeyCode jumpKey, attackKey, dashKey, menuKey, rewindKey;
 
     public UnityEvent OnMenuKeyPressed;
 
@@ -26,6 +26,7 @@ public class PlayerInput : MonoBehaviour
             GetAttackInput();
             GetDashInput();
             GetWeaponSwapInput();
+            GetRewindInput();
         }
 
         GetMenuInput();
@@ -75,8 +76,18 @@ public class PlayerInput : MonoBehaviour
         {
             OnJumpReleased?.Invoke();
         }
+    }
 
-
+    private void GetRewindInput()
+    {
+        if (Input.GetKeyDown(rewindKey))
+        {
+            OnRewindPressed?.Invoke();
+        }
+        if (Input.GetKeyUp(rewindKey))
+        {
+            OnRewindReleased?.Invoke();
+        }
     }
 
     private void GetMovementInput()

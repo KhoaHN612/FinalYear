@@ -50,6 +50,7 @@ MonoBehaviour:
   attackKey: 106
   dashKey: 108
   menuKey: 27
+  rewindKey: 8
   OnMenuKeyPressed:
     m_PersistentCalls:
       m_Calls: []

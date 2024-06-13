@@ -44,6 +44,8 @@ public class DashingState : MovementState
     public override void StateUpdate()
     {
         if (!movementData.isDashing){
+            if (TestFallTransition())
+                return;
             agent.TransitionToState(IdleState);
         }
     }
