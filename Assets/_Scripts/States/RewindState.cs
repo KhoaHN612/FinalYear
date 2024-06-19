@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RewindState : MovementState
 {
+    public Object RewindEffect;
     protected override void EnterState()
     {
         agent.animationManager.StopAnimation();
@@ -19,7 +20,7 @@ public class RewindState : MovementState
         agent.rewindAgent.StopRewind();
         if (TestFallTransition())
             return;
-        agent.TransitionToState(IdleState);
+        agent.TransitionToState(agent.stateFactory.GetState(StateType.Idle));
     }
 
     protected override void ExitState(){

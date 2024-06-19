@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using WeaponSystem;
 
 public class Agent : MonoBehaviour
 {
@@ -15,9 +16,13 @@ public class Agent : MonoBehaviour
     public GroundDetector groundDetector;
     public ClimbingDetector climbingDetector;
     public RewindAgent rewindAgent;
+    public StateFactory stateFactory;
 
     public State curretSate = null, previousState = null;
     public State IdleState;
+
+    [HideInInspector]
+    public AgentWeaponManager agentWeapon;
 
     [Header("State debugging:")]
     public string stateName = "";
@@ -34,13 +39,11 @@ public class Agent : MonoBehaviour
         agentRenderer = GetComponentInChildren<AgentRenderer>();
         groundDetector = GetComponentInChildren<GroundDetector>();
         climbingDetector = GetComponentInChildren<ClimbingDetector>();
+        agentWeapon = GetComponentInChildren<AgentWeaponManager>();
         rewindAgent = GetComponent<RewindAgent>();
+        stateFactory = GetComponentInChildren<StateFactory>();
 
-        State[] states = GetComponentsInChildren<State>();
-        foreach (var state in states)
-        {
-            state.InitializeState(this);
-        }
+        stateFactory.InitializeStates(this);
     }
 
     public float GetFaceDirection(){

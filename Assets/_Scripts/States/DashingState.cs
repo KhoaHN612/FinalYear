@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class DashingState : MovementState
 {
-    // [SerializeField]
-    // protected State IdleState;
     private float previousGravityScale = 0;
     [SerializeField]
     private bool isDashing;
@@ -38,7 +36,7 @@ public class DashingState : MovementState
 
     protected override void HandleJumpPressed()
     {
-        agent.TransitionToState(JumpState);
+        agent.TransitionToState(agent.stateFactory.GetState(StateType.Jump));
     }
 
     public override void StateUpdate()
@@ -46,7 +44,7 @@ public class DashingState : MovementState
         if (!movementData.isDashing){
             if (TestFallTransition())
                 return;
-            agent.TransitionToState(IdleState);
+            agent.TransitionToState(agent.stateFactory.GetState(StateType.Idle));
         }
     }
 

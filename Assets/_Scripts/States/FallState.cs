@@ -28,7 +28,7 @@ public class FallState : MovementState
 
         if (agent.groundDetector.isGrounded)
         {
-            agent.TransitionToState(IdleState);
+            agent.TransitionToState(agent.stateFactory.GetState(StateType.Idle));
         }
         else if(agent.climbingDetector.CanClimb && Mathf.Abs(agent.agentInput.MovementVector.y) > 0)
         {

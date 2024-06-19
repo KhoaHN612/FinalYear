@@ -29,6 +29,16 @@ public class AgentAnimation : MonoBehaviour
                 Play("Idle");
                 break;
             case AnimationType.attack:
+                Play("SwordAttack");
+                break;
+            case AnimationType.attack1:
+                Play("Attack1");
+                break;
+            case AnimationType.attack2:
+                Play("Attack2");
+                break;
+            case AnimationType.attack3:
+                Play("Attack3");
                 break;
             case AnimationType.run:
                 Play("Run");
@@ -90,6 +100,9 @@ public enum AnimationType
     hit,
     idle,
     attack,
+    attack1,
+    attack2,
+    attack3,
     run,
     dash,
     jump,

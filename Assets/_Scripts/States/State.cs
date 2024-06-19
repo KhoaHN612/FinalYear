@@ -6,9 +6,6 @@ using UnityEngine.Events;
 
 public abstract class State : MonoBehaviour
 {
-    [SerializeField]
-    protected State JumpState, FallState, DashingState, RewindState;
-
     protected Agent agent;
 
     public UnityEvent OnEnter, OnExit;
@@ -53,13 +50,13 @@ public abstract class State : MonoBehaviour
     {
         if (agent.groundDetector.isGrounded)
         {
-            agent.TransitionToState(JumpState);
+            agent.TransitionToState(agent.stateFactory.GetState(StateType.Jump));
         }
     }
 
     protected virtual void HandleRewindPressed(){
         if (agent.movementData.canDash){
-            agent.TransitionToState(RewindState);
+            agent.TransitionToState(agent.stateFactory.GetState(StateType.Rewind));
         }
     }
 
@@ -68,6 +65,7 @@ public abstract class State : MonoBehaviour
 
     protected virtual void HandleAttack()
     {
+        TestAttackTransition();
     }
 
     protected virtual void HandleDash()
@@ -79,7 +77,7 @@ public abstract class State : MonoBehaviour
 
     private void TestDashTransition()
     {
-        agent.TransitionToState(DashingState);
+        agent.TransitionToState(agent.stateFactory.GetState(StateType.Dash));
     }
 
     public virtual void StateUpdate()
@@ -91,10 +89,21 @@ public abstract class State : MonoBehaviour
     {
         if(agent.groundDetector.isGrounded == false)
         {
-            agent.TransitionToState(FallState);
+            agent.TransitionToState(agent.stateFactory.GetState(StateType.Fall));
             return true;
         }
         return false;
+    }
+
+    protected virtual void TestAttackTransition()
+    {
+        if (agent.agentWeapon.CanIUseWeapon(agent.groundDetector.isGrounded))
+        {
+            // agent.TransitionToState(agent.stateFactory.GetState(StateType.Attack));
+            // agent.agentWeapon.GetCurrentWeapon().PerformAttack(agent, 0, Vector3.right);
+            agent.TransitionToState(agent.stateFactory.GetState(StateType.Attack));
+
+        }
     }
 
     public virtual void StateFixedUpdate()

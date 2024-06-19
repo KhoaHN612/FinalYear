@@ -14,6 +14,7 @@ public class RewindAgent : MonoBehaviour
 	public Rigidbody2D rb;
     public SpriteRenderer spriteRenderer;
 	public GhostTrail ghostTrail;
+	public GameObject rewindEffect;
 
 	// Use this for initialization
 	void Start () {
@@ -67,6 +68,9 @@ public class RewindAgent : MonoBehaviour
 
 	public void StartRewind ()
 	{
+		if (rewindEffect != null){
+			rewindEffect.SetActive(true);
+		}
 		isRewinding = true;
 		rb.velocity = new Vector3(0f, 0f, 0f);
 		rb.isKinematic = true;
@@ -74,6 +78,9 @@ public class RewindAgent : MonoBehaviour
 
 	public void StopRewind ()
 	{
+		if (rewindEffect != null){
+			rewindEffect.SetActive(false);
+		}
 		isRewinding = false;
 		rb.isKinematic = false;
 		ghostTrail.enabled = false;
