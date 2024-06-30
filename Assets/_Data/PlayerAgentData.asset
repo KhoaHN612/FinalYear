@@ -12,9 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51018dff358314a46bc045d76f444f50, type: 3}
   m_Name: PlayerAgentData
   m_EditorClassIdentifier: 
+  maxHealth: 100
+  maxMana: 50
+  maxTime: 50
   maxSpeed: 6
   acceleration: 50
   deacceleration: 50
+  dashSpeed: 18
+  dashTime: 0.2
+  dashCooldown: 1
+  recordTime: 5
+  rewindCooldown: 1
   jumpForce: 12
   lowJumpMultiplier: 5
   gravityModifier: 0.5
+  climbHorizontalSpeed: 2
+  climbVecticalSpeed: 5

@@ -17,6 +17,7 @@ public class Agent : MonoBehaviour
     public ClimbingDetector climbingDetector;
     public RewindAgent rewindAgent;
     public StateFactory stateFactory;
+    public Damagable damagable;
 
     public State curretSate = null, previousState = null;
     public State IdleState;
@@ -42,6 +43,7 @@ public class Agent : MonoBehaviour
         agentWeapon = GetComponentInChildren<AgentWeaponManager>();
         rewindAgent = GetComponent<RewindAgent>();
         stateFactory = GetComponentInChildren<StateFactory>();
+        damagable = GetComponentInChildren<Damagable>();
 
         stateFactory.InitializeStates(this);
     }
@@ -55,6 +57,9 @@ public class Agent : MonoBehaviour
             return 0;
         }
     }
+    public void GetHit(){
+        curretSate.GetHit();
+    }
     public void AgentDied()
     {
         OnRespawnRequired?.Invoke();
@@ -63,7 +68,13 @@ public class Agent : MonoBehaviour
     private void Start()
     {
         agentInput.OnMovement += agentRenderer.FaceDirection;
+        InitializeAgent();
+    }
+
+    private void InitializeAgent()
+    {
         TransitionToState(IdleState);
+        damagable.Initialize(agentData.maxHealth, agentData.maxMana, agentData.maxTime);
     }
 
     internal void TransitionToState(State desiredState)

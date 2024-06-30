@@ -278,7 +278,7 @@ MonoBehaviour:
   agentCollider: {fileID: 228877519970097680}
   groundMask:
     serializedVersion: 2
-    m_Bits: 320
+    m_Bits: 4416
   isGrounded: 0
   boxCastYOffset: -0.8
   boxCastXOffset: -0
@@ -479,6 +479,7 @@ GameObject:
   - component: {fileID: 7437632748021765540}
   - component: {fileID: 9197074560093167656}
   - component: {fileID: 3937261013781228862}
+  - component: {fileID: 6845549285651598641}
   m_Layer: 0
   m_Name: Agent
   m_TagString: Untagged
@@ -553,6 +554,7 @@ MonoBehaviour:
   climbingDetector: {fileID: 0}
   rewindAgent: {fileID: 0}
   stateFactory: {fileID: 0}
+  damagable: {fileID: 0}
   curretSate: {fileID: 0}
   previousState: {fileID: 0}
   IdleState: {fileID: 7243882101363639340}
@@ -625,6 +627,81 @@ MonoBehaviour:
   spriteRenderer: {fileID: 4566618394894153649}
   ghostTrail: {fileID: 0}
   rewindEffect: {fileID: 305866230516577839}
+--- !u!114 &6845549285651598641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5567470203948737426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f986b6ced303ce743bddc2807426b9a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 100
+  maxMana: 0
+  currentMana: 0
+  maxTime: 0
+  currentTime: 0
+  OnGetHit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 72251233495706884}
+        m_TargetAssemblyTypeName: Agent, Assembly-CSharp
+        m_MethodName: GetHit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnDie:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 72251233495706884}
+        m_TargetAssemblyTypeName: Agent, Assembly-CSharp
+        m_MethodName: AgentDied
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnAddHealth:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHealthValueChange:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInitializeMaxHealth:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAddMana:
+    m_PersistentCalls:
+      m_Calls: []
+  OnManaValueChange:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInitializeMaxMana:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAddTime:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTimeValueChange:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInitializeMaxTime:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &6228730073347948831
 GameObject:
   m_ObjectHideFlags: 0

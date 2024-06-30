@@ -127,4 +127,8 @@ public abstract class State : MonoBehaviour
     protected virtual void ExitState()
     {
     }
+
+    public virtual void GetHit()
+    {
+    }
 }

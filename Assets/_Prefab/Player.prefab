@@ -147,7 +147,7 @@ RectTransform:
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &1566679658350838689
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -222,7 +222,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -20}
+  m_AnchoredPosition: {x: 100, y: -20}
   m_SizeDelta: {x: 800, y: 100}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &2910965137003526770
@@ -295,11 +295,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1319200047441266177}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 650, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &5301449794359466302
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -660,7 +660,7 @@ RectTransform:
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &479312270545468979
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1062,11 +1062,11 @@ RectTransform:
   - {fileID: 5936252949682075465}
   m_Father: {fileID: 3674963911878903404}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 475, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_SizeDelta: {x: 500, y: 50}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &8873378169192269334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1079,6 +1079,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4488222c98576ab45be75fea3c26af5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  widthPerInit: 5
+  bar: {fileID: 5174376648381701160}
   fullBar: {fileID: 824310048777691653}
   percent: 1
 --- !u!1 &5272212790775843872
@@ -1574,7 +1576,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 45, y: 0}
+  m_AnchoredPosition: {x: -50, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!1 &8313928905079133756
@@ -1684,11 +1686,11 @@ RectTransform:
   - {fileID: 1319200047441266177}
   m_Father: {fileID: 9026983185161574217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 650, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_SizeDelta: {x: 500, y: 50}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &5290263096289402895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1701,6 +1703,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4488222c98576ab45be75fea3c26af5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  widthPerInit: 5
+  bar: {fileID: 8561021865568392744}
   fullBar: {fileID: 1619525886950884742}
   percent: 1
 --- !u!1 &9170399682795041495
@@ -1735,11 +1739,11 @@ RectTransform:
   - {fileID: 6834718657815508851}
   m_Father: {fileID: 2853127846844636778}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 575, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_SizeDelta: {x: 500, y: 50}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &6624237563119340654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1752,6 +1756,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4488222c98576ab45be75fea3c26af5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  widthPerInit: 5
+  bar: {fileID: 9170399682795041495}
   fullBar: {fileID: 2780249159022203621}
   percent: 1
 --- !u!1001 &2506674876303519036
@@ -1765,6 +1771,158 @@ PrefabInstance:
     - target: {fileID: 5567470203948737426, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
       propertyPath: m_Name
       value: Agent
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: maxHealth
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: currentHealth
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnManaValueChange.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnTimeValueChange.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnHealthValueChange.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnInitializeMaxMana.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnInitializeMaxTime.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnInitializeMaxHealth.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnManaValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6660892142317199436}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnTimeValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6660892142317199436}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnHealthValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6660892142317199436}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnInitializeMaxMana.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6660892142317199436}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnInitializeMaxTime.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6660892142317199436}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnManaValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnTimeValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnInitializeMaxHealth.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6660892142317199436}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnManaValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetMana
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnTimeValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnHealthValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnInitializeMaxMana.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnInitializeMaxTime.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnHealthValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetHealth
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnInitializeMaxMana.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: InitializeMaxMana
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnInitializeMaxTime.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: InitializeMaxTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnInitializeMaxHealth.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnInitializeMaxHealth.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: InitializeMaxHealth
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnManaValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnTimeValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnHealthValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnInitializeMaxMana.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnInitializeMaxTime.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnInitializeMaxHealth.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnManaValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnTimeValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnHealthValueChange.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnInitializeMaxMana.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnInitializeMaxTime.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845549285651598641, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OnInitializeMaxHealth.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7718397819158042462, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
       propertyPath: m_LocalPosition.x
