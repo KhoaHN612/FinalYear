@@ -552,6 +552,7 @@ MonoBehaviour:
   groundDetector: {fileID: 0}
   climbingDetector: {fileID: 0}
   rewindAgent: {fileID: 0}
+  stateFactory: {fileID: 0}
   curretSate: {fileID: 0}
   previousState: {fileID: 0}
   IdleState: {fileID: 7243882101363639340}
@@ -973,11 +974,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab761227b1aa64d4e8f52ec700b64f28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JumpState: {fileID: 4290815553879461690}
-  FallState: {fileID: 2485613710050250807}
-  DashingState: {fileID: 6415536930857807561}
-  RewindState: {fileID: 2606150046671798889}
-  AttackState: {fileID: 8630072864239436539}
   OnEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -998,11 +994,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ff897919f1bbe4e987cf8853f45334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JumpState: {fileID: 4290815553879461690}
-  FallState: {fileID: 2485613710050250807}
-  DashingState: {fileID: 6415536930857807561}
-  RewindState: {fileID: 2606150046671798889}
-  AttackState: {fileID: 8630072864239436539}
   OnEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -1025,7 +1016,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  IdleState: {fileID: 7243882101363639340}
 --- !u!114 &4290815553879461690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1038,11 +1028,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 669c4eb5ff9bbc841970df7ced1b2e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JumpState: {fileID: 4290815553879461690}
-  FallState: {fileID: 2485613710050250807}
-  DashingState: {fileID: 6415536930857807561}
-  RewindState: {fileID: 2606150046671798889}
-  AttackState: {fileID: 0}
   OnEnter:
     m_PersistentCalls:
       m_Calls:
@@ -1065,8 +1050,6 @@ MonoBehaviour:
   OnStep:
     m_PersistentCalls:
       m_Calls: []
-  IdleState: {fileID: 7243882101363639340}
-  ClimbState: {fileID: 0}
 --- !u!114 &2485613710050250807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1079,11 +1062,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a6c4e0aae2adcc4ca2e38cc873881ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JumpState: {fileID: 4290815553879461690}
-  FallState: {fileID: 2485613710050250807}
-  DashingState: {fileID: 6415536930857807561}
-  RewindState: {fileID: 2606150046671798889}
-  AttackState: {fileID: 0}
   OnEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -1106,7 +1084,6 @@ MonoBehaviour:
   OnStep:
     m_PersistentCalls:
       m_Calls: []
-  IdleState: {fileID: 7243882101363639340}
   ClimbState: {fileID: 0}
 --- !u!114 &6415536930857807561
 MonoBehaviour:
@@ -1120,11 +1097,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93c7f85c2b4ae0142ae6e3725e646945, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JumpState: {fileID: 4290815553879461690}
-  FallState: {fileID: 2485613710050250807}
-  DashingState: {fileID: 6415536930857807561}
-  RewindState: {fileID: 2606150046671798889}
-  AttackState: {fileID: 0}
   OnEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -1135,7 +1107,6 @@ MonoBehaviour:
   OnStep:
     m_PersistentCalls:
       m_Calls: []
-  IdleState: {fileID: 7243882101363639340}
   isDashing: 0
 --- !u!114 &2606150046671798889
 MonoBehaviour:
@@ -1149,11 +1120,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b621c63087f0df49ba87403009f1619, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JumpState: {fileID: 4290815553879461690}
-  FallState: {fileID: 2485613710050250807}
-  DashingState: {fileID: 6415536930857807561}
-  RewindState: {fileID: 2606150046671798889}
-  AttackState: {fileID: 0}
   OnEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -1164,7 +1130,6 @@ MonoBehaviour:
   OnStep:
     m_PersistentCalls:
       m_Calls: []
-  IdleState: {fileID: 7243882101363639340}
   RewindEffect: {fileID: 0}
 --- !u!114 &8630072864239436539
 MonoBehaviour:
@@ -1178,11 +1143,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05a472574ea360e40835bea9bc64f09a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JumpState: {fileID: 0}
-  FallState: {fileID: 0}
-  DashingState: {fileID: 0}
-  RewindState: {fileID: 0}
-  AttackState: {fileID: 0}
   OnEnter:
     m_PersistentCalls:
       m_Calls: []

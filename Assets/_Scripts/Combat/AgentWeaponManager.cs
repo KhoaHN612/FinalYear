@@ -53,7 +53,6 @@ namespace WeaponSystem
 
         public void AddWeaponData(WeaponData weaponData)
         {
-            Debug.Log("Agent");
             if (weaponStorage.AddWeaponData(weaponData) == false)
                 return;
             if (weaponStorage.WeaponCount == 2)
