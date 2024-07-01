@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace RespawnSystem
 {
@@ -8,6 +9,8 @@ namespace RespawnSystem
     {
         List<RespawnPoint> respawnPoints = new List<RespawnPoint>();
         RespawnPoint currentRespawnPoint;
+        [SerializeField]
+        public UnityEvent respawnPointActive;
 
         private void Awake()
         {
@@ -22,6 +25,10 @@ namespace RespawnSystem
         {
             currentRespawnPoint.DisableRespawnPoint();
             currentRespawnPoint = newRespawnPoint;
+        }
+
+        public void ActiveRespawnPoint(){
+            respawnPointActive?.Invoke();
         }
 
         public void Respawn(GameObject objectToRespawn)

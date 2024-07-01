@@ -23,6 +23,11 @@ public class GroundDetector : MonoBehaviour
         if (agentCollider == null)
             agentCollider = GetComponent<Collider2D>();
     }
+    private void Start()
+    {
+        if (agentCollider == null)
+            agentCollider = GetComponent<Collider2D>();
+    }
 
     public void CheckIsGrounded()
     {

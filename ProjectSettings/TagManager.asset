@@ -41,6 +41,12 @@ TagManager:
   - name: Background
     uniqueID: 1747254893
     locked: 0
+  - name: SpawnPoints
+    uniqueID: 571526837
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Agent
+    uniqueID: 2476778001
     locked: 0

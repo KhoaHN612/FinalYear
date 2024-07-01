@@ -130,5 +130,10 @@ public abstract class State : MonoBehaviour
 
     public virtual void GetHit()
     {
+        agent.TransitionToState(agent.stateFactory.GetState(StateType.GetHit));
+    }
+    public virtual void Die()
+    {
+        agent.TransitionToState(agent.stateFactory.GetState(StateType.Die));
     }
 }

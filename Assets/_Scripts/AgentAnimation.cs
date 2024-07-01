@@ -22,8 +22,10 @@ public class AgentAnimation : MonoBehaviour
         switch (animationType)
         {
             case AnimationType.die:
+                Play("Die");
                 break;
             case AnimationType.hit:
+                Play("GetHit");
                 break;
             case AnimationType.idle:
                 Play("Idle");
@@ -108,5 +110,5 @@ public enum AnimationType
     jump,
     fall,
     climb,
-    land
+    land,
 }

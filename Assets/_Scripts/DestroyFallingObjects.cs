@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using RespawnSystem;
 using UnityEngine;
 
 public class DestroyFallingObjects : MonoBehaviour
@@ -22,6 +23,16 @@ public class DestroyFallingObjects : MonoBehaviour
                 Destroy(collider.gameObject);
                 return;
             }
+            var damagable = agent.GetComponent<Damagable>();
+            if (damagable != null)
+            {
+                damagable.GetHit(damagable.CurrentHealth);
+                if (agent.CompareTag("Player"))
+                {
+                    agent.GetComponent<RespawnHelper>().RespawnPlayer();
+                }
+            }
+                
             agent.AgentDied();
         }
     }

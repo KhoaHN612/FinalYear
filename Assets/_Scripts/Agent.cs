@@ -19,7 +19,7 @@ public class Agent : MonoBehaviour
     public StateFactory stateFactory;
     public Damagable damagable;
 
-    public State curretSate = null, previousState = null;
+    public State currentState = null, previousState = null;
     public State IdleState;
 
     [HideInInspector]
@@ -30,6 +30,8 @@ public class Agent : MonoBehaviour
 
     [field: SerializeField]
     private UnityEvent OnRespawnRequired { get; set; }
+    [field: SerializeField]
+    public UnityEvent OnAgentDie  { get; set; }
 
     private void Awake()
     {
@@ -58,11 +60,18 @@ public class Agent : MonoBehaviour
         }
     }
     public void GetHit(){
-        curretSate.GetHit();
+        currentState.GetHit();
     }
     public void AgentDied()
     {
-        OnRespawnRequired?.Invoke();
+        if(damagable.CurrentHealth > 0)
+        {
+            OnRespawnRequired?.Invoke();
+        }
+        else
+        {
+            currentState.Die();
+        }
     }
 
     private void Start()
@@ -81,12 +90,12 @@ public class Agent : MonoBehaviour
     {
         if (desiredState == null)
             return;
-        if (curretSate != null)
-            curretSate.Exit();
+        if (currentState != null)
+            currentState.Exit();
 
-        previousState = curretSate;
-        curretSate = desiredState;
-        curretSate.Enter();
+        previousState = currentState;
+        currentState = desiredState;
+        currentState.Enter();
 
         DisplayState();
 
@@ -94,21 +103,21 @@ public class Agent : MonoBehaviour
 
     private void DisplayState()
     {
-        if(previousState == null || previousState.GetType() != curretSate.GetType())
+        if(previousState == null || previousState.GetType() != currentState.GetType())
         {
-            stateName = curretSate.GetType().ToString();
+            stateName = currentState.GetType().ToString();
         }
     }
 
     private void Update()
     {
 
-        curretSate.StateUpdate();
+        currentState.StateUpdate();
     }
 
     private void FixedUpdate()
     {
         groundDetector.CheckIsGrounded();
-        curretSate.StateFixedUpdate();
+        currentState.StateFixedUpdate();
     }
 }

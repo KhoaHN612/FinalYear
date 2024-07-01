@@ -13,10 +13,16 @@ namespace RespawnSystem
         [field: SerializeField]
         private UnityEvent OnSpawnPointActivated { get; set; }
 
+        [field: SerializeField]
+        private UnityEvent OnSpawnPointRespawn { get; set; }
+
         private void Start()
         {
             OnSpawnPointActivated.AddListener(() =>
                 GetComponentInParent<RespawnPointManager>().UpdateRespawnPoint(this)
+            );
+            OnSpawnPointActivated.AddListener(() =>
+                GetComponentInParent<RespawnPointManager>().ActiveRespawnPoint()
             );
         }
 
@@ -25,14 +31,16 @@ namespace RespawnSystem
             if (collision.CompareTag("Player"))
             {
                 this.respawnTarget = collision.gameObject;
-                OnSpawnPointActivated?.Invoke();
-                
+                OnSpawnPointActivated?.Invoke();                
             }
         }
 
         public void RespawnPlayer()
         {
-            respawnTarget.transform.position = transform.position;
+            OnSpawnPointRespawn?.Invoke();
+            Vector2 spawnLocation = transform.position;
+            spawnLocation.y += 5;
+            respawnTarget.transform.position = spawnLocation;
         }
 
         public void SetPlayerGO(GameObject player)
