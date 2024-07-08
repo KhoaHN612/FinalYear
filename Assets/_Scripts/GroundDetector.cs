@@ -31,9 +31,14 @@ public class GroundDetector : MonoBehaviour
 
     public void CheckIsGrounded()
     {
+        if (agentCollider == null)
+        {
+            return;
+        }
+
         RaycastHit2D raycastHit = Physics2D.BoxCast(agentCollider.bounds.center + new Vector3(boxCastXOffset, boxCastYOffset, 0), new Vector2(boxCastWidth, boxCastHeight), 0, Vector2.down, 0, groundMask);
 
-        if(raycastHit.collider != null)
+        if (raycastHit.collider != null)
         {
             if(raycastHit.collider.IsTouching(agentCollider) == true)
             {
