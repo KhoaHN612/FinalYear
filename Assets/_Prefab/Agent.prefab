@@ -241,7 +241,7 @@ GameObject:
   - component: {fileID: 477143150833793109}
   - component: {fileID: 228877519970097680}
   - component: {fileID: 3835380306622964531}
-  m_Layer: 3
+  m_Layer: 14
   m_Name: GroundCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -575,9 +575,9 @@ GameObject:
   - component: {fileID: 3937261013781228862}
   - component: {fileID: 6845549285651598641}
   - component: {fileID: 7420621420570927076}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Agent
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -639,10 +639,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6961e2900a0fe9740a5abd3a5b35a5e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agentData: {fileID: 11400000, guid: db4b3d2103274fd4bae6cdc4a21dadf7, type: 2}
+  agentData: {fileID: 0}
   movementData: {fileID: 0}
   rb2d: {fileID: 0}
-  agentInput: {fileID: 0}
   animationManager: {fileID: 0}
   agentRenderer: {fileID: 0}
   groundDetector: {fileID: 0}
@@ -657,19 +656,7 @@ MonoBehaviour:
   stateName: 
   <OnRespawnRequired>k__BackingField:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   <OnAgentDie>k__BackingField:
     m_PersistentCalls:
       m_Calls: []
@@ -1403,8 +1390,6 @@ MonoBehaviour:
   hittableLayerMask:
     serializedVersion: 2
     m_Bits: 12288
-  idleState: {fileID: 7243882101363639340}
-  fallState: {fileID: 2485613710050250807}
   OnWeaponSound:
     m_PersistentCalls:
       m_Calls:

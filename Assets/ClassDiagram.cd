@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Agent">
+    <Position X="24" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AWQgAAAgCiAABEIAKABEBAQAEAgIAAAAAAAABAQCQEk=</HashCode>
+      <FileName>Assets\_Scripts\Agent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerInput" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="37.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IJQCAAAQCAAwgCCAEAAAAAABAIAAAAAKAgAAAGApACA=</HashCode>
+      <FileName>Assets\_Scripts\PlayerInput.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.208" />
+  </Class>
+  <Class Name="Damagable" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="33" Y="2" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>CIIQBAgIAEAABQABAAAIAASAAAAFAAiAQAAgsAACIQA=</HashCode>
+      <FileName>Assets\_Scripts\Damagable.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ClimbingDetector" Collapsed="true">
+    <Position X="26.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAABAAAEAAAAAAQAAAAEAAAAA=</HashCode>
+      <FileName>Assets\_Scripts\ClimbingDetector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DestroyFallingObjects">
+    <Position X="21.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAEAAAAAkAAAAAAAIAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_Scripts\DestroyFallingObjects.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GroundDetector" Collapsed="true">
+    <Position X="28.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEEAAAAACAAAAAAACAAECAQAAAAAAAIAACAACAAAMA=</HashCode>
+      <FileName>Assets\_Scripts\GroundDetector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StateFactory">
+    <Position X="30.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEBAAoAAAAAgAAAAgAgAAJAAAAAgAAAAAAACAAA=</HashCode>
+      <FileName>Assets\_Scripts\States\StateFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AttackState" Collapsed="true">
+    <Position X="6" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAUAAAAIAAAIAABAACAABAQIAAAAAAAQAIAACEEAiQ=</HashCode>
+      <FileName>Assets\_Scripts\States\AttackState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClimbingState" Collapsed="true">
+    <Position X="8.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAIAAAAAAAAAAAAAAQAAAAAAAAAAIAAAAAAgA=</HashCode>
+      <FileName>Assets\_Scripts\States\ClimbingState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DashingState" Collapsed="true">
+    <Position X="12.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAIAAAAAAIAAAgAAgQAAAAAAAAAAIAAAAAAgA=</HashCode>
+      <FileName>Assets\_Scripts\States\DashingState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DieState" Collapsed="true">
+    <Position X="3.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgIAAAAAAgAAAAABAQAAAABAAAAAIAAAgCAgA=</HashCode>
+      <FileName>Assets\_Scripts\States\DieState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FallState" Collapsed="true">
+    <Position X="19.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAgA=</HashCode>
+      <FileName>Assets\_Scripts\States\FallState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GetHitState" Collapsed="true">
+    <Position X="10.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAABAQAABAAAAAAAAAAAACAgA=</HashCode>
+      <FileName>Assets\_Scripts\States\GetHitState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IdleState" Collapsed="true">
+    <Position X="1.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQCAAAAAAAABAAACAAAAA=</HashCode>
+      <FileName>Assets\_Scripts\States\IdleState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JumpState" Collapsed="true">
+    <Position X="17.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAgACAAAAQAAAAAAAAAEAAAAAAAgA=</HashCode>
+      <FileName>Assets\_Scripts\States\JumpState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovementData" Collapsed="true">
+    <Position X="35.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CQQAAAAAACAAAAAoAAAAAAAAAAAAABAAAAEAAAAAAAA=</HashCode>
+      <FileName>Assets\_Scripts\States\MovementData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovementState" Collapsed="true">
+    <Position X="16" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAJEAAAAAAAAAAAAAAAAQAAAAAAAAAAIAAAAAAkg=</HashCode>
+      <FileName>Assets\_Scripts\States\MovementState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RewindState" Collapsed="true">
+    <Position X="15" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAIAAAAAAAAQAAAAAAAAAAIAAAgAAgA=</HashCode>
+      <FileName>Assets\_Scripts\States\RewindState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="State" Collapsed="true">
+    <Position X="10.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BgAAAAAAIAAAAQIgAACgABAQEAAUQAIAYIIAICACAgA=</HashCode>
+      <FileName>Assets\_Scripts\States\State.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AIBehaviour" Collapsed="true">
+    <Position X="42" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_Scripts\Enemies\AIBehaviour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AIEnemy.AIEnemy">
+    <Position X="39.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJAABAAACCgQAICBAAAIAAABAAAABAAAAAgAACAIACA=</HashCode>
+      <FileName>Assets\_Scripts\Enemies\AIEnemy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AIEnemy.AIPatrollingEnemyBrain" Collapsed="true">
+    <Position X="39.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAACAAAAAACAAAAAAAAAAAAAAAEEA=</HashCode>
+      <FileName>Assets\_Scripts\Enemies\AIPatrollingEnemyBrain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.MonoBehaviour" Collapsed="true">
+    <Position X="21.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="IAgentInput" Collapsed="true">
+    <Position X="44.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJAAAAAACAAQAACAAAAAAAABAAAAAAAAAAAAACAIACA=</HashCode>
+      <FileName>Assets\_Scripts\IAgentInput.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WeaponSystem.IHittable" Collapsed="true">
+    <Position X="46.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Assets\_Scripts\Combat\IHittable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="StateType" Collapsed="true">
+    <Position X="44.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAoAAAAAgAAAAgAgAAJAAAAAgAAAAAAACAAA=</HashCode>
+      <FileName>Assets\_Scripts\States\StateFactory.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

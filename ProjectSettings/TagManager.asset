@@ -19,7 +19,7 @@ TagManager:
   - Background
   - ObjectInMap
   - Enemy
-  - 
+  - AgentCollider
   - 
   - 
   - 

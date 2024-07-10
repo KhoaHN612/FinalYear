@@ -1,25 +1,12 @@
-using AIEnemy;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AIBehaviour : MonoBehaviour
+namespace AIEnemy
 {
-    internal void PerformAction(AIPatrollingEnemyBrain aIPatrollingEnemyBrain)
+    public abstract class AIBehaviour : MonoBehaviour
     {
-        throw new NotImplementedException();
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public abstract void PerformAction(AIEnemy enemyAI);
     }
 }

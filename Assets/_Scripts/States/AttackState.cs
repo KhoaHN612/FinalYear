@@ -8,7 +8,6 @@ public class AttackState : State
 {
     public LayerMask hittableLayerMask;
 
-    public State idleState, fallState;
 
     protected Vector2 direction;
 
@@ -40,11 +39,9 @@ public class AttackState : State
     {
         agent.animationManager.OnAnimationEnd.RemoveListener(TransitionToIdleState);
         if (agent.groundDetector.isGrounded)
-            agent.TransitionToState(idleState);
-            // agent.TransitionToState(agent.stateFactory.GetState(StateType.Idle));
+            agent.TransitionToState(agent.stateFactory.GetState(StateType.Idle));
         else
-            // agent.TransitionToState(agent.stateFactory.GetState(StateType.Fall));
-            agent.TransitionToState(fallState);
+            agent.TransitionToState(agent.stateFactory.GetState(StateType.Fall));
     }
 
     protected override void ExitState()
@@ -60,7 +57,7 @@ public class AttackState : State
         if (showGizmos == false)
             return;
         Gizmos.color = Color.red;
-        var pos = agent.agentWeapon.transform.position;
+        var pos = agent.agentWeapon.transform.position; 
         agent.agentWeapon.GetCurrentWeapon()?.DrawWeaponGizmo(pos, direction);
     }
 
