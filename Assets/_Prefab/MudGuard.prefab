@@ -525,6 +525,10 @@ PrefabInstance:
       propertyPath: hittableLayerMask.m_Bits
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 9049155791205749044, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -1016885103992031844, guid: 8d2e45ceecc059d409f0b76abe2ee9ed, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
