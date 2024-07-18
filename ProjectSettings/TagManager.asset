@@ -20,7 +20,7 @@ TagManager:
   - ObjectInMap
   - Enemy
   - AgentCollider
-  - 
+  - Pickable
   - 
   - 
   - 
