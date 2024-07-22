@@ -18,7 +18,7 @@ public class AttackState : State
     protected override void EnterState()
     {
         agent.animationManager.ResetEvents();
-        agent.animationManager.PlayAnimation(AnimationType.attack1);
+        agent.animationManager.PlayAnimation(AnimationType.attack2);
         agent.animationManager.OnAnimationEnd.AddListener(TransitionToIdleState);
         agent.animationManager.OnAnimationAction.AddListener(PerformAttack);
 

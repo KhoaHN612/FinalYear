@@ -120,4 +120,11 @@ public class Agent : MonoBehaviour
         groundDetector.CheckIsGrounded();
         currentState.StateFixedUpdate();
     }
+
+    public void PickUp(WeaponData weaponData)
+    {
+        if (agentWeapon == null)
+            return;
+        agentWeapon.PickUpWeapon(weaponData);
+    }
 }

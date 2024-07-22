@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5bc707b805768b4990b4ba3c7a3b739, type: 3}
+  m_Name: DaggerRangeWeaponData
+  m_EditorClassIdentifier: 
+  weaponName: Dagger
+  weaponSprite: {fileID: -1729867903, guid: 6ea10356f686878419dea7401427c809, type: 3}
+  weaponDamage: 10
+  weaponSwingSound: {fileID: 8300000, guid: 049be274737eb7044ab128f3df05934d, type: 3}
+  rangeWeaponPrefab: {fileID: 8295115805203913961, guid: a4cab729f47e9894bbe454a759d4dc74, type: 3}
+  weaponThrowSpeed: 10
+  attackRange: 10

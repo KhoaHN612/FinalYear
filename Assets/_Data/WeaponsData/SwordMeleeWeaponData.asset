@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 773eeb4f0b638e74a8f973c5fcd51baa, type: 3}
-  m_Name: Sword
+  m_Name: SwordMeleeWeaponData
   m_EditorClassIdentifier: 
   weaponName: Sword
-  weaponSprite: {fileID: -277770778, guid: 8b98f74a7c9b04046b484eacca400af9, type: 3}
+  weaponSprite: {fileID: -318049779, guid: 6ea10356f686878419dea7401427c809, type: 3}
   weaponDamage: 5
   weaponSwingSound: {fileID: 8300000, guid: ae4125b7fa3baf34cac60c0d4d6ffc25, type: 3}
   attackRange: 1
