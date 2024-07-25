@@ -10,7 +10,7 @@ namespace WeaponSystem
     {
         SpriteRenderer spriteRenderer;
 
-        private WeaponStorage weaponStorage;
+        public WeaponStorage weaponStorage;
 
         public UnityEvent<Sprite> OnWeaponSwap;
         public UnityEvent OnMultipleWeapons;
@@ -18,7 +18,7 @@ namespace WeaponSystem
 
         private void Awake()
         {
-            weaponStorage = new WeaponStorage();
+            weaponStorage = GetComponent<WeaponStorage>();
             spriteRenderer = GetComponent<SpriteRenderer>();
             ToggleWeaponVisibility(false);
 
@@ -48,7 +48,19 @@ namespace WeaponSystem
         {
             if (weaponStorage.WeaponCount <= 0)
                 return;
-            SwapWeaponSprite(weaponStorage.SwapWeapon().weaponSprite);
+            SwapWeaponSprite(weaponStorage.NextWeapon().weaponSprite);
+        }
+        public void NextWeapon()
+        {
+            if (weaponStorage.WeaponCount <= 0)
+                return;
+            weaponStorage.NextWeapon();
+        }
+        public void PreviousWeapon()
+        {
+            if (weaponStorage.WeaponCount <= 0)
+                return;
+            weaponStorage.PreviousWeapon();
         }
 
         public void AddWeaponData(WeaponData weaponData)

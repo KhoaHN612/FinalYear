@@ -17,5 +17,5 @@ MonoBehaviour:
   weaponDamage: 10
   weaponSwingSound: {fileID: 8300000, guid: 049be274737eb7044ab128f3df05934d, type: 3}
   rangeWeaponPrefab: {fileID: 8295115805203913961, guid: a4cab729f47e9894bbe454a759d4dc74, type: 3}
-  weaponThrowSpeed: 10
+  weaponThrowSpeed: 30
   attackRange: 10

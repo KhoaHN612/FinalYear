@@ -78,12 +78,30 @@ public class Agent : MonoBehaviour
     {
         agentInput.OnMovement += agentRenderer.FaceDirection;
         InitializeAgent();
+
+        agentInput.OnNextWeapon += NextWeapon;
+        agentInput.OnPreviousWeapon += PreviousWeapon;
+
     }
 
     private void InitializeAgent()
     {
         TransitionToState(IdleState);
         damagable.Initialize(agentData.maxHealth, agentData.maxMana, agentData.maxTime);
+    }
+
+    private void NextWeapon()
+    {
+        if (agentWeapon == null)
+            return;
+        agentWeapon.NextWeapon();
+    }
+
+    private void PreviousWeapon()
+    {
+        if (agentWeapon == null)
+            return;
+        agentWeapon.PreviousWeapon();
     }
 
     internal void TransitionToState(State desiredState)

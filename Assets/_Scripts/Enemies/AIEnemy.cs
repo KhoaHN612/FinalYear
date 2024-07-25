@@ -17,6 +17,8 @@ namespace AIEnemy
         public event Action OnRewindPressed;
         public event Action OnRewindReleased;
         public event Action OnWeaponChange;
+        public event Action OnNextWeapon;
+        public event Action OnPreviousWeapon;
 
         public void CallOnAttack()
         {

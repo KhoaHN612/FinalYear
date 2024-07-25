@@ -9,11 +9,11 @@ public class PlayerInput : MonoBehaviour, IAgentInput
     [field: SerializeField]
     public Vector2 MovementVector { get; private set; }
 
-    public event Action OnAttack, OnJumpPressed, OnJumpReleased, OnWeaponChange, OnDash, OnRewindPressed, OnRewindReleased;
+    public event Action OnAttack, OnJumpPressed, OnJumpReleased, OnWeaponChange, OnNextWeapon, OnPreviousWeapon, On1Weapon, On2Weapon, On3Weapon, On4Weapon, On5Weapon, On6Weapon, OnDash, OnRewindPressed, OnRewindReleased;
 
     public event Action<Vector2> OnMovement;
 
-    public KeyCode jumpKey, attackKey, dashKey, menuKey, rewindKey;
+    public KeyCode jumpKey, attackKey, dashKey, menuKey, rewindKey, nextWeaponKey = KeyCode.E, previousWeaponKey = KeyCode.Q;
 
     public UnityEvent OnMenuKeyPressed;
 
@@ -25,18 +25,27 @@ public class PlayerInput : MonoBehaviour, IAgentInput
             GetJumpInput();
             GetAttackInput();
             GetDashInput();
-            GetWeaponSwapInput();
+            GetNextWeaponInput();
+            GetPreviousWeaponInput();
             GetRewindInput();
         }
 
         GetMenuInput();
     }
 
-    private void GetWeaponSwapInput()
+    private void GetNextWeaponInput()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(nextWeaponKey))
         {
-            OnWeaponChange?.Invoke();
+            OnNextWeapon?.Invoke();
+        }
+    }
+
+    private void GetPreviousWeaponInput()
+    {
+        if (Input.GetKeyDown(previousWeaponKey))
+        {
+            OnPreviousWeapon?.Invoke();
         }
     }
 

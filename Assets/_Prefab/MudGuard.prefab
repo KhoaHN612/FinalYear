@@ -465,6 +465,10 @@ PrefabInstance:
       propertyPath: boxCastYOffset
       value: -0.46
       objectReference: {fileID: 0}
+    - target: {fileID: 1585969751469799046, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: inventorySlotNumber
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2373337292396405154, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
       propertyPath: groundDetector
       value: 

@@ -10,7 +10,9 @@ public interface IAgentInput
     event Action OnJumpPressed;
     event Action OnJumpReleased;
     event Action<Vector2> OnMovement;
+    event Action OnWeaponChange;
     event Action OnRewindPressed;
     event Action OnRewindReleased;
-    event Action OnWeaponChange;
+    event Action OnNextWeapon;
+    event Action OnPreviousWeapon;
 }

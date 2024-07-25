@@ -1054,6 +1054,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a52983e027307bd44997710460aeba40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  groundDetector: {fileID: 0}
+  onFlip:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &139878751204874062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1083,6 +1087,7 @@ GameObject:
   - component: {fileID: 3996630493380787390}
   - component: {fileID: 4954567820744540745}
   - component: {fileID: 6475414524892602726}
+  - component: {fileID: 1585969751469799046}
   m_Layer: 3
   m_Name: Weapon
   m_TagString: Untagged
@@ -1178,6 +1183,18 @@ MonoBehaviour:
   OnWeaponPickUp:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1585969751469799046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6609460971224816175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e54a6743d1a533499cf8eff0c1449d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7168570945402864055
 GameObject:
   m_ObjectHideFlags: 0
