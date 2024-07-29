@@ -57,8 +57,12 @@ public class AttackState : State
         if (showGizmos == false)
             return;
         Gizmos.color = Color.red;
-        var pos = agent.agentWeapon.transform.position; 
-        agent.agentWeapon.GetCurrentWeapon()?.DrawWeaponGizmo(pos, direction);
+        if (agent.agentWeapon != null)
+        {
+            var pos = agent.agentWeapon.transform.position;
+            agent.agentWeapon.GetCurrentWeapon()?.DrawWeaponGizmo(pos, direction);
+        }
+
     }
 
     protected override void HandleAttack()

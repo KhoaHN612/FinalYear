@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5bc707b805768b4990b4ba3c7a3b739, type: 3}
+  m_Name: BotWheelRangeWeaponData
+  m_EditorClassIdentifier: 
+  weaponName: BotWheelGun
+  weaponSprite: {fileID: 0}
+  weaponDamage: 10
+  weaponSwingSound: {fileID: 8300000, guid: 049be274737eb7044ab128f3df05934d, type: 3}
+  rangeWeaponPrefab: {fileID: 3646747862819355459, guid: 632d55d8833d38a4a8d262f84f53c11f, type: 3}
+  weaponThrowSpeed: 10
+  attackRange: 8

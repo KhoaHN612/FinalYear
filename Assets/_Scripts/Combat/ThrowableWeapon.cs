@@ -42,6 +42,11 @@ namespace WeaponSystem
         {
             movementDirection = direction;
             this.data = data;
+            this.transform.localScale = new Vector3(
+                direction.x >= 0 ? Mathf.Abs(this.transform.localScale.x) : -Mathf.Abs(this.transform.localScale.x),
+                this.transform.localScale.y,
+                this.transform.localScale.z
+            );
             isInitialized = true;
             rb2d.velocity = movementDirection * data.weaponThrowSpeed;
             layerMask = mask;
