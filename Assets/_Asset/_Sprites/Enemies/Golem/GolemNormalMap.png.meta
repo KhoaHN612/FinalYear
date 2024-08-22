@@ -1,0 +1,6331 @@
+fileFormatVersion: 2
+guid: d242ab2a8522f8e41be62e8b3fc1c97f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GolemNormalMap_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4869a75154daecf4d8502561d3b42785
+      internalID: -620523443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_1
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 10800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b5b0ef816edd7f459a614760ae0dbfa
+      internalID: -205314130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_2
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 10800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 898b1e9fea6bc7242b42b573535cdb35
+      internalID: -1396731767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_3
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 10800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0da0a5bc65fac748b73f115fdbcd344
+      internalID: 1799945068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_4
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 10800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89899e84971f0d441beabf48857ff0bd
+      internalID: -621071724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_5
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 10800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64aae866098ce0345b3e89e5cc922662
+      internalID: -2084893733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_6
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 10800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f88ddf5c8a0843479c2287324450565
+      internalID: -1138168303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_7
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 10800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1678235b8d72124082916dd412f417d
+      internalID: 1504971755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_8
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 10800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c6dd72430493754cbef68819ae666cc
+      internalID: 901222092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e44fd7472b74bd4cbc6307708777819
+      internalID: 756310419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_10
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 10500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8088a5b9505c404ba9b7961de4319cc
+      internalID: 128891653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_11
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 10500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39cde1f09bc37f49b19dd9c15807317
+      internalID: 1194034698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_12
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 10500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf5932f2b79a22a498c773e4ce50c288
+      internalID: 235826613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_13
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 10500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1428e8acbc75ca74e8b110caa120bf48
+      internalID: -1049630502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_14
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 10500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c29974b845faf5943a275daf222daeeb
+      internalID: -1131800755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_15
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 10500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b009cb8ebff7f4b90b161d35d4721b
+      internalID: 421331078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_16
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 10500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 469cfe23f6f0e8a468429cf07ef570d1
+      internalID: 1443485314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_17
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 10500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2138d87317602884e8f4d67a2006fc03
+      internalID: -1035234529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10200
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e63e838caefe7444bc9979831ac86f1
+      internalID: -1896735525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_19
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 10200
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d7d9425baa1aa478b749bd351ee511
+      internalID: 1819199419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_20
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 10200
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5742f3bc4a8bdfc429773ebc3962f7a9
+      internalID: 776780020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_21
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 10200
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123d92aff1ce0264fa0d1382c6728eed
+      internalID: -362008819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_22
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 10200
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d40e63bc17295b34b9905a49a1d0a475
+      internalID: -1532374307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_23
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 10200
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f0341a450fa594c854c5ed215148bc
+      internalID: -560828107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_24
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 10200
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fbce774bee8f1d4b9f5c56db6863995
+      internalID: -47087126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_25
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 10200
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea6675f013d94804e80307230594cc46
+      internalID: 1028056545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_26
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 10200
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c3088e1967e0e545aafbabe9376c6aa
+      internalID: 1102802480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc2bb167c7c0c9c4e9386736e2329772
+      internalID: 984551643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_28
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 9900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3487ab1f9b73c3449a9591262e08fbf1
+      internalID: -534442815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_29
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 9900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2804e2074eb73f04fb41bce08a5e2a30
+      internalID: -753569747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_30
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 9900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14c3b1222a440e9459f2aa4f78f547ef
+      internalID: 1313166009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_31
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 9900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76def1fb2891dda4091de0c33f7ba47a
+      internalID: 1466996738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_32
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 9900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56cc3b8ec10779042a9bd24f4c9c2a92
+      internalID: 2015071291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_33
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 9900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90252264145048f418b7b3bfdce0bf6b
+      internalID: -1224466644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_34
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 9900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97a5bcf91f9832249a7aa5a546b7e084
+      internalID: -1910376467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_35
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 9900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1163d060221f0749b2c842e393c92c9
+      internalID: -2074452411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 884a057686c4fb149861cabf55548427
+      internalID: -1282574688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_37
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 9600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39cf8140379d990419969949853d122d
+      internalID: -248982727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_38
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 9600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e133c02b73253c541867768770d7dcd0
+      internalID: -112842549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_39
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 9600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cbc1b5b0c78ed643b7785187564ebfe
+      internalID: -1369796885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_40
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 9600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78fc698c0eb3ae44385959cda852af95
+      internalID: -1115588410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_41
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 9600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eb0139b1cdf11449ba102749a1ead49
+      internalID: 1815850918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_42
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 9600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5e5787931cccb444a5d3755540d8670
+      internalID: -2073635171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_43
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 9600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1fe81f7a8944be42978b35c949b1499
+      internalID: -522551765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_44
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 9600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7155ea690dd4344db6a1d36a6432e08
+      internalID: 866457641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54409be3211ed8842b0adab620f3bfb1
+      internalID: 806897539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_46
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 9300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d47b8a96f13ffc4e881f489808d8895
+      internalID: 376589608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_47
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 9300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d99806e7936f8b4d8fb058a31d2ace5
+      internalID: -7791138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_48
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 9300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c840d664173bcf48a380ba55d542e1d
+      internalID: 1893974172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_49
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 9300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85486cd15d620d64c87c0f095ba4428d
+      internalID: -432915404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_50
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 9300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72490aac152986241965819b2a1bf49c
+      internalID: 601890613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_51
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 9300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47202701900de1245ae5d6f94e375c50
+      internalID: -1216777768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_52
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 9300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e28d0cb1f467ec8418b5eb429c3b1e9c
+      internalID: 1692523197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_53
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 9300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f0ae7ccab3a4241acae588a7f2e3cf
+      internalID: 1064809619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9000
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d72da719777b64940a228153207f13ca
+      internalID: 1829724924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_55
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 9000
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54371a47dfb81c04889b1fb5718724b0
+      internalID: -12911773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_56
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 9000
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efe96189faad9e7418ff25749da69a23
+      internalID: -952083715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_57
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 9000
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b67d415f16b476740ba45f8307aa6182
+      internalID: 1970595518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_58
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 9000
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4943fb4f0f531e14bb8275fb8a610d16
+      internalID: 643705083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_59
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 9000
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a7c90bfd132a944b3427a103a6bc03
+      internalID: -1365510601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_60
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 9000
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe69c452a3dbadd40aacd1379898dbdb
+      internalID: -132012376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_61
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 9000
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5dbf0dc46b686945b594e885c1b5f8a
+      internalID: -826999335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_62
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 9000
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 490a56ea2caed0943bfe89fb222a7abb
+      internalID: -1089594181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8700
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2109fcefcf56595408da0f7e9a7064d0
+      internalID: 1082155439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_64
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 8700
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3a0afc954719ea48bcdb34f735d0d8b
+      internalID: -184807778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_65
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 8700
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea2853e631cf457498489a7a7064927c
+      internalID: 501847663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_66
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 8700
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42cff968a6b75794b9b505132d6f8e9f
+      internalID: 1530530123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_67
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 8700
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 583c8124b2554d34791c613f4da0926f
+      internalID: 1719105061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_68
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 8700
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c836b60132bd65f41b27c7b1fecdf5af
+      internalID: -758173195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_69
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 8700
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3a05f793369c4a4d8670415f54426b1
+      internalID: -253328263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_70
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 8700
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76d08ab5158f5f74eafa5bb7a923b6ee
+      internalID: -1381116858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_71
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 8700
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6fbc25e21b69cc4fba249c03ed995a5
+      internalID: 660993398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8400
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a015a2ec4dbf2c0408785e93110d97a8
+      internalID: -23547049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_73
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 8400
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c292eb57e35db489e23c41fd5beb35
+      internalID: -441834389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_74
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 8400
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbdecd1584bf5d34bb08b788fc372e6b
+      internalID: 905691937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_75
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 8400
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b20d1ca02d6e2f41af6b746143c3a9a
+      internalID: -106879642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_76
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 8400
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04f11fac9c192024b8ce510a889dc9d6
+      internalID: -538424978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_77
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 8400
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c194fc915632b640b86ae9f551d1309
+      internalID: -320183214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_78
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 8400
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 254dfe8a39a02ba4e90c424bbd03f951
+      internalID: 1053787492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_79
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 8400
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cff0d3e9e8cc3b40ae03d18cdfa95d2
+      internalID: 550393069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8100
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 064e4005ba49efa41b01d83fa35497fc
+      internalID: -1434575652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_81
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 8100
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d5e42dfba6040441b49bb7e10971450
+      internalID: -199127750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_82
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 8100
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97064c765c3d24a44876f494488b3dd1
+      internalID: 1190003344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_83
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 8100
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa42e7f3aac2133448b3234035bcf00a
+      internalID: 1260589998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_84
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 8100
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc32c628e9674b4e8a8999004590953
+      internalID: 1776494351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_85
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 8100
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 184408b2f7747fa4c87d3fbc204272e0
+      internalID: 709615756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_86
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 8100
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cfea33a3c62ff8458e79a7235527117
+      internalID: 577044755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_87
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f879a3e381a15b142bc39fa5f610691a
+      internalID: -1266953306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_88
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 7800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2da2eb9c55594445ad1c48acc679c4e
+      internalID: -2100100270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_89
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 7800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e5ac11c588b41439622c89d4a90d3e
+      internalID: 2045396580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_90
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 7800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c890d4fc495d284449571606438431d4
+      internalID: -713950088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_91
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 7800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6bbb31dea7f05f4e9c8f484bbbb55cd
+      internalID: -589603553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_92
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 7800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb07e24e61cac3c4f972a189e7f70820
+      internalID: -1720122216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_93
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 7800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 543435b4fbf4eec4abfa4e809b4d697e
+      internalID: 180539349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_94
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a924333bcf4fcff42a7c09da71036111
+      internalID: 520048243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_95
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 7500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c7529d0dec655458a0bda4dd9d63f0
+      internalID: -1821749698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_96
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 7500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff348f35bfcb7d245a16ea1d54a8d7ff
+      internalID: 407733804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_97
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 7500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f6628fd6dd33c4b9272888a87f62ee
+      internalID: 56477599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_98
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 7500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b09cf9f27121fb64583bf643b81d7e21
+      internalID: -124950894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_99
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 7500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06f64d7ceeaf30444bd5ca9a32437486
+      internalID: 1064795705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_100
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 7500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ec07f76865bbe4c804fd2545999c45
+      internalID: 117121174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_101
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7200
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f2fc71689735ae4394eed6553e40312
+      internalID: -1481361818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_102
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 7200
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6a8412b665408448ee3136ac5f6dd9
+      internalID: 725840212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_103
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 7200
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a3ec53ff94b274392ad1ea09c5d96b
+      internalID: 962857454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_104
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 7200
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 886b3ef1adeafae4b86180563178652b
+      internalID: 262710686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_105
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 7200
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44765b641ef7d5a4788117b500cd981f
+      internalID: -641224034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_106
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 7200
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d6878a9a1a7c194192b6cd53c053eca
+      internalID: 1686620859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_107
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 7200
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a2d7f45bab65ce4a91e7a1d042f8d8f
+      internalID: 1810115204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37208f9e37c8bb248b7d40023866282a
+      internalID: 1179755007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_109
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 6900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fa9e6d321745024d8ac1734a5c79314
+      internalID: 1114999053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_110
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 6900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eefdbbf12af36c4880e05486dcb8fa8
+      internalID: -754279228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_111
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 6900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8895cd0b8f66d864ebe3cd3cecfc95ce
+      internalID: -735373736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_112
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 6900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9892ea491a2f5d64ba971e7c8b8ddc41
+      internalID: -789566821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_113
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 6900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08eca472a1f082e45a875372e7c216d3
+      internalID: 515685877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_114
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 6900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dd333077be8cff40bc36b9e18b4de53
+      internalID: 885321110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_115
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a235d04aeb603a4bb31b9f60ba3837f
+      internalID: 1387549562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_116
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 6600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4257c03a96d4b114fadd035eccd7cd4e
+      internalID: 97715442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_117
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 6600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7deb0ad87625da949a3c61447e3ad9a9
+      internalID: -567001642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_118
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 6600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7566bbe02ec6b0b49b82b584b61ae81e
+      internalID: 1124769719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_119
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 6600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9573524dc779b9479804d9f1190ffb8
+      internalID: -352775575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 168672334b1f78a4ab62e0d75202fae5
+      internalID: 1286918806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_121
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 6300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b647a3a5f58a5cd4db9e6217888e5702
+      internalID: 532141025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_122
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 6300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd1f22019affe2149b905325ae823003
+      internalID: -1468508879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_123
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 6300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd08c5e04278f94092feda89f1cb83b
+      internalID: -1560877660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_124
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 6300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092e3dd8ffdcd964a822b66e5ddd9dd9
+      internalID: 1975532416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_125
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 6300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9872f03cbbd990147a06128478a63310
+      internalID: -1365978214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_126
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 6300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6068b65f414a28f4a8fe362a2af7b235
+      internalID: 853946778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_127
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 6300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f15ac458bca791949b7b2debe6f55b15
+      internalID: -1556268637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_128
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6000
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a4cfb8eca2e846409a0e59bf22a73aa
+      internalID: 1445577566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_129
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 6000
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff4b0f923cea8f41afcbb6376f31e2b
+      internalID: 634010395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_130
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 6000
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc2a78fa60767e1469cb4bb17a343ce6
+      internalID: 1407912339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_131
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 6000
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a34b388d0b5a414b95f46e1ff10d50a
+      internalID: -662485905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_132
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 6000
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 982cb9ea8f6ae944cb175e7fbc45c9fe
+      internalID: 581264218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_133
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 6000
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a442de2cbef9fb0429bf1c7745e7468d
+      internalID: -158809201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_134
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 6000
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c08025658a169e4287236aa2cd320a9
+      internalID: -2010639899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_135
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 6000
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32dc0494ff941c447ab94e1991c12be6
+      internalID: 791148394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_136
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5700
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c656b110c4fc20947b8488e2aa0d3440
+      internalID: -639603407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_137
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 5700
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5152c67fc92eea64c8006c332459e656
+      internalID: 637127587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_138
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 5700
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca9adf63315c5143a67b10e5ac7b2d5
+      internalID: -880389311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_139
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 5700
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc02692af07f20745a34925648f654b2
+      internalID: -1583955743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_140
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 5700
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 720f99c0d53b3b648a7438b99c877b5d
+      internalID: 1265718855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_141
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 5700
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf588c66fa3aab044b14013e83589726
+      internalID: -519320017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_142
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 5700
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b80393430939984a82026da249fe7b9
+      internalID: 1390624595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_143
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 5700
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 326bd9b8a88a7d543869c0ec9d2916cf
+      internalID: -1896118853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_144
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5400
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a84ff725ce2b8640852cc5489f14e31
+      internalID: 1990040117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_145
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 5400
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79079f55c4dc6de4eae6e94affca5e2f
+      internalID: -589686674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_146
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 5400
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb3389f45520cc44b2f6fbcffe93e07
+      internalID: -423555407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_147
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 5400
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e171606cb26823d47bbd9a3ae685855e
+      internalID: -1373608568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_148
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 5400
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228f39d66ff16074393d1e85ba4be889
+      internalID: -1897342680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_149
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 5400
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3478a9f537087429d05971191546f2
+      internalID: 1370244768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_150
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 5400
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b474f0d3c9190144cb76978a7a29db7b
+      internalID: 1179970344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_151
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 5400
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d71e337ac623fa46975ce57b309d293
+      internalID: -19499122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_152
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5100
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5156ed6ca801e2b40acd5c3e0e611c76
+      internalID: -648970221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_153
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 5100
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2315bd6ef788c714296a6d6905b9561f
+      internalID: 63917015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_154
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 5100
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a138d515cecb0488e7c3fca424720f
+      internalID: 678116011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_155
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 5100
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e82bae0c79b4048b5d154578a6f6f7
+      internalID: -1426686745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_156
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 5100
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f344565894dd9ef4fb8004864c06c501
+      internalID: 1157135341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_157
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 5100
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6126bedd992307242a3a38e41f09f8a2
+      internalID: 1011984084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_158
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 5100
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa0778bbff5a2a94a83655763b270fa3
+      internalID: -1196733283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_159
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 5100
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c630659ee03d3194bbee61d89c0576c1
+      internalID: 22551284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_160
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7f9540e08cc8d44cbcfc56187f841e3
+      internalID: 2006870342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_161
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 4800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 167677a38fc288c43ad4714ccc86398e
+      internalID: 695391686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_162
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 4800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 909ccbceb2a8acc4fa2e42b6054bdbdf
+      internalID: -1459333371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_163
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 4800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c07a13afa2feb8e43a7370e8584818f9
+      internalID: -1764540676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_164
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 4800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1a7d58e72263794690fbf3beabba47c
+      internalID: 505468452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_165
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 4800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf97610e8038d54bb3a60774df17426
+      internalID: 1005537041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_166
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 4800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c9be67b587a6be4da140e36245fd77e
+      internalID: 347750697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_167
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 4800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f449fe72a09e284cbebaa59d9e95ef8
+      internalID: 2079911540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_168
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f263c4d9adcc4f49b210e5195bd11f0
+      internalID: 1979373567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_169
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 4500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 745d3ef7d2cd98541a60e53fbf64f23a
+      internalID: 913775336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_170
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 4500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2195811ee7c46514da2853b3ec87571b
+      internalID: 659570267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_171
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 4500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17902f8521d3d094ea89a472147fcbb2
+      internalID: -533070040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_172
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 4500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9cec42e6377290438e08ed343ca901e
+      internalID: 628444063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_173
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 4500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a78aac47736884090f92f48a5c25c0
+      internalID: -1866742186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_174
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 4500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a1ce56db939de4fa9d301df03b123a
+      internalID: 1175388315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_175
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 4500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d74f656aea4ccc24eb77765c23a802c1
+      internalID: -1147505149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_176
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4200
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1463704f426db1f46b33d38bc3e12820
+      internalID: -87599045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_177
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 4200
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fc298007558f99419b29bcc0468b015
+      internalID: 710895624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_178
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 4200
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d037357e0481424ebdd82bf4a65d292
+      internalID: 142346935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_179
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6437df6dec2fde4cb34ca0b19773150
+      internalID: 400037587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_180
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 3900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ef6ec04f390c444abf701e82b56bc05
+      internalID: -485079734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_181
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 023793058e4a65b4e9a41a0bc40ff4a8
+      internalID: -16600846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_182
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 3900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a2eea8bac0fe03408fe4988d88ff15f
+      internalID: 1597560728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_183
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4ab9ba70489c142ba435ff146a0b59
+      internalID: -383518113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_184
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d8ddf4c6505954428cd7dde2fd3a97d
+      internalID: 1880503278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_185
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32d3b5f77a769eb44bce0ed0f057eec7
+      internalID: -2046558517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_186
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 3900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f897995d186ae419ca55470f2eb9d6
+      internalID: 2078371031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_187
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb288d075cede544a946aa9d844bbb6a
+      internalID: -143765717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_188
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf0b853bdbf9ce44b48520fa8b1ab21
+      internalID: 1111436551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_189
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 3600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05bda849b9f3ebd4fb6e83803dfa6cd6
+      internalID: -527885149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_190
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3a07aba7d20c36479343365f5173a70
+      internalID: 1709239160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_191
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 3600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb099764437c0bc4588d8a62dd6c48e4
+      internalID: -217557985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_192
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 845f5d78936c1b14abc9ec257cfef62b
+      internalID: 799647356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_193
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 275d59304498c474fae3dfd3d631bd82
+      internalID: -141456344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_194
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17eebc390c529f246a5090d3ef1e837a
+      internalID: -165546611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_195
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 3600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5faad8c03fba09541bc65c7a50ebd37b
+      internalID: -442602454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_196
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b4dfe52caed1a4b9781378632dec89
+      internalID: -2054414490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_197
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8589d1965a8fe4a42b09e2ff8e8be9bf
+      internalID: -109473817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_198
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 3300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e69b482cd46d41444bca9d6a3bc4ccd7
+      internalID: 589425180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_199
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f2335ef889464d4ca0d96a1c8048f72
+      internalID: -179838016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_200
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 3300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a721ffa68eafb9f4e99f7a7b420d7c67
+      internalID: 318534456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_201
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02f737e6e0c64cc4bb3fba658d1c716d
+      internalID: 1791227601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_202
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 098e73105639cee4a841c1ca3edc3e46
+      internalID: -1116645860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_203
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa85bd944e37c324185885bdd5b009df
+      internalID: 471681359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_204
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 3300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9970654bfddb037428cf52dc05fbf803
+      internalID: -812843968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_205
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57bbadf64da1df342808abb379a3eaf1
+      internalID: -108572656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_206
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3000
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15cdd2522736e0a4fa0a642842cacd96
+      internalID: -98059592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_207
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 3000
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77686ca689b7b824b8d6ddabb783e3f2
+      internalID: -1579065929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_208
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3000
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb82fd0b43996a54a9f7a927bdbffd4c
+      internalID: 1688186634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_209
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 3000
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f951d558433b844aba52e0c29345a72
+      internalID: 573511133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_210
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3000
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3581fb395528ab0468cc6081ec634d3f
+      internalID: -1359068158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_211
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3000
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb392ceb531d16c48a9deefbf5a7e3ba
+      internalID: -900711668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_212
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3000
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c37ed503b8854cb45901708480a91542
+      internalID: -1779509634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_213
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 3000
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7226707366400494d91e642ab13e6a19
+      internalID: 1692886287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_214
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3000
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb13638a4b5d9ee42b4a8c9c5e3d0dd1
+      internalID: 2086041735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_215
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2700
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e8f241837536a94e9c40b8545666b84
+      internalID: 74565612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_216
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2700
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44a1c7721831e9f40be2eac1cafdec5c
+      internalID: -434441631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_217
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2700
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca858489901c4740b96e5d416e1c8df
+      internalID: 1297724478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_218
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2700
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb09c38de7ef3d74db0478147f97604f
+      internalID: -616861645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_219
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2700
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b69498ec1d817fe4a876462edcec4431
+      internalID: -1444704911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_220
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2700
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cb7490694e02ee4db34935263f43cb3
+      internalID: 2008400628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_221
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2700
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc2492ffcdea8e246a075e4c93522dab
+      internalID: 509362760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_222
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 2700
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79d8b14f50ee5894ea3130946e31888f
+      internalID: 600212606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_223
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2700
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b1becb99867aa14289d1ba799881bdf
+      internalID: -237217160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_224
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2400
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b94638ff76b72c4799272c54dfd515a
+      internalID: 2026319482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_225
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2400
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63a0ef0cf929da144b7f375f1c45114c
+      internalID: 1830913668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_226
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2400
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f63dafa337363d54384a8b29f64bab9d
+      internalID: 1730408344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_227
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2400
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e50b682377beb7542961fd3d7d840a25
+      internalID: 1193747572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_228
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2400
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc369831a6bd3aa46bd227f8b7549196
+      internalID: 652295955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_229
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2400
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b08bffbbb69c29147818cfe895199a4a
+      internalID: 1037649070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_230
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2400
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e3fc8177f1d24b469e2235f343953a6
+      internalID: -960929557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_231
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 2400
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee4b94c3ecf6a340a12d78f0d075608
+      internalID: 767777637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_232
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2400
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c21927f7ca6b1c4ab47772e08776265
+      internalID: 101761481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_233
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2100
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2066040a745c46c468149e59922e1dfd
+      internalID: 1510685466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_234
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2100
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3d42c444fae381478d0a9a6482497af
+      internalID: 1381928370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_235
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2100
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b1a68e605fda944494d151b98071899
+      internalID: 1773095737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_236
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2100
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39eb89c507e67284eab1a149107e6082
+      internalID: -1941913104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_237
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2100
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 546bfd4a15e6f964a9b0ee389cf40ac3
+      internalID: -265744949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_238
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2100
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05665d096912eb041b47f8832356f007
+      internalID: 2080146369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_239
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2100
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f608084d38f092744823e4cfe7871947
+      internalID: 162357034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_240
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 2100
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328710db5fa37ec4d8375530f6d2604e
+      internalID: -857518796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_241
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2100
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f396daa5d2ace984c8a94ca01e34832a
+      internalID: 463910627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_242
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58d83d4acf2317e41b5e575ef0d5bada
+      internalID: -1823066489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_243
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b4698fc24ee55a4b8fcd90c1a4c44a8
+      internalID: -559763277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_244
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38b8009b178bd91478530e3e592dbaf5
+      internalID: 801521680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_245
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8788364c355696a4a80af87d82e10fd7
+      internalID: 1535609513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_246
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 695effb2f41e3bb4ebec1651cc3038a7
+      internalID: 1260049675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_247
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d593892ac8a9c44b88e8510bdc6372b
+      internalID: 1967497240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_248
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 018fb675c8a6bfd4eb59cbbfd40eb3d1
+      internalID: -477123417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_249
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 1800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb890002d272244f80f99674d0260ed
+      internalID: -1928608395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_250
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1800
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51d9c7da0654b2d4ca144710adc71a21
+      internalID: 672138887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_251
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2fa539cd65184344a7818f2a83a1d44
+      internalID: 678363360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_252
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ba9c2acfd3e6e3458ee69a6fea87abf
+      internalID: -1407757212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_253
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9d31b12963aafd46be9368ed791779e
+      internalID: -332125623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_254
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d9cac19a931b794285323cd123e18d8
+      internalID: -1282212444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_255
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae897667f03893498f6c602c7ac01dc
+      internalID: -1531109370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_256
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a658da60f0dda142b65049045ea05c3
+      internalID: 1973468749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_257
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a276112e94c7ff04980ab77e98f8f51c
+      internalID: -1241493337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_258
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 1500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6e48b3f92e1c0b4d945b2fbeb2be1ea
+      internalID: -1029673624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_259
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f4d7ea519da4c4dbfdf8c8a845abc7
+      internalID: -1368715870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_260
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd54ef6f767d35429f7882874e31eaa
+      internalID: -2093773917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_261
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1200
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c0fc9263f1f0a54fbbddc287b3a873c
+      internalID: -2048828903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_262
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1200
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d216992e2dc79944189bb34912f2963c
+      internalID: 773607655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_263
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1200
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a424d5adb3dd44a9ad699c638ae201
+      internalID: -1129100804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_264
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1200
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f9bbce49d1f784db856010c3f7f36a
+      internalID: 1478469389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_265
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3190e91cfa635141849fa7d86cb0c6f
+      internalID: 327245333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_266
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb661c8134d1f4d409848079dc1d6601
+      internalID: 2129411489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_267
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a29771e8a246e2448b686fc4b8db49c1
+      internalID: 1595498267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_268
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1862554a5613d4d41b22c766bbc93c75
+      internalID: 2014336158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_269
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 900
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a7daa45f7fc71a4a885bae84b608a13
+      internalID: -1041077484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_270
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23788e623d4538f4da8e3f439bb7a54d
+      internalID: -2146184911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_271
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c30f8e491deff4daa48414a234c499
+      internalID: -1323024916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_272
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf2a192c017ca242bc7e749d48c2c73
+      internalID: -466846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_273
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8796b0f1710bcbb489d1d9722a3111fb
+      internalID: -499012291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_274
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 600
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f63f6bb0a1ea0e7448b3119aab96370a
+      internalID: 918210391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_275
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f2aa22ae9af9ab4ca53fe1c1dd69c72
+      internalID: 1372677975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_276
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f1b6ab2f1d3a04394be601c2c5815c
+      internalID: -659640222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_277
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4ae8c72671db76409e461a79bcc8943
+      internalID: 701765704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_278
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 549393586c2074341bce73b5f059d5f3
+      internalID: 353197613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_279
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 300
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5efc6c1a0c5cc74983774db766e29fb
+      internalID: -866786250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_280
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28eca26e82aec054e85d49f5f7b5b8c9
+      internalID: -1056315445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GolemNormalMap_281
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a256f45d3ac8a874c8c6b2d3f5e6712c
+      internalID: -76661678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      GolemNormalMap_0: -620523443
+      GolemNormalMap_1: -205314130
+      GolemNormalMap_10: 128891653
+      GolemNormalMap_100: 117121174
+      GolemNormalMap_101: -1481361818
+      GolemNormalMap_102: 725840212
+      GolemNormalMap_103: 962857454
+      GolemNormalMap_104: 262710686
+      GolemNormalMap_105: -641224034
+      GolemNormalMap_106: 1686620859
+      GolemNormalMap_107: 1810115204
+      GolemNormalMap_108: 1179755007
+      GolemNormalMap_109: 1114999053
+      GolemNormalMap_11: 1194034698
+      GolemNormalMap_110: -754279228
+      GolemNormalMap_111: -735373736
+      GolemNormalMap_112: -789566821
+      GolemNormalMap_113: 515685877
+      GolemNormalMap_114: 885321110
+      GolemNormalMap_115: 1387549562
+      GolemNormalMap_116: 97715442
+      GolemNormalMap_117: -567001642
+      GolemNormalMap_118: 1124769719
+      GolemNormalMap_119: -352775575
+      GolemNormalMap_12: 235826613
+      GolemNormalMap_120: 1286918806
+      GolemNormalMap_121: 532141025
+      GolemNormalMap_122: -1468508879
+      GolemNormalMap_123: -1560877660
+      GolemNormalMap_124: 1975532416
+      GolemNormalMap_125: -1365978214
+      GolemNormalMap_126: 853946778
+      GolemNormalMap_127: -1556268637
+      GolemNormalMap_128: 1445577566
+      GolemNormalMap_129: 634010395
+      GolemNormalMap_13: -1049630502
+      GolemNormalMap_130: 1407912339
+      GolemNormalMap_131: -662485905
+      GolemNormalMap_132: 581264218
+      GolemNormalMap_133: -158809201
+      GolemNormalMap_134: -2010639899
+      GolemNormalMap_135: 791148394
+      GolemNormalMap_136: -639603407
+      GolemNormalMap_137: 637127587
+      GolemNormalMap_138: -880389311
+      GolemNormalMap_139: -1583955743
+      GolemNormalMap_14: -1131800755
+      GolemNormalMap_140: 1265718855
+      GolemNormalMap_141: -519320017
+      GolemNormalMap_142: 1390624595
+      GolemNormalMap_143: -1896118853
+      GolemNormalMap_144: 1990040117
+      GolemNormalMap_145: -589686674
+      GolemNormalMap_146: -423555407
+      GolemNormalMap_147: -1373608568
+      GolemNormalMap_148: -1897342680
+      GolemNormalMap_149: 1370244768
+      GolemNormalMap_15: 421331078
+      GolemNormalMap_150: 1179970344
+      GolemNormalMap_151: -19499122
+      GolemNormalMap_152: -648970221
+      GolemNormalMap_153: 63917015
+      GolemNormalMap_154: 678116011
+      GolemNormalMap_155: -1426686745
+      GolemNormalMap_156: 1157135341
+      GolemNormalMap_157: 1011984084
+      GolemNormalMap_158: -1196733283
+      GolemNormalMap_159: 22551284
+      GolemNormalMap_16: 1443485314
+      GolemNormalMap_160: 2006870342
+      GolemNormalMap_161: 695391686
+      GolemNormalMap_162: -1459333371
+      GolemNormalMap_163: -1764540676
+      GolemNormalMap_164: 505468452
+      GolemNormalMap_165: 1005537041
+      GolemNormalMap_166: 347750697
+      GolemNormalMap_167: 2079911540
+      GolemNormalMap_168: 1979373567
+      GolemNormalMap_169: 913775336
+      GolemNormalMap_17: -1035234529
+      GolemNormalMap_170: 659570267
+      GolemNormalMap_171: -533070040
+      GolemNormalMap_172: 628444063
+      GolemNormalMap_173: -1866742186
+      GolemNormalMap_174: 1175388315
+      GolemNormalMap_175: -1147505149
+      GolemNormalMap_176: -87599045
+      GolemNormalMap_177: 710895624
+      GolemNormalMap_178: 142346935
+      GolemNormalMap_179: 400037587
+      GolemNormalMap_18: -1896735525
+      GolemNormalMap_180: -485079734
+      GolemNormalMap_181: -16600846
+      GolemNormalMap_182: 1597560728
+      GolemNormalMap_183: -383518113
+      GolemNormalMap_184: 1880503278
+      GolemNormalMap_185: -2046558517
+      GolemNormalMap_186: 2078371031
+      GolemNormalMap_187: -143765717
+      GolemNormalMap_188: 1111436551
+      GolemNormalMap_189: -527885149
+      GolemNormalMap_19: 1819199419
+      GolemNormalMap_190: 1709239160
+      GolemNormalMap_191: -217557985
+      GolemNormalMap_192: 799647356
+      GolemNormalMap_193: -141456344
+      GolemNormalMap_194: -165546611
+      GolemNormalMap_195: -442602454
+      GolemNormalMap_196: -2054414490
+      GolemNormalMap_197: -109473817
+      GolemNormalMap_198: 589425180
+      GolemNormalMap_199: -179838016
+      GolemNormalMap_2: -1396731767
+      GolemNormalMap_20: 776780020
+      GolemNormalMap_200: 318534456
+      GolemNormalMap_201: 1791227601
+      GolemNormalMap_202: -1116645860
+      GolemNormalMap_203: 471681359
+      GolemNormalMap_204: -812843968
+      GolemNormalMap_205: -108572656
+      GolemNormalMap_206: -98059592
+      GolemNormalMap_207: -1579065929
+      GolemNormalMap_208: 1688186634
+      GolemNormalMap_209: 573511133
+      GolemNormalMap_21: -362008819
+      GolemNormalMap_210: -1359068158
+      GolemNormalMap_211: -900711668
+      GolemNormalMap_212: -1779509634
+      GolemNormalMap_213: 1692886287
+      GolemNormalMap_214: 2086041735
+      GolemNormalMap_215: 74565612
+      GolemNormalMap_216: -434441631
+      GolemNormalMap_217: 1297724478
+      GolemNormalMap_218: -616861645
+      GolemNormalMap_219: -1444704911
+      GolemNormalMap_22: -1532374307
+      GolemNormalMap_220: 2008400628
+      GolemNormalMap_221: 509362760
+      GolemNormalMap_222: 600212606
+      GolemNormalMap_223: -237217160
+      GolemNormalMap_224: 2026319482
+      GolemNormalMap_225: 1830913668
+      GolemNormalMap_226: 1730408344
+      GolemNormalMap_227: 1193747572
+      GolemNormalMap_228: 652295955
+      GolemNormalMap_229: 1037649070
+      GolemNormalMap_23: -560828107
+      GolemNormalMap_230: -960929557
+      GolemNormalMap_231: 767777637
+      GolemNormalMap_232: 101761481
+      GolemNormalMap_233: 1510685466
+      GolemNormalMap_234: 1381928370
+      GolemNormalMap_235: 1773095737
+      GolemNormalMap_236: -1941913104
+      GolemNormalMap_237: -265744949
+      GolemNormalMap_238: 2080146369
+      GolemNormalMap_239: 162357034
+      GolemNormalMap_24: -47087126
+      GolemNormalMap_240: -857518796
+      GolemNormalMap_241: 463910627
+      GolemNormalMap_242: -1823066489
+      GolemNormalMap_243: -559763277
+      GolemNormalMap_244: 801521680
+      GolemNormalMap_245: 1535609513
+      GolemNormalMap_246: 1260049675
+      GolemNormalMap_247: 1967497240
+      GolemNormalMap_248: -477123417
+      GolemNormalMap_249: -1928608395
+      GolemNormalMap_25: 1028056545
+      GolemNormalMap_250: 672138887
+      GolemNormalMap_251: 678363360
+      GolemNormalMap_252: -1407757212
+      GolemNormalMap_253: -332125623
+      GolemNormalMap_254: -1282212444
+      GolemNormalMap_255: -1531109370
+      GolemNormalMap_256: 1973468749
+      GolemNormalMap_257: -1241493337
+      GolemNormalMap_258: -1029673624
+      GolemNormalMap_259: -1368715870
+      GolemNormalMap_26: 1102802480
+      GolemNormalMap_260: -2093773917
+      GolemNormalMap_261: -2048828903
+      GolemNormalMap_262: 773607655
+      GolemNormalMap_263: -1129100804
+      GolemNormalMap_264: 1478469389
+      GolemNormalMap_265: 327245333
+      GolemNormalMap_266: 2129411489
+      GolemNormalMap_267: 1595498267
+      GolemNormalMap_268: 2014336158
+      GolemNormalMap_269: -1041077484
+      GolemNormalMap_27: 984551643
+      GolemNormalMap_270: -2146184911
+      GolemNormalMap_271: -1323024916
+      GolemNormalMap_272: -466846
+      GolemNormalMap_273: -499012291
+      GolemNormalMap_274: 918210391
+      GolemNormalMap_275: 1372677975
+      GolemNormalMap_276: -659640222
+      GolemNormalMap_277: 701765704
+      GolemNormalMap_278: 353197613
+      GolemNormalMap_279: -866786250
+      GolemNormalMap_28: -534442815
+      GolemNormalMap_280: -1056315445
+      GolemNormalMap_281: -76661678
+      GolemNormalMap_29: -753569747
+      GolemNormalMap_3: 1799945068
+      GolemNormalMap_30: 1313166009
+      GolemNormalMap_31: 1466996738
+      GolemNormalMap_32: 2015071291
+      GolemNormalMap_33: -1224466644
+      GolemNormalMap_34: -1910376467
+      GolemNormalMap_35: -2074452411
+      GolemNormalMap_36: -1282574688
+      GolemNormalMap_37: -248982727
+      GolemNormalMap_38: -112842549
+      GolemNormalMap_39: -1369796885
+      GolemNormalMap_4: -621071724
+      GolemNormalMap_40: -1115588410
+      GolemNormalMap_41: 1815850918
+      GolemNormalMap_42: -2073635171
+      GolemNormalMap_43: -522551765
+      GolemNormalMap_44: 866457641
+      GolemNormalMap_45: 806897539
+      GolemNormalMap_46: 376589608
+      GolemNormalMap_47: -7791138
+      GolemNormalMap_48: 1893974172
+      GolemNormalMap_49: -432915404
+      GolemNormalMap_5: -2084893733
+      GolemNormalMap_50: 601890613
+      GolemNormalMap_51: -1216777768
+      GolemNormalMap_52: 1692523197
+      GolemNormalMap_53: 1064809619
+      GolemNormalMap_54: 1829724924
+      GolemNormalMap_55: -12911773
+      GolemNormalMap_56: -952083715
+      GolemNormalMap_57: 1970595518
+      GolemNormalMap_58: 643705083
+      GolemNormalMap_59: -1365510601
+      GolemNormalMap_6: -1138168303
+      GolemNormalMap_60: -132012376
+      GolemNormalMap_61: -826999335
+      GolemNormalMap_62: -1089594181
+      GolemNormalMap_63: 1082155439
+      GolemNormalMap_64: -184807778
+      GolemNormalMap_65: 501847663
+      GolemNormalMap_66: 1530530123
+      GolemNormalMap_67: 1719105061
+      GolemNormalMap_68: -758173195
+      GolemNormalMap_69: -253328263
+      GolemNormalMap_7: 1504971755
+      GolemNormalMap_70: -1381116858
+      GolemNormalMap_71: 660993398
+      GolemNormalMap_72: -23547049
+      GolemNormalMap_73: -441834389
+      GolemNormalMap_74: 905691937
+      GolemNormalMap_75: -106879642
+      GolemNormalMap_76: -538424978
+      GolemNormalMap_77: -320183214
+      GolemNormalMap_78: 1053787492
+      GolemNormalMap_79: 550393069
+      GolemNormalMap_8: 901222092
+      GolemNormalMap_80: -1434575652
+      GolemNormalMap_81: -199127750
+      GolemNormalMap_82: 1190003344
+      GolemNormalMap_83: 1260589998
+      GolemNormalMap_84: 1776494351
+      GolemNormalMap_85: 709615756
+      GolemNormalMap_86: 577044755
+      GolemNormalMap_87: -1266953306
+      GolemNormalMap_88: -2100100270
+      GolemNormalMap_89: 2045396580
+      GolemNormalMap_9: 756310419
+      GolemNormalMap_90: -713950088
+      GolemNormalMap_91: -589603553
+      GolemNormalMap_92: -1720122216
+      GolemNormalMap_93: 180539349
+      GolemNormalMap_94: 520048243
+      GolemNormalMap_95: -1821749698
+      GolemNormalMap_96: 407733804
+      GolemNormalMap_97: 56477599
+      GolemNormalMap_98: -124950894
+      GolemNormalMap_99: 1064795705
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

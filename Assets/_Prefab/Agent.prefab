@@ -1174,6 +1174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58f675156356a244c8a40a871fc91c2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponStorage: {fileID: 0}
   OnWeaponSwap:
     m_PersistentCalls:
       m_Calls: []
@@ -1195,6 +1196,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e54a6743d1a533499cf8eff0c1449d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryPlayBarManage: {fileID: 0}
+  inventorySlotNumber: 4
 --- !u!1 &7168570945402864055
 GameObject:
   m_ObjectHideFlags: 0
@@ -1675,7 +1678,7 @@ MonoBehaviour:
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
-  m_NormalMapQuality: 2
+  m_NormalMapQuality: 1
   m_UseNormalMap: 0
   m_ShadowIntensityEnabled: 1
   m_ShadowIntensity: 1
