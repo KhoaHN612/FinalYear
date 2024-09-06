@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Burst.CompilerServices;
 using UnityEngine;
 
 namespace AIEnemy
@@ -29,7 +30,13 @@ namespace AIEnemy
             if (!collision.isTrigger)
             {
                 OnPathBlocked?.Invoke();
+                if (((1 << collision.gameObject.layer) & groundMask) != 0)
+                {
+                    PathBlocked = collision != null;
+
+                }
             }
+
         }
 
         private void Start()
