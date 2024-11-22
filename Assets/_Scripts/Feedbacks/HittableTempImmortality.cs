@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Burst.CompilerServices;
 using UnityEngine;
 using WeaponSystem;
 
@@ -8,6 +9,7 @@ namespace SVS.Feedback
     public class HittableTempImmortality : MonoBehaviour, IHittable
     {
         public Collider2D[] colliders = new Collider2D[0];
+        public IHittable[] hitabilities = new IHittable[0];
         public float immortalityTime = 1;
 
         public SpriteRenderer spriteRenderer;
@@ -19,19 +21,41 @@ namespace SVS.Feedback
         [Header("For debug purposes")]
         public bool isImmortal = false;
 
+        public bool CanHit { get; set; } = true;
+
         private void Awake()
         {
             if (colliders.Length == 0)
                 colliders = GetComponents<Collider2D>();
+
+            if (hitabilities.Length == 0)
+                hitabilities = GetComponents<IHittable>();
         }
 
         public void GetHit(GameObject gameObject, int weaponDamage)
         {
+            if (!CanHit) return;
+
             if (this.enabled == false)
                 return;
-            ToggleColliders(false);
-            StartCoroutine(ResetColliders());
+
+
+            /*ToggleColliders(false);
+            StartCoroutine(ResetColliders());*/
+
+            ToggleGetDamage(false);
+            StartCoroutine(ResetGetDamage());
+
             StartCoroutine(Flash(flashAlpha));
+        }
+
+        private void ToggleGetDamage(bool val)
+        {
+            isImmortal = !val;
+            foreach (var hitable in hitabilities)
+            {
+                hitable.CanHit = val; 
+            }
         }
 
         private void ToggleColliders(bool val)
@@ -48,6 +72,14 @@ namespace SVS.Feedback
             yield return new WaitForSeconds(immortalityTime);
             StopAllCoroutines();
             ToggleColliders(true);
+            ChangeSpriteRendererColorAlpha(1);
+        }
+
+        IEnumerator ResetGetDamage()
+        {
+            yield return new WaitForSeconds(immortalityTime);
+            StopAllCoroutines();
+            ToggleGetDamage(true);
             ChangeSpriteRendererColorAlpha(1);
         }
 

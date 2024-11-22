@@ -21,6 +21,7 @@ public abstract class State : MonoBehaviour
         this.agent.agentInput.OnDash += HandleDash;
         this.agent.agentInput.OnJumpPressed += HandleJumpPressed;
         this.agent.agentInput.OnJumpReleased += HandleJumpReleased;
+        this.agent.agentInput.OnPlayAnimation += HandlePlayAnimation;
         this.agent.agentInput.OnMovement += HandleMovement;
         this.agent.agentInput.OnRewindPressed += HandleRewindPressed;
         this.agent.agentInput.OnRewindReleased += HandleRewindReleased;
@@ -31,6 +32,10 @@ public abstract class State : MonoBehaviour
     protected virtual void EnterState()
     {
 
+    }
+
+    protected virtual void HandlePlayAnimation(string animationName)
+    {
     }
 
     protected virtual void HandleMovement(Vector2 obj)
@@ -117,6 +122,7 @@ public abstract class State : MonoBehaviour
         this.agent.agentInput.OnDash -= HandleDash;
         this.agent.agentInput.OnJumpPressed -= HandleJumpPressed;
         this.agent.agentInput.OnJumpReleased -= HandleJumpReleased;
+        this.agent.agentInput.OnPlayAnimation -= HandlePlayAnimation;
         this.agent.agentInput.OnMovement -= HandleMovement;
         this.agent.agentInput.OnRewindPressed -= HandleRewindPressed;
         this.agent.agentInput.OnRewindReleased -= HandleRewindReleased;

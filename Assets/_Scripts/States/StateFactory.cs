@@ -35,7 +35,7 @@ public class StateFactory : MonoBehaviour
     }
 }
 
-public enum StateType
+public enum GolemStateType
 {
     Idle,
     Move,

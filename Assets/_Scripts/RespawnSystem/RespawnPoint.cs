@@ -7,6 +7,14 @@ namespace RespawnSystem
 {
     public class RespawnPoint : MonoBehaviour
     {
+        [SerializeField] public string id;
+
+        [ContextMenu("Generate guid for id")]
+        private void GenerateGuid()
+        {
+            id = System.Guid.NewGuid().ToString();
+        }
+
         [SerializeField]
         private GameObject respawnTarget;
 
@@ -51,7 +59,7 @@ namespace RespawnSystem
 
         public void DisableRespawnPoint()
         {
-            GetComponent<Collider2D>().enabled = false;
+            //GetComponent<Collider2D>().enabled = false;
         }
 
         public void ResetRespawnPoint()

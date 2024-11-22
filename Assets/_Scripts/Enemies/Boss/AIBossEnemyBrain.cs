@@ -16,6 +16,9 @@ namespace AIEnemy
         private AIEndPlatformDetector endPlatformDetector;
 
         [SerializeField]
+        private bool haveMet = false;
+
+        [SerializeField]
         private AIBehaviour IdleBehaviour, ChargeBehaviour, MeleeAttackBehaviour, WaitBehaviour;
 
         private void Update()
@@ -26,21 +29,34 @@ namespace AIEnemy
 
             if (aiBoard.CheckBoard(AIDataTypes.PlayerDetected))
             {
-                if (aiBoard.CheckBoard(AIDataTypes.Waiting))
+                if (!haveMet) 
                 {
-                    WaitBehaviour.PerformAction(this);
-                }
+                    CallOnPlayAnimation("Roar");
+                    haveMet = true;
+                } 
                 else
                 {
-                    if (aiBoard.CheckBoard(AIDataTypes.InMeleeRange))
+                    Debug.Log(aiBoard.CheckBoard(AIDataTypes.Waiting)); 
+                    if (aiBoard.CheckBoard(AIDataTypes.Waiting))
                     {
-                        MeleeAttackBehaviour.PerformAction(this);
+                        WaitBehaviour.PerformAction(this);
                     }
                     else
                     {
-                        ChargeBehaviour.PerformAction(this);
+                        /*Debug.Log(aiBoard.CheckBoard(AIDataTypes.Waiting));*/
+
+                        if (aiBoard.CheckBoard(AIDataTypes.InMeleeRange))
+                        {
+                            MeleeAttackBehaviour.PerformAction(this);
+                        }
+                        else
+                        {
+                            Debug.Log("Charge");
+                            ChargeBehaviour.PerformAction(this);
+                        }
                     }
                 }
+                
             }
             else
             {

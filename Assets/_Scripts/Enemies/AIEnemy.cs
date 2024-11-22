@@ -19,6 +19,7 @@ namespace AIEnemy
         public event Action OnWeaponChange;
         public event Action OnNextWeapon;
         public event Action OnPreviousWeapon;
+        public event Action<string> OnPlayAnimation;
 
         public void CallOnAttack()
         {
@@ -38,6 +39,11 @@ namespace AIEnemy
         public void CallOnJumpReleased()
         {
             OnJumpReleased?.Invoke();
+        }
+
+        public void CallOnPlayAnimation(string animationName)
+        {
+            OnPlayAnimation?.Invoke(animationName);
         }
 
         public void CallOnMovement(Vector2 input)

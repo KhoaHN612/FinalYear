@@ -20,10 +20,13 @@ namespace SVS.UI
         [SerializeField]
         private bool playConstantly = false;
 
-        private void Start()
+        private void Awake()
         {
             baseScale = element.localScale;
             endScale = Vector3.one * animationEndScale;
+        }
+        private void Start()
+        {
 
             if (playConstantly)
             {

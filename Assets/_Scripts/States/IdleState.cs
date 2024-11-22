@@ -27,16 +27,25 @@ public class IdleState : State
         }
     }
 
-/*    protected override void HandleMovement(Vector2 input)
+    protected override void HandlePlayAnimation(string animationName)
     {
-        if (agent.climbingDetector.CanClimb && Mathf.Abs(input.y) > 0)
+        base.HandlePlayAnimation(animationName);
+        agent.animationManager.PlayAnimationByName(animationName);
+        if (agent.groundDetector.isGrounded)
+            agent.rb2d.velocity = Vector2.zero;
+
+    }
+
+    /*    protected override void HandleMovement(Vector2 input)
         {
-            agent.TransitionToState(ClimbState);
-        }
-        else if (Mathf.Abs(input.x) > 0)
-        {
-            agent.TransitionToState(MoveState);
-        }
-    }*/
+            if (agent.climbingDetector.CanClimb && Mathf.Abs(input.y) > 0)
+            {
+                agent.TransitionToState(ClimbState);
+            }
+            else if (Mathf.Abs(input.x) > 0)
+            {
+                agent.TransitionToState(MoveState);
+            }
+        }*/
 
 }

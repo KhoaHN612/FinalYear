@@ -52,8 +52,7 @@ namespace SVS.UI
 
             rectTransform.localScale = Vector3.one * scale * canvas.scaleFactor;
 
-
-            Debug.Log(rectTransform.localScale);
+            //Debug.Log(rectTransform.localScale);
 
             Cloud newCloud = cloudObject.GetComponent<Cloud>();
 

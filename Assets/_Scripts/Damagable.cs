@@ -50,6 +50,8 @@ public class Damagable : MonoBehaviour, IHittable
         }
     }
 
+    public bool CanHit { get; set; } = true;
+
     public UnityEvent OnGetHit;
     public UnityEvent OnDie;
 
@@ -68,7 +70,8 @@ public class Damagable : MonoBehaviour, IHittable
 
     public void GetHit(GameObject gameObject, int weaponDamage)
     {
-        GetHit(weaponDamage);
+        if (CanHit)
+            GetHit(weaponDamage);
     }
 
     public void GetHit(int weaponDamage)

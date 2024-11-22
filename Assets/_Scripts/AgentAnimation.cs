@@ -1,12 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class AgentAnimation : MonoBehaviour
 {
-    private Animator animator;
+    public Animator animator;
 
     public UnityEvent OnAnimationAction;
     public UnityEvent OnAnimationEnd;
@@ -31,7 +32,7 @@ public class AgentAnimation : MonoBehaviour
                 Play("Idle");
                 break;
             case AnimationType.attack:
-                Play("SwordAttack");
+                Play("Attack");
                 break;
             case AnimationType.attack1:
                 Play("Attack1");
@@ -64,6 +65,11 @@ public class AgentAnimation : MonoBehaviour
         }
     }
 
+    public void PlayAnimationByName(string animationName)
+    {
+        Play(animationName);
+    }
+
     internal void StopAnimation()
     {
         animator.enabled = false;
@@ -76,7 +82,27 @@ public class AgentAnimation : MonoBehaviour
 
     public void Play(string name)
     {
-        animator.Play(name, -1, 0f);
+        int stateHash = Animator.StringToHash(name);
+
+        if (animator.HasState(0, stateHash))
+        {
+            animator.Play(stateHash, -1, 0f);
+        }
+        else
+        {
+            AnimationClip[] clips = animator.runtimeAnimatorController.animationClips;
+            AnimationClip foundClip = clips.FirstOrDefault(clip => clip.name.Contains(name));
+
+            if (foundClip != null)
+            {
+                animator.Play(foundClip.name, -1, 0f);
+                Debug.Log($"Animation '{foundClip.name}' played instead of '{name}'");
+            }
+            else
+            {
+                Debug.LogWarning($"No animation found with name '{name}' or containing '{name}'");
+            }
+        }
     }
 
         public void ResetEvents()

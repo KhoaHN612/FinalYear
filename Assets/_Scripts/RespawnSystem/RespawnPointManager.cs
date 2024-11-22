@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 namespace RespawnSystem
 {
-    public class RespawnPointManager : MonoBehaviour
+    public class RespawnPointManager : MonoBehaviour, IDataPersistence
     {
         List<RespawnPoint> respawnPoints = new List<RespawnPoint>();
         RespawnPoint currentRespawnPoint;
@@ -20,6 +20,7 @@ namespace RespawnSystem
             }
             currentRespawnPoint = respawnPoints[0];
         }
+
 
         public void UpdateRespawnPoint(RespawnPoint newRespawnPoint)
         {
@@ -52,6 +53,27 @@ namespace RespawnSystem
 
             }
             currentRespawnPoint = respawnPoints[0];
+        }
+
+        public void LoadData(GameData data)
+        {
+            Debug.Log("RespawnPointManager LoadData" + data.currentSpawnPointId);
+            foreach (RespawnPoint respawnPoint in respawnPoints)
+            {
+                if (respawnPoint.id.Equals(data.currentSpawnPointId))
+                {
+                    UpdateRespawnPoint(respawnPoint);
+                    GameObject player = GameObject.FindWithTag("Player");
+                    respawnPoint.SetPlayerGO(player);
+                    Respawn(player);
+                    return;
+                }
+            }
+        }
+
+        public void SaveData(GameData data)
+        {
+            data.currentSpawnPointId = currentRespawnPoint.id;
         }
     }
 }

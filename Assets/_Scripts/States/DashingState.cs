@@ -10,8 +10,8 @@ public class DashingState : MovementState
 
     protected override void EnterState()
     {
-        agent.animationManager.PlayAnimation(AnimationType.dash);
         agent.animationManager.StopAnimation();
+        agent.animationManager.PlayAnimation(AnimationType.dash);
 
         movementData.isDashing = true;
         movementData.canDash = false;

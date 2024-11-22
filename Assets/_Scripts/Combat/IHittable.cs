@@ -7,6 +7,7 @@ namespace WeaponSystem
 {
     public interface IHittable
     {
+        bool CanHit { get; set; }
         void GetHit(GameObject gameObject, int weaponDamage);
     }
 }

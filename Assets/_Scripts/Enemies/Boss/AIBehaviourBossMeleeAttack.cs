@@ -15,6 +15,8 @@ namespace AIEnemy
 
             aiBoard.SetBoard(AIDataTypes.Arrived, true);
             aiBoard.SetBoard(AIDataTypes.Waiting, true);
+
+            Debug.Log("..." + aiBoard.CheckBoard(AIDataTypes.Waiting));
         }
     }
 }

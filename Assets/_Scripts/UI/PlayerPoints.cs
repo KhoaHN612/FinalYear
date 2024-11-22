@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
 namespace SVS.PlayerAgent
 {
-    public class PlayerPoints : MonoBehaviour
+    public class PlayerPoints : MonoBehaviour, IDataPersistence
     {
         public UnityEvent<int> OnPointsValueChange;
         public UnityEvent OnPickUpPoints;
@@ -23,6 +24,16 @@ namespace SVS.PlayerAgent
             Points += amount;
             OnPickUpPoints?.Invoke();
             OnPointsValueChange?.Invoke(Points);
+        }
+
+        public void LoadData(GameData data)
+        {
+            this.points = data.coinCount;
+        }
+
+        public void SaveData(GameData data)
+        {
+            data.coinCount = Points;
         }
     }
 }

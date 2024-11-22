@@ -18,9 +18,10 @@ public class Agent : MonoBehaviour
     public RewindAgent rewindAgent;
     public StateFactory stateFactory;
     public Damagable damagable;
+    public bool isAffectByTimeManipulate = true;
 
     public State currentState = null, previousState = null;
-    public State IdleState;
+    /*public State IdleState;*/
 
     [HideInInspector]
     public AgentWeaponManager agentWeapon;
@@ -84,9 +85,10 @@ public class Agent : MonoBehaviour
 
     }
 
+
     private void InitializeAgent()
     {
-        TransitionToState(IdleState);
+        TransitionToState(stateFactory.GetState(StateType.Idle));
         damagable.Initialize(agentData.maxHealth, agentData.maxMana, agentData.maxTime);
     }
 
@@ -129,7 +131,6 @@ public class Agent : MonoBehaviour
 
     private void Update()
     {
-
         currentState.StateUpdate();
     }
 
@@ -145,4 +146,5 @@ public class Agent : MonoBehaviour
             return;
         agentWeapon.PickUpWeapon(weaponData);
     }
+
 }

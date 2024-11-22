@@ -15,4 +15,6 @@ public interface IAgentInput
     event Action OnRewindReleased;
     event Action OnNextWeapon;
     event Action OnPreviousWeapon;
+    event Action<string> OnPlayAnimation;
+
 }

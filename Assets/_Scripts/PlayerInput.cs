@@ -3,8 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
-public class PlayerInput : MonoBehaviour, IAgentInput
+public class PlayerInput : MonoBehaviour, IAgentInput, IInteractiveInterface
 {
     [field: SerializeField]
     public Vector2 MovementVector { get; private set; }
@@ -13,9 +14,16 @@ public class PlayerInput : MonoBehaviour, IAgentInput
 
     public event Action<Vector2> OnMovement;
 
-    public KeyCode jumpKey, attackKey, dashKey, menuKey, rewindKey, nextWeaponKey = KeyCode.E, previousWeaponKey = KeyCode.Q;
+    public event Action<string> OnPlayAnimation; 
+
+    public KeyCode jumpKey, attackKey, dashKey, menuKey, rewindKey, nextWeaponKey = KeyCode.E, previousWeaponKey = KeyCode.Q, interactiveKey = KeyCode.R;
 
     public UnityEvent OnMenuKeyPressed;
+
+    private bool canControl;
+
+    public bool CanControl { get => canControl; set => canControl = value; }
+    public InteractiveObject InteractiveObject { get; set; }
 
     private void Update()
     {
@@ -28,9 +36,41 @@ public class PlayerInput : MonoBehaviour, IAgentInput
             GetNextWeaponInput();
             GetPreviousWeaponInput();
             GetRewindInput();
+            GetInteractiveInput();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Slash))
+        {
+            TimeManager.Instance.DoSlowTime((float)0.1, 2);
         }
 
         GetMenuInput();
+    }
+
+    public void SetInteractiveObject(InteractiveObject interactiveObject)
+    {
+        InteractiveObject = interactiveObject;
+    }
+
+    public void ClearInteractiveObject(InteractiveObject interactiveObject)
+    {
+        if (InteractiveObject == interactiveObject)
+        {
+            InteractiveObject = null;
+        }
+    }
+
+    private void GetInteractiveInput()
+    {
+        if (InteractiveObject == null) return;
+        if (Input.GetKeyDown(interactiveKey))
+        {
+            InteractiveObject.Interact();
+        }
+        else if (Input.anyKeyDown) 
+        {
+            InteractiveObject.StopInteract();
+        }
     }
 
     private void GetNextWeaponInput()
@@ -109,4 +149,5 @@ public class PlayerInput : MonoBehaviour, IAgentInput
     {
         return new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
     }
+
 }
