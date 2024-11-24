@@ -3272,6 +3272,10 @@ PrefabInstance:
       propertyPath: isAffectByTimeManipulate
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 72251233495706884, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: isAffectByNegativeTimeManipulate
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 173541732723693151, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
       propertyPath: OnEnter.m_PersistentCalls.m_Calls.Array.size
       value: 3

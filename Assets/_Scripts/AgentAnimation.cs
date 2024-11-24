@@ -7,7 +7,7 @@ using UnityEngine.Events;
 
 public class AgentAnimation : MonoBehaviour
 {
-    public Animator animator;
+    private Animator animator;
 
     public UnityEvent OnAnimationAction;
     public UnityEvent OnAnimationEnd;
@@ -20,6 +20,8 @@ public class AgentAnimation : MonoBehaviour
 
     public void PlayAnimation(AnimationType animationType)
     {
+        if (animator.speed == 0)
+            return;
         switch (animationType)
         {
             case AnimationType.die:
@@ -78,6 +80,11 @@ public class AgentAnimation : MonoBehaviour
     internal void StartAnimation()
     {
         animator.enabled = true;
+    }
+
+    internal void AdjustAnimationSpeed(float f)
+    {
+        animator.speed = f;
     }
 
     public void Play(string name)

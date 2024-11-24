@@ -16,21 +16,15 @@ public class RewindState : MovementState
     {
     }
 
-    protected override void HandleRewindReleased(){
-        agent.rewindAgent.StopRewind();
-        if (TestFallTransition())
-            return;
-        agent.TransitionToState(agent.stateFactory.GetState(StateType.Idle));
-    }
-
     protected override void ExitState(){
         StartCoroutine(rewindCooldown());
         agent.movementData.isRewind = false;
         agent.animationManager.StartAnimation();
+        movementData.currentVelocity = agent.rb2d.velocity;
     }
 
     private IEnumerator rewindCooldown(){
-        yield return new WaitForSeconds(agent.agentData.rewindCooldown);
+        yield return new WaitForSeconds(agent.agentData.rewindCooldown * (1/ agent.timeManipulateMutiplier));
         movementData.canRewind = true;
     }
 }

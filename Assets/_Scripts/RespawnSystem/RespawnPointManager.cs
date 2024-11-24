@@ -57,7 +57,6 @@ namespace RespawnSystem
 
         public void LoadData(GameData data)
         {
-            Debug.Log("RespawnPointManager LoadData" + data.currentSpawnPointId);
             foreach (RespawnPoint respawnPoint in respawnPoints)
             {
                 if (respawnPoint.id.Equals(data.currentSpawnPointId))

@@ -275,6 +275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2a80ed67f840544c80fef0ed2ded9f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flying: 0
   agentCollider: {fileID: 228877519970097680}
   groundMask:
     serializedVersion: 2
@@ -666,9 +667,9 @@ MonoBehaviour:
   rewindAgent: {fileID: 0}
   stateFactory: {fileID: 0}
   damagable: {fileID: 0}
+  isAffectByTimeManipulate: 1
   currentState: {fileID: 0}
   previousState: {fileID: 0}
-  IdleState: {fileID: 7243882101363639340}
   agentWeapon: {fileID: 0}
   stateName: 
   <OnRespawnRequired>k__BackingField:
@@ -1263,6 +1264,7 @@ GameObject:
   - component: {fileID: 8630072864239436539}
   - component: {fileID: 214761395335009525}
   - component: {fileID: 173541732723693151}
+  - component: {fileID: 4196608125792602738}
   - component: {fileID: 6626765709679957982}
   m_Layer: 3
   m_Name: States
@@ -1597,6 +1599,28 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   timeToWaitBeforeDieAction: 2
+--- !u!114 &4196608125792602738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8344573179310717554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcf49c43462e94e4fa825819bc3f7377, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnExit:
+    m_PersistentCalls:
+      m_Calls: []
+  movementData: {fileID: 9197074560093167656}
+  OnStep:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &6626765709679957982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1619,6 +1643,7 @@ MonoBehaviour:
   GetHit: {fileID: 214761395335009525}
   Die: {fileID: 173541732723693151}
   Rewind: {fileID: 2606150046671798889}
+  Stop: {fileID: 4196608125792602738}
 --- !u!1 &8877856364282452673
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565cf0e822cbb1c4eb82694ff1065331, type: 3}
+  m_Name: GolemAOEWeaponData
+  m_EditorClassIdentifier: 
+  weaponName: 
+  weaponSprite: {fileID: 0}
+  weaponDamage: 5
+  weaponSwingSound: {fileID: 8300000, guid: 14cd1330fdf3d0e45937bd0176a0b1fd, type: 3}
+  aoeRadius: 2

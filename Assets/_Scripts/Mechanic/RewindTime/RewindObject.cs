@@ -61,7 +61,9 @@ public class RewindObject : MonoBehaviour
 			transform.rotation = stateInTime.rotation;
 			transform.localScale = stateInTime.scale;
             spriteRenderer.sprite = stateInTime.sprite;
-			ghostTrail.enabled = true;
+			rb.velocity = stateInTime.velocity;
+			rb.angularVelocity = stateInTime.angularVelocity;
+            ghostTrail.enabled = true;
 			statesInTime.RemoveAt(0);
 		} else
 		{
@@ -77,7 +79,7 @@ public class RewindObject : MonoBehaviour
 			statesInTime.RemoveAt(statesInTime.Count - 1);
 		}
 
-		statesInTime.Insert(0, new StateInTime(transform.position, transform.rotation, transform.localScale, spriteRenderer.sprite));
+		statesInTime.Insert(0, new StateInTime(transform.position, transform.rotation, transform.localScale, spriteRenderer.sprite, rb.velocity, rb.angularVelocity));
 	}
 
 	public void StartRewind ()

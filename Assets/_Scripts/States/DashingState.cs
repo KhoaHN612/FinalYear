@@ -10,14 +10,14 @@ public class DashingState : MovementState
 
     protected override void EnterState()
     {
-        agent.animationManager.StopAnimation();
         agent.animationManager.PlayAnimation(AnimationType.dash);
+        agent.animationManager.StopAnimation();
 
         movementData.isDashing = true;
         movementData.canDash = false;
         previousGravityScale = agent.rb2d.gravityScale;
         agent.rb2d.gravityScale = 0;
-        movementData.currentVelocity.x = agent.GetFaceDirection() * agent.agentData.dashSpeed;
+        movementData.currentVelocity.x = agent.GetFaceDirection() * agent.agentData.dashSpeed * agent.timeManipulateMutiplier;
         movementData.currentVelocity.y = 0;
         StartCoroutine(stopDashing());
         StartCoroutine(dashCooldown());
@@ -25,12 +25,12 @@ public class DashingState : MovementState
     }
 
     private IEnumerator stopDashing(){
-        yield return new WaitForSeconds(agent.agentData.dashTime);
+        yield return new WaitForSeconds(agent.agentData.dashTime * (1 / agent.timeManipulateMutiplier));
         movementData.isDashing = false;
     }
 
     private IEnumerator dashCooldown(){
-        yield return new WaitForSeconds(agent.agentData.dashTime);
+        yield return new WaitForSeconds(agent.agentData.dashTime * (1/ agent.timeManipulateMutiplier));
         movementData.canDash = true;
     }
 

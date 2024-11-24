@@ -20,6 +20,11 @@ namespace WeaponSystem
         {
             weaponStorage = GetComponent<WeaponStorage>();
             spriteRenderer = GetComponent<SpriteRenderer>();
+
+            if (spriteRenderer == null)
+            {
+                spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+            }
             ToggleWeaponVisibility(false);
 
         }

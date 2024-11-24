@@ -39,10 +39,45 @@ public class PlayerInput : MonoBehaviour, IAgentInput, IInteractiveInterface
             GetInteractiveInput();
         }
 
-        if (Input.GetKeyDown(KeyCode.Slash))
+        if (Input.GetKeyDown(KeyCode.N))
         {
-            TimeManager.Instance.DoSlowTime((float)0.1, 2);
+            Debug.Log("Toggle Time Adjust");
+            if (TimeManager.Instance.isAdjustTime == false)
+            {
+                TimeManager.Instance.AdjustTime(0.2f);
+            }
+            else
+            {
+                TimeManager.Instance.AdjustTime(1);
+            }
+
         }
+
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            Debug.Log("Toggle Time Stop");
+            if (TimeManager.Instance.isStopTime == false)
+            {
+                TimeManager.Instance.StopTime();
+            } else
+            {
+                TimeManager.Instance.ResumeTime();
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            Debug.Log("Toggle Speed Up Player");
+            if (TimeManager.Instance.isSpeedUpPlayer == false)
+            {
+                TimeManager.Instance.SpeedUpPlayer();
+            }
+            else
+            {
+                TimeManager.Instance.StopSpeedUpPlayer();
+            }
+        }
+
 
         GetMenuInput();
     }

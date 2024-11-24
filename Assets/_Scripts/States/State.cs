@@ -60,12 +60,16 @@ public abstract class State : MonoBehaviour
     }
 
     protected virtual void HandleRewindPressed(){
-        if (agent.movementData.canDash){
+        if (agent.movementData.canRewind){
             agent.TransitionToState(agent.stateFactory.GetState(StateType.Rewind));
         }
     }
 
     protected virtual void HandleRewindReleased(){
+        agent.rewindAgent.StopRewind();
+        if (TestFallTransition())
+            return;
+        agent.TransitionToState(agent.stateFactory.GetState(StateType.Fall));
     }
 
     protected virtual void HandleAttack()
@@ -137,6 +141,10 @@ public abstract class State : MonoBehaviour
     public virtual void GetHit()
     {
         agent.TransitionToState(agent.stateFactory.GetState(StateType.GetHit));
+    }
+    public virtual void GetStop()
+    {
+        agent.TransitionToState(agent.stateFactory.GetState(StateType.Stop));
     }
     public virtual void Die()
     {

@@ -38,11 +38,6 @@ public class MovementState : State
 
     protected void SetPlayerVelocity()
     {
-        //if (!agent.isAffectByTimeManipulate && TimeManager.Instance.isSlowTime)
-        //{
-        //    movementData.currentVelocity.x = movementData.currentVelocity.x * (1 / Time.timeScale);
-        //    movementData.currentVelocity.y = movementData.currentVelocity.y * (1/Time.timeScale);
-        //}
         agent.rb2d.velocity = movementData.currentVelocity;
     }
 
@@ -69,13 +64,13 @@ public class MovementState : State
     {
         if(Mathf.Abs(movementVector.x) > 0)
         {
-            movementData.currentSpeed += agent.agentData.acceleration * Time.deltaTime;
+            movementData.currentSpeed += agent.agentData.acceleration * Time.deltaTime * agent.timeManipulateMutiplier;
         }
         else
         {
-            movementData.currentSpeed -= agent.agentData.deacceleration * Time.deltaTime;
+            movementData.currentSpeed -= agent.agentData.deacceleration * Time.deltaTime * agent.timeManipulateMutiplier;
         }
-        movementData.currentSpeed = Mathf.Clamp(movementData.currentSpeed, 0, agent.agentData.maxSpeed);
+        movementData.currentSpeed = Mathf.Clamp(movementData.currentSpeed, 0, agent.agentData.maxSpeed * agent.timeManipulateMutiplier);
     }
 
     protected override void ExitState()

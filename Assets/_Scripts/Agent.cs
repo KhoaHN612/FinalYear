@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using WeaponSystem;
 
-public class Agent : MonoBehaviour
+public class Agent : MonoBehaviour, ICanBeTimeAffect
 {
     public AgentDataSO agentData;
     public MovementData movementData;
@@ -18,7 +18,9 @@ public class Agent : MonoBehaviour
     public RewindAgent rewindAgent;
     public StateFactory stateFactory;
     public Damagable damagable;
-    public bool isAffectByTimeManipulate = true;
+    public bool isAffectByNegativeTimeManipulate = true;
+    public float timeManipulateMutiplier = 1;
+    private float defaultGravityScale;
 
     public State currentState = null, previousState = null;
     /*public State IdleState;*/
@@ -33,7 +35,6 @@ public class Agent : MonoBehaviour
     private UnityEvent OnRespawnRequired { get; set; }
     [field: SerializeField]
     public UnityEvent OnAgentDie  { get; set; }
-
     private void Awake()
     {
         agentInput = GetComponentInParent<IAgentInput>();
@@ -47,6 +48,8 @@ public class Agent : MonoBehaviour
         rewindAgent = GetComponent<RewindAgent>();
         stateFactory = GetComponentInChildren<StateFactory>();
         damagable = GetComponentInChildren<Damagable>();
+
+        defaultGravityScale = rb2d.gravityScale;
 
         stateFactory.InitializeStates(this);
     }
@@ -147,4 +150,29 @@ public class Agent : MonoBehaviour
         agentWeapon.PickUpWeapon(weaponData);
     }
 
+    public void StopTime()
+    {
+        if (!isAffectByNegativeTimeManipulate) return;
+        if (currentState == stateFactory.GetState(StateType.Stop)) return; 
+        agentRenderer.stopRotation = true;
+        TransitionToState(stateFactory.GetState(StateType.Stop));
+    }
+
+    public void ResumeTime()
+    {
+        if (!isAffectByNegativeTimeManipulate) return;
+        if (currentState == stateFactory.GetState(StateType.Stop))
+        {
+            agentRenderer.stopRotation = false;
+            TransitionToState(previousState);
+        }
+    }
+
+    public void AdjustSpeed(float speed)
+    {
+        if (!isAffectByNegativeTimeManipulate && speed<1) return;
+        animationManager.AdjustAnimationSpeed(speed);
+        rb2d.gravityScale = defaultGravityScale * speed;
+        timeManipulateMutiplier = speed;
+    }
 }

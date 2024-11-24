@@ -8,7 +8,6 @@ public class AttackState : State
 {
     public LayerMask hittableLayerMask;
 
-
     protected Vector2 direction;
 
     public UnityEvent<AudioClip> OnWeaponSound;
@@ -21,6 +20,7 @@ public class AttackState : State
         agent.animationManager.PlayAnimation(AnimationType.attack1);
         agent.animationManager.OnAnimationEnd.AddListener(TransitionToIdleState);
         agent.animationManager.OnAnimationAction.AddListener(PerformAttack);
+        agent.agentRenderer.stopRotation = true;
 
         agent.agentWeapon.ToggleWeaponVisibility(true);
         direction = agent.transform.right * (agent.transform.localScale.x > 0 ? 1 : -1);
@@ -48,6 +48,7 @@ public class AttackState : State
     {
         agent.animationManager.ResetEvents();
         agent.agentWeapon.ToggleWeaponVisibility(false);
+        agent.agentRenderer.stopRotation = false;
     }
 
     private void OnDrawGizmos()

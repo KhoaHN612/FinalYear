@@ -8,8 +8,13 @@ public class AgentRenderer : MonoBehaviour
     [SerializeField]
     private GroundDetector groundDetector;
     public UnityEvent onFlip;
+    public bool stopRotation = false;
+
     public void FaceDirection(Vector2 input)
     {
+        if (stopRotation)
+            return;
+
         if (input.x < 0)
         {
             if (transform.parent.localScale.x > 0)
@@ -24,6 +29,5 @@ public class AgentRenderer : MonoBehaviour
                     onFlip?.Invoke();
             transform.parent.localScale = new Vector3(Mathf.Abs(transform.parent.localScale.x), transform.parent.localScale.y, transform.parent.localScale.z);
         }
-
     }
 }

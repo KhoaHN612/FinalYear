@@ -11,7 +11,7 @@ public class JumpState : MovementState
     {
         agent.animationManager.PlayAnimation(AnimationType.jump);
         movementData.currentVelocity = agent.rb2d.velocity;
-        movementData.currentVelocity.y = agent.agentData.jumpForce;
+        movementData.currentVelocity.y = agent.agentData.jumpForce * agent.timeManipulateMutiplier;
         agent.rb2d.velocity = movementData.currentVelocity;
         jumpPressed = true;
     }
@@ -43,10 +43,10 @@ public class JumpState : MovementState
 
     private void ControlJumpHeight()
     {
-        if(jumpPressed == false)
+        if (jumpPressed == false)
         {
             movementData.currentVelocity = agent.rb2d.velocity;
-            movementData.currentVelocity.y += agent.agentData.lowJumpMultiplier *Physics2D.gravity.y * Time.deltaTime;
+            movementData.currentVelocity.y += agent.agentData.lowJumpMultiplier * Physics2D.gravity.y * Time.deltaTime * agent.timeManipulateMutiplier;
             agent.rb2d.velocity = movementData.currentVelocity;
         }
     }

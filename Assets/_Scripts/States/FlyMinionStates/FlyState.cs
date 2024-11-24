@@ -10,13 +10,13 @@ public class FlyState : MovementState
         movementDirection = movementVector.normalized;
         if (movementVector.magnitude > 0)
         {
-            movementData.currentSpeed += agent.agentData.acceleration * Time.deltaTime;
+            movementData.currentSpeed += agent.agentData.acceleration * Time.deltaTime * agent.timeManipulateMutiplier;
         }
         else
         {
-            movementData.currentSpeed -= agent.agentData.deacceleration * Time.deltaTime;
+            movementData.currentSpeed -= agent.agentData.deacceleration * Time.deltaTime * agent.timeManipulateMutiplier;
         }
-        movementData.currentSpeed = Mathf.Clamp(movementData.currentSpeed, 0, agent.agentData.maxSpeed);
+        movementData.currentSpeed = Mathf.Clamp(movementData.currentSpeed, 0, agent.agentData.maxSpeed * agent.timeManipulateMutiplier);
     }
 
     protected new void CalculateVelocity()

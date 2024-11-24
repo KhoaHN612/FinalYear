@@ -20,10 +20,10 @@ public class RewindAgent : MonoBehaviour
 	void Start () {
 		statesInTime = new List<StateInTime>();
 		if (rb == null){
-			rb = GetComponent<Rigidbody2D>();
+			rb = GetComponentInChildren<Rigidbody2D>();
 		}
         if (spriteRenderer == null){
-            spriteRenderer = GetComponent<SpriteRenderer>();
+            spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         }
 
 		ghostTrail = this.AddComponent<GhostTrail>();
@@ -47,11 +47,14 @@ public class RewindAgent : MonoBehaviour
 			transform.rotation = stateInTime.rotation;
 			transform.localScale = stateInTime.scale;
             spriteRenderer.sprite = stateInTime.sprite;
-			ghostTrail.enabled = true;
+            rb.velocity = stateInTime.velocity;
+			rb.angularVelocity = stateInTime.angularVelocity;
+            ghostTrail.enabled = true;
 			statesInTime.RemoveAt(0);
-		} else
+		} 
+		else
 		{
-			StopRewind();
+			return;
 		}
 		
 	}
@@ -63,7 +66,7 @@ public class RewindAgent : MonoBehaviour
 			statesInTime.RemoveAt(statesInTime.Count - 1);
 		}
 
-		statesInTime.Insert(0, new StateInTime(transform.position, transform.rotation, transform.localScale, spriteRenderer.sprite));
+		statesInTime.Insert(0, new StateInTime(transform.position, transform.rotation, transform.localScale, spriteRenderer.sprite, rb.velocity, rb.angularVelocity));
 	}
 
 	public void StartRewind ()
@@ -72,7 +75,7 @@ public class RewindAgent : MonoBehaviour
 			rewindEffect.SetActive(true);
 		}
 		isRewinding = true;
-		rb.velocity = new Vector3(0f, 0f, 0f);
+		//rb.velocity = new Vector3(0f, 0f, 0f);
 		rb.isKinematic = true;
 	}
 
