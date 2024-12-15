@@ -12,6 +12,7 @@ public class DataPersistenceManager : MonoBehaviour
     [SerializeField] private bool initializeDataIfNull = false;
     [SerializeField] private bool overrideSelectedProfileId = false;
     [SerializeField] private string testSelectedProfileId = "test";
+    [SerializeField] private bool loadAfterEnable = false;
 
     [Header("File Storage Config")]
     [SerializeField] private string fileName;
@@ -56,6 +57,12 @@ public class DataPersistenceManager : MonoBehaviour
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
         SceneManager.sceneUnloaded += OnSceneUnloaded;
+        if (loadAfterEnable)
+        {
+            this.sessionStartTime = DateTime.Now;
+            this.dataPersistenceObjects = FindAllDataPersistenceObjects();
+            LoadGame();
+        }
     }
 
     private void OnDisable()
@@ -101,6 +108,7 @@ public class DataPersistenceManager : MonoBehaviour
 
         // load any saved data from a file using the data handler
         this.gameData = dataHandler.Load(selectedProfileId);
+        //Debug.Log("Loaded game data for profile: " + selectedProfileId);
 
         // start a new game if the data is null and we're configured to initialize data for debugging purposes
         if (this.gameData == null && initializeDataIfNull)

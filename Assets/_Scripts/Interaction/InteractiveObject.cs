@@ -4,13 +4,13 @@ using UnityEngine.Events;
 public class InteractiveObject: MonoBehaviour
 {
     [SerializeField]
-    public UnityEvent onInteract, onStopInteract;
+    public UnityEvent<Object> onInteract, onStopInteract;
 
-    public void Interact()
+    public void Interact(Object obj)
     {
         if (onInteract != null)
         {
-            onInteract.Invoke();
+            onInteract.Invoke(obj);
         }
         else
         {
@@ -18,11 +18,11 @@ public class InteractiveObject: MonoBehaviour
         }
     }
 
-    public void StopInteract()
+    public void StopInteract(Object obj)
     {
         if (onStopInteract != null)
         {
-            onStopInteract.Invoke();
+            onStopInteract.Invoke(obj);
         }
         else
         {

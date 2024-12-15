@@ -357,6 +357,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 5823554040610424971, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.15
+      objectReference: {fileID: 0}
     - target: {fileID: 7265838932670486780, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
       propertyPath: clip
       value: 

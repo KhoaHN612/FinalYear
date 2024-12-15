@@ -5,13 +5,22 @@ using UnityEngine;
 public class AudioFeedback : MonoBehaviour
 {
     public AudioClip clip;
-    public AudioSource targetAudioSource;
+    public AudioSource targetAudioSource = null;
     [Range(0, 1)]
     public float volume = 1;
 
+    private void Start()
+    {
+        if (targetAudioSource == null)
+        {
+            targetAudioSource = FindObjectOfType<AudioSource>();
+        }
+    }
     public void PlayClip()
     {
         if (clip == null)
+            return;
+        if (targetAudioSource == null)
             return;
         targetAudioSource.volume = this.volume;
         targetAudioSource.PlayOneShot(clip);

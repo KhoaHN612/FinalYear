@@ -98,11 +98,11 @@ public class TimeManager : MonoBehaviour
     {
         if (r != 1)
         {
-            isAdjustTime = false;
+            isAdjustTime = true;
         }
         else
         {
-            isAdjustTime = true;
+            isAdjustTime = false;
         }
         foreach (var obj in canBeTimeAffectObjects)
         {
@@ -123,12 +123,12 @@ public class TimeManager : MonoBehaviour
         }
     }
 
-    public void SpeedUpPlayer()
+    public void SpeedUpPlayer(float f)
     {
         isSpeedUpPlayer = true;
         if (player != null)
         {
-            AdjustTimeObject(player, 2);
+            AdjustTimeObject(player, f);
         }
     }
 
@@ -138,6 +138,22 @@ public class TimeManager : MonoBehaviour
         if (player != null)
         {
             AdjustTimeObject(player, 1);
+        }
+    }
+
+    public void StartRewind()
+    {
+        foreach (var obj in canBeTimeAffectObjects)
+        {
+            obj.RewindStart();
+        }
+    }
+
+    public void EndRewind()
+    {
+        foreach (var obj in canBeTimeAffectObjects)
+        {
+            obj.RewindEnd();
         }
     }
 

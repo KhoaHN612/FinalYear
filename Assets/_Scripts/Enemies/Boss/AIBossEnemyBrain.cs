@@ -36,7 +36,7 @@ namespace AIEnemy
                 } 
                 else
                 {
-                    Debug.Log(aiBoard.CheckBoard(AIDataTypes.Waiting)); 
+                    //Debug.Log(aiBoard.CheckBoard(AIDataTypes.Waiting)); 
                     if (aiBoard.CheckBoard(AIDataTypes.Waiting))
                     {
                         WaitBehaviour.PerformAction(this);
@@ -51,7 +51,7 @@ namespace AIEnemy
                         }
                         else
                         {
-                            Debug.Log("Charge");
+                            //Debug.Log("Charge");
                             ChargeBehaviour.PerformAction(this);
                         }
                     }

@@ -1,9 +1,13 @@
+using System;
+using System.Collections;
 using UnityEngine;
 
 public class ControlAnimator : MonoBehaviour
 {
     [SerializeField]
     private Animator animator;
+
+    public string defaultParameterName = "isOpen";
 
     private void Awake()
     {
@@ -30,11 +34,19 @@ public class ControlAnimator : MonoBehaviour
     }
     public void SetBoolTrue(string parameterName)
     {
+        if (parameterName == null || parameterName == "")
+        {
+            parameterName = defaultParameterName;
+        }
         SetBool(parameterName, true);
     }
 
     public void SetBoolFalse(string parameterName)
     {
+        if (parameterName == null || parameterName == "")
+        {
+            parameterName = defaultParameterName;
+        }
         SetBool(parameterName, false);
     }
 
@@ -48,5 +60,18 @@ public class ControlAnimator : MonoBehaviour
             }
         }
         return false;
+    }
+
+    public void ChangeParameterTrueFor(float time)
+    {
+        SetBool(defaultParameterName, true);
+
+        StartCoroutine(ChangeParameterFalseAfter(time));
+    }
+
+    private IEnumerator ChangeParameterFalseAfter(float time)
+    {
+        yield return new WaitForSeconds(time);
+        SetBool(defaultParameterName, false);
     }
 }

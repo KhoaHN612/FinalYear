@@ -49,6 +49,7 @@ namespace RespawnSystem
             Vector2 spawnLocation = transform.position;
             spawnLocation.y += 5;
             respawnTarget.transform.position = spawnLocation;
+            //respawnTarget.GetComponent<Agent>()?.RespawnAgent();
         }
 
         public void SetPlayerGO(GameObject player)

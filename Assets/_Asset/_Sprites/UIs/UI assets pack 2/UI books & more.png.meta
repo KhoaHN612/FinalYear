@@ -2672,7 +2672,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI books & more_122
+      name: BookSelect2
       rect:
         serializedVersion: 2
         x: 352
@@ -5086,6 +5086,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: BookSelect
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 192
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 3, z: 2, w: 3}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547bddfccc1b95046985d26b89220002
+      internalID: -2003720597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -5097,6 +5118,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      BookSelect: -2003720597
+      BookSelect2: 775865183
       UI books & more_0: -1502896360
       UI books & more_1: 486440125
       UI books & more_10: 690889524
@@ -5124,7 +5147,6 @@ TextureImporter:
       UI books & more_12: -973347552
       UI books & more_120: -1925518903
       UI books & more_121: 1529229392
-      UI books & more_122: 775865183
       UI books & more_123: -1483278229
       UI books & more_124: -1830109770
       UI books & more_125: 706960073

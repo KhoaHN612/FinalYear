@@ -667,7 +667,8 @@ MonoBehaviour:
   rewindAgent: {fileID: 0}
   stateFactory: {fileID: 0}
   damagable: {fileID: 0}
-  isAffectByTimeManipulate: 1
+  isAffectByNegativeTimeManipulate: 1
+  timeManipulateMutiplier: 1
   currentState: {fileID: 0}
   previousState: {fileID: 0}
   agentWeapon: {fileID: 0}
@@ -945,7 +946,7 @@ GameObject:
   - component: {fileID: 4394126496078856339}
   - component: {fileID: 2373337292396405154}
   - component: {fileID: 139878751204874062}
-  m_Layer: 3
+  m_Layer: 13
   m_Name: Avatar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1059,6 +1060,7 @@ MonoBehaviour:
   onFlip:
     m_PersistentCalls:
       m_Calls: []
+  stopRotation: 0
 --- !u!114 &139878751204874062
 MonoBehaviour:
   m_ObjectHideFlags: 0

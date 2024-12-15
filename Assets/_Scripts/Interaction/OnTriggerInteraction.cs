@@ -15,7 +15,7 @@ namespace SVS.Common
         {
             if ((1 << collision.gameObject.layer & collisionMask) != 0)
             {
-                var interactiveInterface = collision.GetComponentInParent<IInteractiveInterface>();
+                var interactiveInterface = collision.GetComponent<IInteractiveInterface>();
                 if (interactiveInterface != null)
                 {
                     interactiveInterface.SetInteractiveObject(interactiveObject);
@@ -29,7 +29,7 @@ namespace SVS.Common
         {
             if ((1 << collision.gameObject.layer & collisionMask) != 0)
             {
-                var interactiveInterface = collision.GetComponentInParent<IInteractiveInterface>();
+                var interactiveInterface = collision.GetComponent<IInteractiveInterface>();
                 if (interactiveInterface != null)
                 {
                     interactiveInterface.ClearInteractiveObject(interactiveObject);

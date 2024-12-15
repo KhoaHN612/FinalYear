@@ -24,6 +24,8 @@ namespace SVS.UI
         [SerializeField]
         private float scaleModifier = 0;
 
+        public float outsideScreenDistance = 400;
+
         public Canvas canvas;
 
 
@@ -31,7 +33,7 @@ namespace SVS.UI
         {
             foreach (Transform item in transform)
             {
-                item.GetComponent<Cloud>().Initialize(canvas.scaleFactor + 50, SpawnClouds);
+                item.GetComponent<Cloud>().Initialize(canvas.scaleFactor + outsideScreenDistance, SpawnClouds);
             }
         }
 
@@ -60,7 +62,7 @@ namespace SVS.UI
 
             rectTransform.SetParent(transform,false);
 
-            newCloud.Initialize(canvas.scaleFactor + 50, SpawnClouds);
+            newCloud.Initialize(outsideScreenDistance, SpawnClouds);
 
         }
 

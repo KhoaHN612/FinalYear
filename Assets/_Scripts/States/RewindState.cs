@@ -10,7 +10,10 @@ public class RewindState : MovementState
         agent.animationManager.StopAnimation();
         agent.movementData.canRewind = false;
         agent.movementData.isRewind = true;
-        agent.rewindAgent.StartRewind();
+        if (agent.rewindAgent != null)
+        {
+            agent.rewindAgent.StartRewind();
+        }
     }
     public override void StateUpdate()
     {
@@ -21,6 +24,10 @@ public class RewindState : MovementState
         agent.movementData.isRewind = false;
         agent.animationManager.StartAnimation();
         movementData.currentVelocity = agent.rb2d.velocity;
+        if (agent.rewindAgent != null)
+        {
+            agent.rewindAgent.StopRewind();
+        }
     }
 
     private IEnumerator rewindCooldown(){

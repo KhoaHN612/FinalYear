@@ -10,6 +10,8 @@ namespace SVS.PlayerAgent
     {
         public UnityEvent<int> OnPointsValueChange;
         public UnityEvent OnPickUpPoints;
+        public UnityEvent OnUsePoints;
+        [SerializeField]
         private int points = 0;
 
         public int Points { get => points; private set => points = value; }
@@ -24,6 +26,18 @@ namespace SVS.PlayerAgent
             Points += amount;
             OnPickUpPoints?.Invoke();
             OnPointsValueChange?.Invoke(Points);
+        }
+
+        public bool Use(int amount)
+        {
+            if (Points < amount)
+            {
+                return false;
+            }
+            Points -= amount;
+            OnUsePoints?.Invoke();
+            OnPointsValueChange?.Invoke(Points);
+            return true;
         }
 
         public void LoadData(GameData data)

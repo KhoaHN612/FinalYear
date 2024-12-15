@@ -15,10 +15,10 @@ MonoBehaviour:
   maxHealth: 100
   maxMana: 50
   maxTime: 50
-  maxSpeed: 9
-  acceleration: 60
-  deacceleration: 90
-  dashSpeed: 18
+  maxSpeed: 3
+  acceleration: 20
+  deacceleration: 30
+  dashSpeed: 6
   dashTime: 0.2
   dashCooldown: 1
   recordTime: 5

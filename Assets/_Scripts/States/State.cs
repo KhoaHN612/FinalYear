@@ -23,8 +23,6 @@ public abstract class State : MonoBehaviour
         this.agent.agentInput.OnJumpReleased += HandleJumpReleased;
         this.agent.agentInput.OnPlayAnimation += HandlePlayAnimation;
         this.agent.agentInput.OnMovement += HandleMovement;
-        this.agent.agentInput.OnRewindPressed += HandleRewindPressed;
-        this.agent.agentInput.OnRewindReleased += HandleRewindReleased;
         OnEnter?.Invoke();
         EnterState();
     }
@@ -59,14 +57,13 @@ public abstract class State : MonoBehaviour
         }
     }
 
-    protected virtual void HandleRewindPressed(){
+    public virtual void HandleRewindPressed(){
         if (agent.movementData.canRewind){
             agent.TransitionToState(agent.stateFactory.GetState(StateType.Rewind));
         }
     }
 
-    protected virtual void HandleRewindReleased(){
-        agent.rewindAgent.StopRewind();
+    public virtual void HandleRewindReleased(){
         if (TestFallTransition())
             return;
         agent.TransitionToState(agent.stateFactory.GetState(StateType.Fall));
@@ -108,8 +105,6 @@ public abstract class State : MonoBehaviour
     {
         if (agent.agentWeapon.CanIUseWeapon(agent.groundDetector.isGrounded))
         {
-            // agent.TransitionToState(agent.stateFactory.GetState(StateType.Attack));
-            // agent.agentWeapon.GetCurrentWeapon().PerformAttack(agent, 0, Vector3.right);
             agent.TransitionToState(agent.stateFactory.GetState(StateType.Attack));
 
         }
@@ -128,8 +123,6 @@ public abstract class State : MonoBehaviour
         this.agent.agentInput.OnJumpReleased -= HandleJumpReleased;
         this.agent.agentInput.OnPlayAnimation -= HandlePlayAnimation;
         this.agent.agentInput.OnMovement -= HandleMovement;
-        this.agent.agentInput.OnRewindPressed -= HandleRewindPressed;
-        this.agent.agentInput.OnRewindReleased -= HandleRewindReleased;
         OnExit?.Invoke();
         ExitState();
     }

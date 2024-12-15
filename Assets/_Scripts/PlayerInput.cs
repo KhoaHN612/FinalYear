@@ -5,29 +5,50 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
-public class PlayerInput : MonoBehaviour, IAgentInput, IInteractiveInterface
+public class PlayerInput : MonoBehaviour, IAgentInput
 {
     [field: SerializeField]
     public Vector2 MovementVector { get; private set; }
 
-    public event Action OnAttack, OnJumpPressed, OnJumpReleased, OnWeaponChange, OnNextWeapon, OnPreviousWeapon, On1Weapon, On2Weapon, On3Weapon, On4Weapon, On5Weapon, On6Weapon, OnDash, OnRewindPressed, OnRewindReleased;
+    public event
+        Action OnAttack, OnJumpPressed, OnJumpReleased,
+        OnWeaponChange, OnNextWeapon, OnPreviousWeapon,
+        On1Weapon, On2Weapon, On3Weapon, On4Weapon, On5Weapon, On6Weapon,
+        OnDash, OnRewindPressed, OnRewindReleased, OnInteract, OnStopInteract;
+
+    public UnityEvent 
+        OnStopTimeActivate, OnStopTimeDeadActive, OnSlowTimeActivate, OnSlowTimeDeadActivate, 
+        OnSpeedUpActivate, OnSpeedUpDeadActivate, OnRewindTimeActive, OnRewindTimeDeadActive;
 
     public event Action<Vector2> OnMovement;
 
-    public event Action<string> OnPlayAnimation; 
+    public event Action<string> OnPlayAnimation;
 
-    public KeyCode jumpKey, attackKey, dashKey, menuKey, rewindKey, nextWeaponKey = KeyCode.E, previousWeaponKey = KeyCode.Q, interactiveKey = KeyCode.R;
+    public event Action<int> OnUsingTime;
+
+    public KeyCode 
+        jumpKey, attackKey, dashKey, menuKey, rewindKey, 
+        nextWeaponKey = KeyCode.E, previousWeaponKey = KeyCode.Q, interactiveKey = KeyCode.R, skillTreeKey;
 
     public UnityEvent OnMenuKeyPressed;
 
-    private bool canControl;
+    private bool canControl = true;
 
+    public PlayerSkills playerSkills;
     public bool CanControl { get => canControl; set => canControl = value; }
-    public InteractiveObject InteractiveObject { get; set; }
 
+    private void Awake()
+    {
+        if (playerSkills == null)
+            playerSkills = GetComponent<PlayerSkills>();
+    }
+    private void Start()
+    {
+        SkillTreeMenu.Instance.uiSkillTree.SetPlayerSkills(playerSkills);
+    }
     private void Update()
     {
-        if (Time.timeScale > 0)
+        if (Time.timeScale > 0 && canControl)
         {
             GetMovementInput();
             GetJumpInput();
@@ -35,76 +56,195 @@ public class PlayerInput : MonoBehaviour, IAgentInput, IInteractiveInterface
             GetDashInput();
             GetNextWeaponInput();
             GetPreviousWeaponInput();
-            GetRewindInput();
             GetInteractiveInput();
+            GetSkillTreeInput();
+            GetSkillSpeedUpInput();
+            GetSkillSlowTimeInput();
+            GetSkillStopTimeInput();
+            GetSkillRewindInput();
         }
-
-        if (Input.GetKeyDown(KeyCode.N))
-        {
-            Debug.Log("Toggle Time Adjust");
-            if (TimeManager.Instance.isAdjustTime == false)
-            {
-                TimeManager.Instance.AdjustTime(0.2f);
-            }
-            else
-            {
-                TimeManager.Instance.AdjustTime(1);
-            }
-
-        }
-
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            Debug.Log("Toggle Time Stop");
-            if (TimeManager.Instance.isStopTime == false)
-            {
-                TimeManager.Instance.StopTime();
-            } else
-            {
-                TimeManager.Instance.ResumeTime();
-            }
-        }
-
-        if (Input.GetKeyDown(KeyCode.B))
-        {
-            Debug.Log("Toggle Speed Up Player");
-            if (TimeManager.Instance.isSpeedUpPlayer == false)
-            {
-                TimeManager.Instance.SpeedUpPlayer();
-            }
-            else
-            {
-                TimeManager.Instance.StopSpeedUpPlayer();
-            }
-        }
-
 
         GetMenuInput();
     }
 
-    public void SetInteractiveObject(InteractiveObject interactiveObject)
+    private void GetSkillStopTimeInput()
     {
-        InteractiveObject = interactiveObject;
+        if (!playerSkills.IsSkillUnlocked(SkillType.StopTime1))
+        {
+            return;
+        }
+
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            if (TimeManager.Instance.isStopTime == false)
+            {
+                OnUsingTime(50);
+                TimeManager.Instance.StopTime();
+                OnStopTimeActivate?.Invoke();
+                StartCoroutine(ReleaseSkillStopTime());
+            }
+        }
     }
 
-    public void ClearInteractiveObject(InteractiveObject interactiveObject)
+    private IEnumerator ReleaseSkillStopTime()
     {
-        if (InteractiveObject == interactiveObject)
+        if (!playerSkills.IsSkillUnlocked(SkillType.StopTime3))
         {
-            InteractiveObject = null;
+            yield return new WaitForSeconds(0.5f);
+        }
+        if (playerSkills.IsSkillUnlocked(SkillType.StopTime2))
+        {
+            yield return new WaitForSeconds(0.5f);
+        }
+        yield return new WaitForSeconds(0.5f);
+        TimeManager.Instance.ResumeTime();
+        OnStopTimeDeadActive?.Invoke();
+    }
+
+    private void GetSkillSlowTimeInput()
+    {
+        if (!playerSkills.IsSkillUnlocked(SkillType.SlowTime1))
+        {
+            return;
+        }
+
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            if (TimeManager.Instance.isAdjustTime == false)
+            {
+                if (playerSkills.IsSkillUnlocked(SkillType.SlowTime3))
+                {
+                    TimeManager.Instance.AdjustTime(0.5f);
+                }
+                else if (playerSkills.IsSkillUnlocked(SkillType.SlowTime2))
+                {
+                    TimeManager.Instance.AdjustTime(0.35f);
+                }
+                else if (playerSkills.IsSkillUnlocked(SkillType.SlowTime1))
+                {
+                    TimeManager.Instance.AdjustTime(0.2f);
+                }
+                OnUsingTime(25);
+                OnSlowTimeActivate?.Invoke();
+                StartCoroutine(ReleaseSkillSlowTime());
+            }
+        }
+    }
+
+    private IEnumerator ReleaseSkillSlowTime()
+    {
+        if (!playerSkills.IsSkillUnlocked(SkillType.SlowTime3))
+        {
+            yield return new WaitForSeconds(1);
+        }
+
+        if (playerSkills.IsSkillUnlocked(SkillType.SlowTime2))
+        {
+            yield return new WaitForSeconds(1);
+        }
+
+        yield return new WaitForSeconds(1);
+        TimeManager.Instance.AdjustTime(1);
+        OnSlowTimeDeadActivate?.Invoke();
+    }
+
+    private void GetSkillSpeedUpInput()
+    {
+        if (!playerSkills.IsSkillUnlocked(SkillType.SpeedTime1))
+        {
+            return;
+        }
+
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            if (TimeManager.Instance.isSpeedUpPlayer == false)
+            {
+                if (playerSkills.IsSkillUnlocked(SkillType.SpeedTime3))
+                {
+                    TimeManager.Instance.SpeedUpPlayer(2f);
+                }
+                else if (playerSkills.IsSkillUnlocked(SkillType.SpeedTime2))
+                {
+                    TimeManager.Instance.SpeedUpPlayer(1.66f);
+                }
+                else if (playerSkills.IsSkillUnlocked(SkillType.SpeedTime1))
+                {
+                    TimeManager.Instance.SpeedUpPlayer(1.33f);
+                }
+
+                OnUsingTime(25);
+                StartCoroutine(ReleaseSkillSpeedUp());
+                OnSpeedUpActivate?.Invoke();
+            }
+        }
+    }
+
+    private IEnumerator ReleaseSkillSpeedUp()
+    {
+        if (!playerSkills.IsSkillUnlocked(SkillType.SpeedTime3))
+        {
+            yield return new WaitForSeconds(0.5f);
+        }
+
+        if (playerSkills.IsSkillUnlocked(SkillType.SpeedTime2))
+        {
+            yield return new WaitForSeconds(0.5f);
+        }
+
+        yield return new WaitForSeconds(0.5f);
+        TimeManager.Instance.StopSpeedUpPlayer();
+        OnSpeedUpDeadActivate?.Invoke();
+    }
+
+    private Coroutine executeRewind;
+    private void GetSkillRewindInput()
+    {
+        if (!playerSkills.IsSkillUnlocked(SkillType.RewindTime1))
+        {
+            return;
+        }
+
+        if (Input.GetKeyDown(rewindKey))
+        {
+            TimeManager.Instance.StartRewind();
+            executeRewind = StartCoroutine(UsingTimeOnTime());
+            OnRewindTimeActive?.Invoke();
+        }
+        if (Input.GetKeyUp(rewindKey))
+        {
+            TimeManager.Instance.EndRewind();
+            StopCoroutine(executeRewind);
+            OnRewindTimeDeadActive?.Invoke();
+        }
+    }
+
+    private IEnumerator UsingTimeOnTime()
+    {
+        while (true)
+        {
+            OnUsingTime(5);
+            yield return new WaitForSeconds(0.5f);
+        }
+    }
+
+    private void GetSkillTreeInput()
+    {
+        if (Input.GetKeyDown(skillTreeKey))
+        {
+            SkillTreeMenu.Instance.ToggleMenu();
         }
     }
 
     private void GetInteractiveInput()
     {
-        if (InteractiveObject == null) return;
         if (Input.GetKeyDown(interactiveKey))
         {
-            InteractiveObject.Interact();
+            Debug.Log("Call Interact");
+            OnInteract?.Invoke();
         }
-        else if (Input.anyKeyDown) 
+        else if (Input.GetKeyDown(menuKey) || (MovementVector.magnitude > 0))
         {
-            InteractiveObject.StopInteract();
+            OnStopInteract?.Invoke();
         }
     }
 
@@ -159,18 +299,6 @@ public class PlayerInput : MonoBehaviour, IAgentInput, IInteractiveInterface
         if (Input.GetKeyUp(jumpKey))
         {
             OnJumpReleased?.Invoke();
-        }
-    }
-
-    private void GetRewindInput()
-    {
-        if (Input.GetKeyDown(rewindKey))
-        {
-            OnRewindPressed?.Invoke();
-        }
-        if (Input.GetKeyUp(rewindKey))
-        {
-            OnRewindReleased?.Invoke();
         }
     }
 

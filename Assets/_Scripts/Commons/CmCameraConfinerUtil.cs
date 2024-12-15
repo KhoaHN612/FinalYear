@@ -12,6 +12,9 @@ namespace SVS.Common
 
         public void SetConfiner()
         {
+            CinemachineVirtualCamera virtualCamera = FindObjectOfType<CinemachineVirtualCamera>();
+            cm_confiner = virtualCamera.GetComponent<CinemachineConfiner2D>();
+
             cm_confiner.m_BoundingShape2D = cameraConfiner;
         }
     }

@@ -13,6 +13,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (instance != null && instance != this)
         {
+            Debug.Log("Destroying duplicate DialogueManager");
             Destroy(this.gameObject);
             return;
         }

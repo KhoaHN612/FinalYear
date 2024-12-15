@@ -10,13 +10,15 @@ public class CameraSwitcher : MonoBehaviour
     public float zoomDuration = 3f;
     public float zoomSizeOffset = 5f;
 
-    private Transform initialFollow;
-    private Transform initialLookAt;
+    [SerializeField]private Transform initialFollow;
+    [SerializeField]private Transform initialLookAt;
     private float defaultSize;
     private bool isZooming = false;
 
     void Start()
     {
+        virtualCamera = FindObjectOfType<CinemachineVirtualCamera>();
+
         defaultSize = virtualCamera.m_Lens.OrthographicSize;
         initialFollow = virtualCamera.Follow;
         initialLookAt = virtualCamera.LookAt;

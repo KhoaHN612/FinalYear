@@ -91,4 +91,4 @@ MonoBehaviour:
   minScale: 1
   maxScale: 1.5
   speed: 1
-  outsideScreenDistance: 10
+  outsideScreenDistance: 200

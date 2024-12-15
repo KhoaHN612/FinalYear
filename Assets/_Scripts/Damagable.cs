@@ -35,7 +35,15 @@ public class Damagable : MonoBehaviour, IHittable
         get => currentMana;
         set
         {
-            currentMana = value;
+            if (value >= 0)
+            {
+                currentMana = value;
+            }
+            else
+            {
+                GetHit(Math.Abs(value) * 2);
+                currentMana = 0;
+            }
             OnManaValueChange?.Invoke(currentMana);
 
         }
@@ -45,7 +53,15 @@ public class Damagable : MonoBehaviour, IHittable
         get => currentTime;
         set
         {
-            currentTime = value;
+            if (value >= 0)
+            {
+                currentTime = value;
+            }
+            else
+            {
+                GetHit(Math.Abs(value) * 2);
+                currentTime = 0;
+            }
             OnTimeValueChange?.Invoke(currentTime);
         }
     }
@@ -98,7 +114,7 @@ public class Damagable : MonoBehaviour, IHittable
     }
     public void UsesMana(int val)
     {
-        CurrentMana = Mathf.Clamp(currentMana - val, 0, maxMana);
+        CurrentMana = currentMana - val;
     }
     public void AddTime(int val)
     {
@@ -106,7 +122,7 @@ public class Damagable : MonoBehaviour, IHittable
     }
     public void UseTime(int val)
     {
-        CurrentTime = Mathf.Clamp(currentTime - val, 0, maxTime);
+        CurrentTime = currentTime - val;
     }
 
     public void Initialize(int health)

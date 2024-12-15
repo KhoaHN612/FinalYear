@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PlayerSkills" BaseTypeListCollapsed="true">
+    <Position X="4" Y="1" Width="1.5" />
+    <NestedTypes>
+      <Class Name="PlayerSkills.OnSkillUnlockedEventArgs" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\_Scripts\SkillTreeSystem\PlayerSkills.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAgACAAIgAAQAAAAAAAAAJAQCAAAEAACIAIAAAAAAAA=</HashCode>
+      <FileName>Assets\_Scripts\SkillTreeSystem\PlayerSkills.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SaleSkillPoint">
+    <Position X="7.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQACAAAEgAAAAAAQAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_Scripts\SkillTreeSystem\SaleSkillPoint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SkillTreeMenu">
+    <Position X="1.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAACAAAEAAAAAEAAAAAAAAAAAAQARAACgBAAA=</HashCode>
+      <FileName>Assets\_Scripts\SkillTreeSystem\SkillTreeMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UISkillTree">
+    <Position X="5.75" Y="2" Width="1.5" />
+    <NestedTypes>
+      <Class Name="UISkillTree.SkillButton" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\_Scripts\SkillTreeSystem\UISkillTree.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="UISkillTree.SkillUnlockPath" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\_Scripts\SkillTreeSystem\UISkillTree.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAQCAAEAAAUCAAAAQAABAgQABAAAQAA=</HashCode>
+      <FileName>Assets\_Scripts\SkillTreeSystem\UISkillTree.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="SkillType" Collapsed="true">
+    <Position X="9.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAQAAAAIAAIAAYAAAgAIAAAAAEBsAA=</HashCode>
+      <FileName>Assets\_Scripts\SkillTreeSystem\PlayerSkills.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

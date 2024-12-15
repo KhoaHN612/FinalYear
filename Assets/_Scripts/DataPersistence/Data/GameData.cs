@@ -11,6 +11,11 @@ public class GameData
     public Vector3 playerPosition;
     public SerializableDictionary<string, bool> coinsCollected;
     public string currentSpawnPointId;
+    public int skillPoints;
+    public List<SkillType> unlockedSkillTypeList;
+    public int playerBonusHealth;
+    public int playerBonusMana;
+    public int playerBonusTime;
 
     public GameData()
     {
@@ -20,5 +25,10 @@ public class GameData
         this.currentSpawnPointId = null; 
         this.playerPosition = Vector3.zero;
         this.coinsCollected = new SerializableDictionary<string, bool>();
+        skillPoints = 0;
+        this.unlockedSkillTypeList = new List<SkillType>();
+        this.playerBonusHealth = 0;
+        this.playerBonusMana = 0;
+        this.playerBonusTime = 0;
     }
 }

@@ -103,7 +103,7 @@ public class AgentAnimation : MonoBehaviour
             if (foundClip != null)
             {
                 animator.Play(foundClip.name, -1, 0f);
-                Debug.Log($"Animation '{foundClip.name}' played instead of '{name}'");
+                //Debug.Log($"Animation '{foundClip.name}' played instead of '{name}'");
             }
             else
             {

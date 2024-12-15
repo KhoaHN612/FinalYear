@@ -13,7 +13,9 @@ namespace WeaponSystem
         {
             Agent agent = GetComponentInChildren<Agent>();
             if (agent == null)
+            {
                 return;
+            }
             foreach (var item in weaponData)
             {
                 agent.agentWeapon.AddWeaponData(item);

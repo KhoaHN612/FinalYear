@@ -10,6 +10,7 @@ namespace WeaponSystem
         public string weaponName;
         public Sprite weaponSprite;
         public int weaponDamage = 1;
+        public float weaponCooldown = 0;
         public AudioClip weaponSwingSound;
 
         public bool Equals(WeaponData other)

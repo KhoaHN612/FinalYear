@@ -20,7 +20,7 @@ public class InventoryPlaySlot : MonoBehaviour
         }
     }
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         Transform inventoryImageTransform = transform.Find("InvetoryImage");
         if (inventoryImageTransform != null)
@@ -43,7 +43,10 @@ public class InventoryPlaySlot : MonoBehaviour
             inventoryImage.sprite = sprite;
         }
     }
-    public bool isEmpty() { return inventoryImage.sprite == null; }
+    public bool isEmpty() { 
+        //Debug.Log(inventoryImage);
+        return inventoryImage.sprite == null; 
+    }
     // Update is called once per frame
     void Update()
     {

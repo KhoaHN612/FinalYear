@@ -6,9 +6,10 @@ namespace RespawnSystem
 {
     public class RespawnHelper : MonoBehaviour
     {
+        [SerializeField]
         private RespawnPointManager manager;
 
-        private void Awake()
+        private void Start()
         {
             manager = FindObjectOfType<RespawnPointManager>();
 

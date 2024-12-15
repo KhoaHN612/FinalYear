@@ -7,4 +7,6 @@ public interface ICanBeTimeAffect
     public void StopTime();
     public void ResumeTime();
     public void AdjustSpeed(float speed);
+    public void RewindStart();
+    public void RewindEnd();
 }
