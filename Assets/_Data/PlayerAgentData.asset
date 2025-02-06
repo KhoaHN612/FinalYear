@@ -23,7 +23,7 @@ MonoBehaviour:
   dashCooldown: 1
   recordTime: 5
   rewindCooldown: 1
-  jumpForce: 12
+  jumpForce: 13
   lowJumpMultiplier: 5
   gravityModifier: 0.5
   climbHorizontalSpeed: 2

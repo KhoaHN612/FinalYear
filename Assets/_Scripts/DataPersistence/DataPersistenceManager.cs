@@ -82,6 +82,10 @@ public class DataPersistenceManager : MonoBehaviour
     {
         TimeSpan sessionPlaytime = DateTime.Now - sessionStartTime;
         gameData.totalPlaytime += (float)sessionPlaytime.TotalSeconds;
+        if (!scene.name.Equals("MainMenu"))
+        {
+            gameData.currentScene = scene.name;
+        }
         SaveGame();
     }
 
@@ -108,7 +112,7 @@ public class DataPersistenceManager : MonoBehaviour
 
         // load any saved data from a file using the data handler
         this.gameData = dataHandler.Load(selectedProfileId);
-        //Debug.Log("Loaded game data for profile: " + selectedProfileId);
+        Debug.Log("Loaded game data for profile: " + selectedProfileId);
 
         // start a new game if the data is null and we're configured to initialize data for debugging purposes
         if (this.gameData == null && initializeDataIfNull)
@@ -156,6 +160,11 @@ public class DataPersistenceManager : MonoBehaviour
 
         // save that data to a file using the data handler
         dataHandler.Save(gameData, selectedProfileId);
+    }
+
+    public void LoadScene()
+    {
+        SceneManager.LoadSceneAsync(gameData.currentScene);
     }
 
     private void OnApplicationQuit()

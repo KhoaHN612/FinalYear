@@ -16,6 +16,8 @@ public class GameData
     public int playerBonusHealth;
     public int playerBonusMana;
     public int playerBonusTime;
+    public string currentScene;
+    public List<string> listWeapon;
 
     public GameData()
     {
@@ -30,5 +32,7 @@ public class GameData
         this.playerBonusHealth = 0;
         this.playerBonusMana = 0;
         this.playerBonusTime = 0;
+        this.currentScene = "CutSceneStarting";
+        this.listWeapon = new List<string>();   
     }
 }

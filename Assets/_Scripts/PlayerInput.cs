@@ -25,6 +25,7 @@ public class PlayerInput : MonoBehaviour, IAgentInput
     public event Action<string> OnPlayAnimation;
 
     public event Action<int> OnUsingTime;
+    public event Action<int> OnAttackNum;
 
     public KeyCode 
         jumpKey, attackKey, dashKey, menuKey, rewindKey, 
@@ -67,6 +68,15 @@ public class PlayerInput : MonoBehaviour, IAgentInput
         GetMenuInput();
     }
 
+    public void DisableControl()
+    {
+        canControl = false;
+    }
+
+    public void EnableControl()
+    {
+        canControl = true;
+    }
     private void GetSkillStopTimeInput()
     {
         if (!playerSkills.IsSkillUnlocked(SkillType.StopTime1))

@@ -10,6 +10,7 @@ namespace AIEnemy
         public Vector2 MovementVector { get; set; }
 
         public event Action OnAttack;
+        public event Action<int> OnAttackNum;
         public event Action OnDash;
         public event Action OnJumpPressed;
         public event Action OnJumpReleased;
@@ -24,6 +25,11 @@ namespace AIEnemy
         public void CallOnAttack()
         {
             OnAttack?.Invoke();
+        }
+
+        public void CallOnAttack(int i)
+        {
+            OnAttackNum?.Invoke(i);
         }
 
         public void CallOnDash()
@@ -64,6 +70,11 @@ namespace AIEnemy
         public void CallAttack()
         {
             OnAttack?.Invoke();
+        }
+
+        public void CallAttack(int i)
+        {
+            OnAttackNum?.Invoke(i);
         }
 
         public void CallOnWeaponChange()

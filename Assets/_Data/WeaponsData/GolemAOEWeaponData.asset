@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 565cf0e822cbb1c4eb82694ff1065331, type: 3}
   m_Name: GolemAOEWeaponData
   m_EditorClassIdentifier: 
-  weaponName: 
+  weaponName: GolemAttack
   weaponSprite: {fileID: 0}
   weaponDamage: 5
-  weaponSwingSound: {fileID: 8300000, guid: 14cd1330fdf3d0e45937bd0176a0b1fd, type: 3}
+  weaponCooldown: 0
+  weaponSwingSound: {fileID: 8300000, guid: 5b81486862265a947b81b43a75ef3de4, type: 3}
   aoeRadius: 2

@@ -177,7 +177,10 @@ MonoBehaviour:
   OnPlayerDetected:
     m_PersistentCalls:
       m_Calls: []
+  isCircle: 1
   radius: 0.7
+  width: 0
+  height: 1
   gizmoColor: {r: 0, g: 1, b: 0, a: 0.5803922}
   showGizmos: 1
 --- !u!1 &6727788465434401231
@@ -276,6 +279,10 @@ PrefabInstance:
       propertyPath: agentData
       value: 
       objectReference: {fileID: 11400000, guid: b7646eaaa0f6166409d95e1294a56bc7, type: 2}
+    - target: {fileID: 72251233495706884, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      propertyPath: attackNum
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 72251233495706884, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
       propertyPath: <OnAgentDie>k__BackingField.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -579,6 +586,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5020355883459748713, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5225748966447297067}
+    - targetCorrespondingSourceObject: {fileID: 5020355883459748713, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4450011174522887883}
   m_SourcePrefab: {fileID: 100100000, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}
 --- !u!114 &1609823371903110217 stripped
 MonoBehaviour:
@@ -609,6 +619,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToInstantiate: {fileID: 52468877454038648, guid: b53f20ca5d3ddc946827223f0777900d, type: 3}
+  number: 1
+  spawnArea: {x: 5, y: 0}
+--- !u!114 &4450011174522887883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6153036301528749941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06461e6277302ce499ef667a8c7d81d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToInstantiate: {fileID: 375285608337855387, guid: c19971a5b5db4e141bd8688f804c9491, type: 3}
+  number: 5
+  spawnArea: {x: 5, y: 0.2}
 --- !u!1 &7135386130270932590 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8344573179310717554, guid: fab43f2d39e0ccc41b7a912aeacd87a3, type: 3}

@@ -4,12 +4,13 @@ using UnityEngine;
 
 namespace WeaponSystem
 {
-    public class ThrowableWeapon : MonoBehaviour
+    public class ThrowableWeapon : MonoBehaviour, ICanBeTimeAffect
     {
         Vector2 startPosition = Vector2.zero;
         RangeWeaponData data;
         Vector2 movementDirection;
         bool isInitialized = false;
+        bool isTimeStopped = false;
         Rigidbody2D rb2d;
 
         public Transform spriteTransform;
@@ -25,6 +26,8 @@ namespace WeaponSystem
         [SerializeField]
         private Color gizmoColor = Color.red;
         private LayerMask layerMask;
+        private Vector2 storedVelocity;
+        private float timeManipulateMutiplier = 1;
 
         private void Awake()
         {
@@ -48,15 +51,35 @@ namespace WeaponSystem
                 this.transform.localScale.z
             );
             isInitialized = true;
-            rb2d.velocity = movementDirection * data.weaponThrowSpeed;
+            timeManipulateMutiplier = TimeManager.Instance.currentSpeed;    
+            rb2d.velocity = movementDirection * data.weaponThrowSpeed * timeManipulateMutiplier;
             layerMask = mask;
+        }
+
+        private void OnEnable()
+        {
+            if (TimeManager.Instance != null)
+            {
+                TimeManager.Instance.canBeTimeAffectObjects.Add(this);
+                Debug.Log($"{name} added to TimeManager.");
+            }
+        }
+
+        private void OnDisable()
+        {
+            if (TimeManager.Instance != null)
+            {
+                TimeManager.Instance.canBeTimeAffectObjects.Remove(this);
+                Debug.Log($"{name} removed from TimeManager.");
+            }
         }
 
         private void Update()
         {
-            if (isInitialized)
+            if (isInitialized && !isTimeStopped)
             {
                 Fly();
+                rb2d.velocity = movementDirection * data.weaponThrowSpeed * timeManipulateMutiplier;
                 DetectCollision();
                 if (((Vector2)transform.position - startPosition).magnitude >= data.attackRange)
                 {
@@ -81,13 +104,49 @@ namespace WeaponSystem
 
         private void Fly()
         {
-            spriteTransform.rotation *= Quaternion.Euler(0, 0, Time.deltaTime * rotationSpeed * -movementDirection.x);
+            spriteTransform.rotation *= Quaternion.Euler(0, 0, Time.deltaTime * rotationSpeed * -movementDirection.x * timeManipulateMutiplier);
         }
 
         private void OnDrawGizmos()
         {
             Gizmos.color = gizmoColor;
             Gizmos.DrawSphere(transform.position + (Vector3)center, radius);
+        }
+
+        public void StopTime()
+        {
+            if (isInitialized)
+            {
+                isTimeStopped = true;
+                storedVelocity = rb2d.velocity;  
+                rb2d.velocity = Vector2.zero;    
+                rb2d.isKinematic = true;        
+            }
+        }
+
+        public void ResumeTime()
+        {
+            if (isInitialized)
+            {
+                isTimeStopped = false;
+                rb2d.isKinematic = false;       
+                rb2d.velocity = storedVelocity;
+            }
+        }
+
+        public void AdjustSpeed(float speed)
+        {
+            timeManipulateMutiplier = speed;
+        }
+
+        public void RewindStart()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void RewindEnd()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

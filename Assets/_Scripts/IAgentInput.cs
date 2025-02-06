@@ -6,6 +6,7 @@ public interface IAgentInput
     Vector2 MovementVector { get; }
 
     event Action OnAttack;
+    event Action<int> OnAttackNum;
     event Action OnDash;
     event Action OnJumpPressed;
     event Action OnJumpReleased;

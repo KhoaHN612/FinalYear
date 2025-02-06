@@ -11,8 +11,12 @@ namespace AIEnemy
 
         public UnityEvent<GameObject> OnPlayerDetected;
 
+        public bool isCircle = true;
+
         [Range(.1f, 1)]
         public float radius;
+
+        public float width, height = 1;
 
         [Header("Gizmo parameters")]
         public Color gizmoColor = Color.green;
@@ -22,7 +26,16 @@ namespace AIEnemy
 
         private void Update()
         {
-            var collider = Physics2D.OverlapCircle(transform.position, radius, targetLayer);
+            Collider2D collider;
+            if (isCircle)
+            {
+                collider = Physics2D.OverlapCircle(transform.position, radius, targetLayer);
+            }
+            else
+            {
+                collider = Physics2D.OverlapBox(transform.position, new Vector2(width, height) , 0f, targetLayer);
+            }
+
             PlayerDetected = collider != null;
             if (PlayerDetected)
                 OnPlayerDetected?.Invoke(collider.gameObject);
@@ -33,7 +46,14 @@ namespace AIEnemy
             if (showGizmos)
             {
                 Gizmos.color = gizmoColor;
-                Gizmos.DrawSphere(transform.position, radius);
+                if (isCircle)
+                {
+                    Gizmos.DrawWireSphere(transform.position, radius);
+                }
+                else
+                {
+                    Gizmos.DrawWireCube(transform.position, new Vector3(width, height, 1f));
+                }
             }
         }
     }

@@ -15,5 +15,6 @@ MonoBehaviour:
   weaponName: Sword
   weaponSprite: {fileID: -318049779, guid: 6ea10356f686878419dea7401427c809, type: 3}
   weaponDamage: 5
+  weaponCooldown: 0
   weaponSwingSound: {fileID: 8300000, guid: ae4125b7fa3baf34cac60c0d4d6ffc25, type: 3}
-  attackRange: 1
+  attackRange: 2.2

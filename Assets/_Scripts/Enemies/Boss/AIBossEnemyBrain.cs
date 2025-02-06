@@ -18,9 +18,14 @@ namespace AIEnemy
         [SerializeField]
         private bool haveMet = false;
 
-        [SerializeField]
-        private AIBehaviour IdleBehaviour, ChargeBehaviour, MeleeAttackBehaviour, WaitBehaviour;
+        [SerializeField] private float attackRangeCooldown = 10f;
 
+        [SerializeField]
+        private AIBehaviour IdleBehaviour, ChargeBehaviour, MeleeAttackBehaviour, WaitBehaviour, AttackRangeBehavior;
+        private void Start()
+        {
+            
+        }
         private void Update()
         {
             aiBoard.SetBoard(AIDataTypes.PlayerDetected, playerDetector.PlayerInArea);
@@ -33,6 +38,7 @@ namespace AIEnemy
                 {
                     CallOnPlayAnimation("Roar");
                     haveMet = true;
+                    StartCoroutine(AttackRangeCooldown());
                 } 
                 else
                 {
@@ -44,8 +50,12 @@ namespace AIEnemy
                     else
                     {
                         /*Debug.Log(aiBoard.CheckBoard(AIDataTypes.Waiting));*/
-
-                        if (aiBoard.CheckBoard(AIDataTypes.InMeleeRange))
+                        if (aiBoard.CheckBoard(AIDataTypes.CanUseRangeAttack))
+                        {
+                            AttackRangeBehavior.PerformAction(this);
+                            StartCoroutine(AttackRangeCooldown());
+                        }
+                        else if (aiBoard.CheckBoard(AIDataTypes.InMeleeRange))
                         {
                             MeleeAttackBehaviour.PerformAction(this);
                         }
@@ -62,6 +72,11 @@ namespace AIEnemy
             {
                 IdleBehaviour.PerformAction(this);
             }
+        }
+        public IEnumerator AttackRangeCooldown()
+        {
+            yield return new WaitForSeconds(attackRangeCooldown);
+            aiBoard.SetBoard(AIDataTypes.CanUseRangeAttack, true);
         }
     }
 }

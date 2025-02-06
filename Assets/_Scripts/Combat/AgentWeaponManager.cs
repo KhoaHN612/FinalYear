@@ -67,6 +67,16 @@ namespace WeaponSystem
                 return;
             weaponStorage.PreviousWeapon();
         }
+        public int GetCurrentWeaponIndex()
+        {
+            return weaponStorage.GetCurrentWeaponIndex();
+        }
+        public void SelectWeapon(int n)
+        {
+            if (weaponStorage.WeaponCount <= 0)
+                return;
+            weaponStorage.SelectWeapon(n);
+        }
 
         public void AddWeaponData(WeaponData weaponData)
         {
@@ -95,6 +105,15 @@ namespace WeaponSystem
             return weaponStorage.GetPlayerWeaponNames();
         }
 
+        public void LoadData(GameData data)
+        {
+            weaponStorage.LoadData(data);       
+        }
+
+        public void SaveData(GameData data)
+        {
+            weaponStorage.SaveData(data);   
+        }
     }
 }
 

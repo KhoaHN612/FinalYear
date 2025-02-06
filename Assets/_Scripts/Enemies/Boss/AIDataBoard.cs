@@ -44,6 +44,7 @@ namespace AIEnemy
         PlayerDetected,
         Arrived,
         InMeleeRange,
-        PathBlocked
+        PathBlocked,
+        CanUseRangeAttack,
     }
 }

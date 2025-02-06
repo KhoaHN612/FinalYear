@@ -12,6 +12,9 @@ public class SaveSlotsMenu : Menu
     [Header("Menu Buttons")]
     [SerializeField] private Button backButton;
 
+    [Header("Starting Scene")]
+    [SerializeField] private SceneField startingScene;
+
     private SaveSlot[] saveSlots;
 
     private bool isLoadingGame = false;
@@ -36,7 +39,8 @@ public class SaveSlotsMenu : Menu
         }
 
         // load the scene - which will in turn save the game because of OnSceneUnloaded() in the DataPersistenceManager
-        SceneManager.LoadSceneAsync("Scene_01");
+        //SceneManager.LoadSceneAsync("Scene_02");
+        DataPersistenceManager.instance.LoadScene();
     }
 
     public void OnBackClicked()

@@ -21,6 +21,7 @@ public class Agent : MonoBehaviour, ICanBeTimeAffect, IDataPersistence, IInterac
     public bool isAffectByNegativeTimeManipulate = true;
     public float timeManipulateMutiplier = 1;
     private float defaultGravityScale;
+    public int attackNum = 1;
 
     private int bonusHealth = 0;
     private int bonusMana = 0;
@@ -104,6 +105,10 @@ public class Agent : MonoBehaviour, ICanBeTimeAffect, IDataPersistence, IInterac
             playerInput.OnStopInteract += CallStopInteractObjetc;   
         }
 
+    }
+
+    private void OnDisable()
+    {
     }
 
     private void CallInteractObject()
@@ -215,7 +220,8 @@ public class Agent : MonoBehaviour, ICanBeTimeAffect, IDataPersistence, IInterac
     public void AdjustSpeed(float speed)
     {
         if (!isAffectByNegativeTimeManipulate && speed<1) return;
-        Debug.Log(transform.parent.name + " AdjustSpeed: " + speed);     
+        Debug.Log(transform.parent.name + " AdjustSpeed: " + speed);
+        if (animationManager == null) Debug.Log("AnimationManager is null in " + transform.parent.name);
         animationManager.AdjustAnimationSpeed(speed);
         rb2d.gravityScale = defaultGravityScale * speed;
         timeManipulateMutiplier = speed;
@@ -238,6 +244,7 @@ public class Agent : MonoBehaviour, ICanBeTimeAffect, IDataPersistence, IInterac
             bonusHealth = data.playerBonusHealth;
             bonusMana = data.playerBonusMana;
             bonusTime = data.playerBonusTime;
+            agentWeapon.LoadData(data);
         }
     }
 
@@ -248,6 +255,7 @@ public class Agent : MonoBehaviour, ICanBeTimeAffect, IDataPersistence, IInterac
             data.playerBonusHealth = bonusHealth;
             data.playerBonusMana = bonusMana;
             data.playerBonusTime = bonusTime;
+            agentWeapon.SaveData(data);     
         }
     }
 

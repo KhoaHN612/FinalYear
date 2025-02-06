@@ -8,13 +8,15 @@ public class ParallaxEffect : MonoBehaviour
     [Range(0, 1)]
     public float movementSpeed = 0.3f;
 
-    private void Awake()
+    private void Start()
     {
         mainCamera = mainCamera == null ? Camera.main : mainCamera;
     }
 
     private void FixedUpdate()
     {
+        if (mainCamera == null)
+            return;
         transform.position = new Vector2(mainCamera.transform.position.x * movementSpeed, 0);
     }
 }

@@ -2,11 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerSkills : MonoBehaviour, IDataPersistence
 {
     public event EventHandler OnSkillPointsChanged;
     public event EventHandler<OnSkillUnlockedEventArgs> OnSkillUnlocked;
+    public UnityEvent OnSkillUnlockedEvents;
     public class OnSkillUnlockedEventArgs : EventArgs
     {
         public SkillType skillType;
@@ -38,6 +40,7 @@ public class PlayerSkills : MonoBehaviour, IDataPersistence
         {
             unlockedSkillTypeList.Add(skillType);
             OnSkillUnlocked?.Invoke(this, new OnSkillUnlockedEventArgs { skillType = skillType });
+            OnSkillUnlockedEvents?.Invoke();
         }
     }
 

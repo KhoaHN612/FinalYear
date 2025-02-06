@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 public class SceneObjectManager : MonoBehaviour
 {
     [SerializeField] private GameObject persistObjects;
-
+    [SerializeField] private List<string> exceptScenes = new List<string> { "CutSceneStarting", "MainMenu" }; 
     private void Awake()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
+        //OnSceneLoaded(SceneManager.GetActiveScene(), LoadSceneMode.Single);
     }
 
     private void OnDestroy()
@@ -20,7 +21,7 @@ public class SceneObjectManager : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         Debug.Log("OnSceneLoaded: " + scene.name);
-        if (scene.name == "MainMenu")
+        if (exceptScenes.Contains(scene.name))
         {
             if (persistObjects != null)
             {

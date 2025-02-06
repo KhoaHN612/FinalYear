@@ -14,6 +14,9 @@ public class MainMenu : Menu
     [SerializeField] private Button continueGameButton;
     [SerializeField] private Button loadGameButton;
 
+    [Header("Starting Scene")]
+    [SerializeField] private SceneField startingScene;
+
     private void Start()
     {
         if (!DataPersistenceManager.instance.HasGameData())
@@ -47,7 +50,7 @@ public class MainMenu : Menu
         DisableMenuButtons();
         // load the next scene - which will in turn load the game because of 
         // OnSceneLoaded() in the DataPersistenceManager
-        SceneManager.LoadSceneAsync("Scene_01");
+        DataPersistenceManager.instance.LoadScene();
     }
 
     private void DisableMenuButtons()

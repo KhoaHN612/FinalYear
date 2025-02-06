@@ -18,6 +18,7 @@ public abstract class State : MonoBehaviour
     public void Enter()
     {
         this.agent.agentInput.OnAttack += HandleAttack;
+        this.agent.agentInput.OnAttackNum += HandleAttackNum;
         this.agent.agentInput.OnDash += HandleDash;
         this.agent.agentInput.OnJumpPressed += HandleJumpPressed;
         this.agent.agentInput.OnJumpReleased += HandleJumpReleased;
@@ -74,6 +75,38 @@ public abstract class State : MonoBehaviour
         TestAttackTransition();
     }
 
+    protected virtual void TestAttackTransition()
+    {
+        if (agent.currentState == agent.stateFactory.GetState(StateType.Die))
+        {
+            return;
+        }
+        if (agent.agentWeapon.CanIUseWeapon(agent.groundDetector.isGrounded))
+        {
+            agent.TransitionToState(agent.stateFactory.GetState(StateType.Attack));
+
+        }
+    }
+
+    protected virtual void HandleAttackNum(int i)
+    {
+        TestAttackTransitionNum(i);
+    }
+
+    protected virtual void TestAttackTransitionNum(int i)
+    {
+        if (agent.currentState == agent.stateFactory.GetState(StateType.Die))
+        {
+            return;
+        }
+        agent.attackNum = i;
+        if (agent.agentWeapon.CanIUseWeapon(agent.groundDetector.isGrounded))
+        {
+            agent.TransitionToState(agent.stateFactory.GetState(StateType.Attack));
+
+        }
+    }
+
     protected virtual void HandleDash()
     {
         if (agent.movementData.canDash){
@@ -101,15 +134,6 @@ public abstract class State : MonoBehaviour
         return false;
     }
 
-    protected virtual void TestAttackTransition()
-    {
-        if (agent.agentWeapon.CanIUseWeapon(agent.groundDetector.isGrounded))
-        {
-            agent.TransitionToState(agent.stateFactory.GetState(StateType.Attack));
-
-        }
-    }
-
     public virtual void StateFixedUpdate()
     {
 
@@ -118,6 +142,7 @@ public abstract class State : MonoBehaviour
     public void Exit()
     {
         this.agent.agentInput.OnAttack -= HandleAttack;
+        this.agent.agentInput.OnAttackNum += HandleAttackNum;
         this.agent.agentInput.OnDash -= HandleDash;
         this.agent.agentInput.OnJumpPressed -= HandleJumpPressed;
         this.agent.agentInput.OnJumpReleased -= HandleJumpReleased;

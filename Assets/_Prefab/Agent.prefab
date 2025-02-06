@@ -669,6 +669,7 @@ MonoBehaviour:
   damagable: {fileID: 0}
   isAffectByNegativeTimeManipulate: 1
   timeManipulateMutiplier: 1
+  attackNum: 1
   currentState: {fileID: 0}
   previousState: {fileID: 0}
   agentWeapon: {fileID: 0}
@@ -854,6 +855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881b79a5041e1f04785fb134412867eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
 --- !u!114 &284545326342983346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1091,6 +1093,7 @@ GameObject:
   - component: {fileID: 4954567820744540745}
   - component: {fileID: 6475414524892602726}
   - component: {fileID: 1585969751469799046}
+  - component: {fileID: 205363124941369456}
   m_Layer: 3
   m_Name: Weapon
   m_TagString: Untagged
@@ -1201,6 +1204,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventoryPlayBarManage: {fileID: 0}
   inventorySlotNumber: 4
+  weaponDataHelper: {fileID: 205363124941369456}
+  isChangeToNewestWeapon: 1
+--- !u!114 &205363124941369456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6609460971224816175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 230f3aebad7e3224ab7c5f8980cc4fdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponDataList:
+  - {fileID: 11400000, guid: 687159b78c5f69c41865b7c5f3bbfdf7, type: 2}
+  - {fileID: 11400000, guid: 3c27d9675d37f644b97a4fa2c0e90022, type: 2}
+  - {fileID: 11400000, guid: 85d9dc752f3b70e4ab55b03f8f6bb218, type: 2}
+  - {fileID: 11400000, guid: 7661fc07b52e7b74dbfdafc1093020ab, type: 2}
 --- !u!1 &7168570945402864055
 GameObject:
   m_ObjectHideFlags: 0
@@ -1497,9 +1519,11 @@ MonoBehaviour:
   OnExit:
     m_PersistentCalls:
       m_Calls: []
+  isAttackCanBeInterrupted: 1
   hittableLayerMask:
     serializedVersion: 2
     m_Bits: 12288
+  defaultWeaponIndex: 0
   OnWeaponSound:
     m_PersistentCalls:
       m_Calls:

@@ -15,5 +15,6 @@ MonoBehaviour:
   weaponName: EnemyMelee
   weaponSprite: {fileID: 0}
   weaponDamage: 5
+  weaponCooldown: 0
   weaponSwingSound: {fileID: 8300000, guid: ae4125b7fa3baf34cac60c0d4d6ffc25, type: 3}
-  attackRange: 1
+  attackRange: 2

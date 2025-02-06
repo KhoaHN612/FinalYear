@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TimeManager : MonoBehaviour
 {
@@ -20,6 +22,30 @@ public class TimeManager : MonoBehaviour
             Debug.Log("TimeManager exist, newone is destroyed");
             return;
         }
+
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene arg0, LoadSceneMode arg1)
+    {
+        FindPlayerAndICanBeTimeAffectObjects();
+    }
+
+    private void FindPlayerAndICanBeTimeAffectObjects()
+    {
+        canBeTimeAffectObjects = null;
+        player = null;
+
+        canBeTimeAffectObjects = new List<ICanBeTimeAffect>(FindObjectsOfType<MonoBehaviour>(false)
+            .OfType<ICanBeTimeAffect>());
+
+        player = FindObjectsOfType<Agent>()
+            .FirstOrDefault(a => a.CompareTag("Player"));
+    }
+
+    private void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     public float slowdownFactor = 0.05f;
@@ -31,15 +57,12 @@ public class TimeManager : MonoBehaviour
     public bool isAdjustTime { get; private set; } = false;
     public bool isSpeedUpPlayer { get; private set; } = false;
     private Agent player;
-    private List<ICanBeTimeAffect> canBeTimeAffectObjects;
+    public List<ICanBeTimeAffect> canBeTimeAffectObjects;
+    public float currentSpeed = 1;  
 
     private void Start()
     {
-        canBeTimeAffectObjects = new List<ICanBeTimeAffect>(FindObjectsOfType<MonoBehaviour>(true)
-            .OfType<ICanBeTimeAffect>());
-
-        player = FindObjectsOfType<Agent>()
-            .FirstOrDefault(a => a.CompareTag("Player"));
+        FindPlayerAndICanBeTimeAffectObjects();
     }
 
     void Update()
@@ -96,6 +119,7 @@ public class TimeManager : MonoBehaviour
 
     public void AdjustTime(float r)
     {
+        currentSpeed = r;
         if (r != 1)
         {
             isAdjustTime = true;
@@ -104,9 +128,10 @@ public class TimeManager : MonoBehaviour
         {
             isAdjustTime = false;
         }
+        Debug.Log("Obj number: " + canBeTimeAffectObjects.Count);
         foreach (var obj in canBeTimeAffectObjects)
         {
-            obj.AdjustSpeed(r);
+                obj.AdjustSpeed(r); 
         }
     }
 

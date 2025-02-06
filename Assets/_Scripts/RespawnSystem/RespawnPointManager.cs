@@ -7,8 +7,9 @@ namespace RespawnSystem
 {
     public class RespawnPointManager : MonoBehaviour, IDataPersistence
     {
+        [SerializeField] Transform startingPoint;
         List<RespawnPoint> respawnPoints = new List<RespawnPoint>();
-        RespawnPoint currentRespawnPoint;
+        [SerializeField] RespawnPoint currentRespawnPoint;
         [SerializeField]
         public UnityEvent respawnPointActive;
 
@@ -16,9 +17,15 @@ namespace RespawnSystem
         {
             foreach (Transform item in transform)
             {
-                respawnPoints.Add(item.GetComponent<RespawnPoint>());
+                if (item.GetComponent<RespawnPoint>() != null)
+                {
+                    respawnPoints.Add(item.GetComponent<RespawnPoint>());
+                }
             }
-            currentRespawnPoint = respawnPoints[0];
+            if (respawnPoints.Count > 0)
+                currentRespawnPoint = respawnPoints[0];
+
+            //Debug.Log(respawnPoints.Count);
         }
 
 
@@ -57,22 +64,26 @@ namespace RespawnSystem
 
         public void LoadData(GameData data)
         {
+            GameObject player = GameObject.FindWithTag("Player");
+            //Debug.Log(respawnPoints.Count);
             foreach (RespawnPoint respawnPoint in respawnPoints)
             {
                 if (respawnPoint.id.Equals(data.currentSpawnPointId))
                 {
                     UpdateRespawnPoint(respawnPoint);
-                    GameObject player = GameObject.FindWithTag("Player");
                     respawnPoint.SetPlayerGO(player);
                     Respawn(player);
                     return;
                 }
             }
+            player.transform.position = startingPoint.position;
         }
 
         public void SaveData(GameData data)
         {
-            data.currentSpawnPointId = currentRespawnPoint.id;
+            //Debug.Log("Current spawnpoint" + currentRespawnPoint.id);
+            if (currentRespawnPoint != null)
+                data.currentSpawnPointId = currentRespawnPoint.id;
         }
     }
 }

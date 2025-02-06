@@ -1,10 +1,12 @@
 using CodeMonkey.Utils;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class UISkillTree : MonoBehaviour
+public class UISkillTree : MonoBehaviour    
 {
     [SerializeField] private Material skillLockedMaterial;
     [SerializeField] private Material skillUnlockableMaterial;
@@ -16,6 +18,17 @@ public class UISkillTree : MonoBehaviour
     private List<SkillButton> skillButtonList;
     [SerializeField]
     private TMPro.TextMeshProUGUI skillPointsText;
+
+    private void Awake()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene arg0, LoadSceneMode arg1)
+    {
+        UpdateVisuals();
+        UpdateSkillPoints();
+    }
 
     public void SetPlayerSkills(PlayerSkills playerSkills)
     {
@@ -49,8 +62,12 @@ public class UISkillTree : MonoBehaviour
         playerSkills.OnSkillUnlocked += PlayerSkills_OnSkillUnlocked;
         playerSkills.OnSkillPointsChanged += PlayerSkills_OnSkillPointsChanged;
 
-        UpdateVisuals();
-        UpdateSkillPoints();
+        if (this.enabled)
+        {
+            UpdateVisuals();
+            UpdateSkillPoints();
+        }
+
     }
 
     private void PlayerSkills_OnSkillPointsChanged(object sender, System.EventArgs e)
@@ -70,6 +87,10 @@ public class UISkillTree : MonoBehaviour
 
     private void UpdateVisuals()
     {
+        if (this == null)
+        {
+            return;
+        }
         foreach (SkillButton skillButton in skillButtonList)
         {
             skillButton.UpdateVisual();
@@ -108,6 +129,7 @@ public class UISkillTree : MonoBehaviour
         private Transform transform;
         private Image image;
         private Image backgroundImage;
+        private Color defaultBackgroundImage;
         private PlayerSkills playerSkills;
         private SkillType skillType;
         private Material skillLockedMaterial;
@@ -124,6 +146,7 @@ public class UISkillTree : MonoBehaviour
             image = transform.Find("Icon").GetComponent<Image>();
 
             backgroundImage = transform.GetComponent<Image>();
+            defaultBackgroundImage = backgroundImage.color;
 
             transform.GetComponent<Button>().onClick.AddListener(() =>
             {
@@ -140,10 +163,15 @@ public class UISkillTree : MonoBehaviour
 
         public void UpdateVisual()
         {
+            if (transform == null)
+            {
+                return;
+            }
             if (playerSkills.IsSkillUnlocked(skillType))
             {
                 image.material = null;
                 backgroundImage.material = null;
+                backgroundImage.color = defaultBackgroundImage;
             }
             else
             {

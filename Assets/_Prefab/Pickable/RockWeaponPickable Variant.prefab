@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &9084070483715910923
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2605338473878993107, guid: d9129947e968f454db619af2ba6a65cd, type: 3}
+      propertyPath: weaponData
+      value: 
+      objectReference: {fileID: 11400000, guid: 3c27d9675d37f644b97a4fa2c0e90022, type: 2}
+    - target: {fileID: 4474029052568296722, guid: d9129947e968f454db619af2ba6a65cd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.2256932
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474029052568296722, guid: d9129947e968f454db619af2ba6a65cd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.46332502
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474029052568296722, guid: d9129947e968f454db619af2ba6a65cd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.018981349
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474029052568296722, guid: d9129947e968f454db619af2ba6a65cd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474029052568296722, guid: d9129947e968f454db619af2ba6a65cd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474029052568296722, guid: d9129947e968f454db619af2ba6a65cd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474029052568296722, guid: d9129947e968f454db619af2ba6a65cd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474029052568296722, guid: d9129947e968f454db619af2ba6a65cd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474029052568296722, guid: d9129947e968f454db619af2ba6a65cd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474029052568296722, guid: d9129947e968f454db619af2ba6a65cd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5310312991332725604, guid: d9129947e968f454db619af2ba6a65cd, type: 3}
+      propertyPath: m_Name
+      value: RockWeaponPickable Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8193547802422170882, guid: d9129947e968f454db619af2ba6a65cd, type: 3}
+      propertyPath: m_Size.x
+      value: 3.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 8193547802422170882, guid: d9129947e968f454db619af2ba6a65cd, type: 3}
+      propertyPath: m_Size.y
+      value: 3.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 8193547802422170882, guid: d9129947e968f454db619af2ba6a65cd, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 23106569e524c5541b68e875104e0de3, type: 3}
+    - target: {fileID: 8193547802422170882, guid: d9129947e968f454db619af2ba6a65cd, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d9129947e968f454db619af2ba6a65cd, type: 3}

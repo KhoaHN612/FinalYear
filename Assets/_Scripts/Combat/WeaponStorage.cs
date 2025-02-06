@@ -14,6 +14,9 @@ namespace WeaponSystem
         private InventoryPlayBarManage inventoryPlayBarManage;
         public int inventorySlotNumber = 4;
 
+        public WeaponDataHelper weaponDataHelper;
+
+        public bool isChangeToNewestWeapon = true;
         public int WeaponCount { get => weaponDataList.Count; }
         public int CurrentWeaponIndex 
         { 
@@ -37,6 +40,11 @@ namespace WeaponSystem
             if (CurrentWeaponIndex == -1)   
                 return null;
             return weaponDataList[CurrentWeaponIndex];
+        }
+
+        internal int GetCurrentWeaponIndex()
+        {
+            return CurrentWeaponIndex;
         }
 
         internal WeaponData NextWeapon()
@@ -67,6 +75,23 @@ namespace WeaponSystem
             return weaponDataList[CurrentWeaponIndex];
         }
 
+        internal WeaponData SelectWeapon(int n)
+        {
+            if (CurrentWeaponIndex == -1)
+                return null;
+
+            if (n < 0 || n >= weaponDataList.Count)
+                return null;
+
+            CurrentWeaponIndex = n;
+
+            if (inventoryPlayBarManage != null)
+            {
+                inventoryPlayBarManage.SelectInventorySlot(currentWeaponIndex);
+            }
+            return weaponDataList[CurrentWeaponIndex];
+        }
+
         internal bool AddWeaponData(WeaponData weaponData)
         {
             if (weaponDataList.Contains(weaponData))
@@ -82,6 +107,8 @@ namespace WeaponSystem
                     inventoryPlayBarManage.ReplaceItem(n, weaponData.weaponSprite);
                 }
             }
+            if (!isChangeToNewestWeapon && weaponDataList.Count > 1)
+                return true;
             CurrentWeaponIndex = weaponDataList.Count - 1;
             if (inventoryPlayBarManage != null)
             {
@@ -93,6 +120,33 @@ namespace WeaponSystem
         internal List<string> GetPlayerWeaponNames()
         {
             return weaponDataList.Select(weapon => weapon.name).ToList();
+        }
+
+        public void LoadData(GameData data)
+        {
+            if (weaponDataHelper == null) return;
+            for (int i = 0; i < data.listWeapon.Count; i++)
+            {
+                Debug.Log("Weapon Name: " + data.listWeapon[i]);
+                WeaponData weaponData = weaponDataHelper.GetWeaponData(data.listWeapon[i]);
+                if (weaponData != null)
+                {
+                    Debug.Log("WeaponStorage.LoadData: " + weaponData.weaponName);  
+                    AddWeaponData(weaponData);
+                }
+            }   
+        }
+
+        public void SaveData(GameData data)
+        {
+            if (weaponDataHelper == null) return;
+            //for (int i = 0; i < weaponDataList.Count; i++)
+            //{
+            //    data.listWeapon.Add(weaponDataList[i].weaponName);
+            //}
+
+            data.listWeapon.Clear();
+            data.listWeapon.AddRange(weaponDataList.Select(w => w.weaponName));
         }
     }
 }
